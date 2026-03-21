@@ -2,12 +2,24 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-function Card({ className, ...props }: React.ComponentProps<'div'>) {
+interface CardProps extends React.ComponentProps<'div'> {
+  variant?: 'default' | 'premium' | 'moroccan' | 'glass';
+}
+
+function Card({ className, variant = 'default', ...props }: CardProps) {
+  const variantClasses = {
+    default: 'bg-card text-card-foreground border shadow-sm',
+    premium: 'bg-gradient-to-br from-card via-background to-card border-2 border-turath-saffron/20 shadow-lg hover:shadow-xl transition-all duration-300',
+    moroccan: 'glass-moroccan border-turath-saffron/25 shadow-md hover:shadow-lg transition-all duration-300',
+    glass: 'glass-premium border-turath-saffron/25 shadow-lg',
+  }
+
   return (
     <div
       data-slot="card"
       className={cn(
-        'bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm',
+        'text-card-foreground flex flex-col gap-6 rounded-2xl py-6',
+        variantClasses[variant],
         className,
       )}
       {...props}
@@ -32,7 +44,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="card-title"
-      className={cn('leading-none font-semibold', className)}
+      className={cn('leading-none font-bold text-lg bg-gradient-to-r from-turath-red to-turath-red-dark bg-clip-text text-transparent', className)}
       {...props}
     />
   )
