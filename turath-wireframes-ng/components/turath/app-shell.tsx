@@ -98,36 +98,43 @@ function AppContent() {
   return (
     <div
       className={cn(
-        "min-h-screen flex flex-col items-center justify-center relative transition-colors duration-300",
+        "min-h-screen flex flex-col items-center justify-center relative transition-all duration-500",
         isDark
-          ? "bg-gradient-to-br from-[#0F0F0F] via-[#1E1C1A] to-[#0F0F0F]"
-          : "bg-gradient-to-br from-[#FAF7F0] via-[#F5F0E8] to-[#FAF7F0]"
+          ? "bg-gradient-to-br from-turath-warm-dark via-[#0F0F0F] to-turath-warm-dark"
+          : "bg-gradient-to-br from-turath-parchment via-turath-silk to-turath-parchment-dark"
       )}
     >
-      {/* Zellige & Amazigh Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.06] pointer-events-none overflow-hidden zellige-pattern" />
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden amazigh-pattern" />
+      {/* Premium Layered Background Patterns */}
+      <div className="absolute inset-0 opacity-[0.07] pointer-events-none overflow-hidden zellige-ornate" />
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none overflow-hidden amazigh-tribal" />
+      <div className="absolute inset-0 opacity-[0.04] pointer-events-none overflow-hidden calligraphy-flourish" />
+      
+      {/* Ambient glow effect */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-turath-saffron/10 blur-3xl pointer-events-none mix-blend-multiply" />
+      <div className="absolute bottom-0 right-1/3 w-96 h-96 rounded-full bg-turath-red/10 blur-3xl pointer-events-none mix-blend-multiply" />
 
-      {/* Top Chrome Bar */}
-      <div className="relative z-10 w-full max-w-sm mx-auto mb-4 px-2">
+      {/* Premium Top Chrome Bar */}
+      <div className="relative z-10 w-full max-w-sm mx-auto mb-4 px-2 animate-in fade-in duration-500">
         <div className={cn(
-          "flex items-center justify-between px-4 py-2 rounded-2xl",
-          isDark ? "bg-white/5 border border-white/10" : "bg-black/5 border border-black/10"
+          "flex items-center justify-between px-4 py-3 rounded-2xl backdrop-blur-xl border-2 transition-all duration-300",
+          isDark 
+            ? "glass-premium border-white/10 shadow-lg" 
+            : "glass-premium border-turath-saffron/20 shadow-lg"
         )}>
           {/* Logo + App name */}
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#C1272D] via-[#2A52BE] to-[#006233] flex items-center justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="text-white">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-turath-red via-turath-majorelle to-turath-green flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-white">
                 <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <span className={cn("text-sm font-bold font-serif flex items-center gap-1.5", isDark ? "text-white" : "text-[#1a1a1a]")}>
+            <span className={cn("text-sm font-bold font-serif flex items-center gap-2 tracking-tight", isDark ? "text-white" : "text-foreground")}>
               <span>Turath</span>
-              <span className="font-sans font-normal opacity-50">/</span>
-              <span className="font-sans text-[#F4C430] text-xs">{SCREEN_LABELS[currentScreen]}</span>
-              <span className="font-sans text-[#E07A5F] text-xs ml-0.5 opacity-80">ⵣ</span>
+              <span className="w-px h-4 bg-turath-saffron/40" />
+              <span className="font-sans text-turath-red text-xs font-semibold">{SCREEN_LABELS[currentScreen]}</span>
+              <span className="font-sans text-turath-indigo text-xs ml-0.5 tifinagh-float">ⵣ</span>
             </span>
           </div>
 
@@ -226,16 +233,20 @@ function AppContent() {
         />
       </div>
 
-      {/* Bottom tagline */}
-      <div className="relative z-10 mt-6 flex items-center gap-2">
-        <div className="w-2 h-2 rounded-full bg-[#C1272D] shadow-sm" />
-        <div className="w-2 h-2 rounded-full bg-[#006233] shadow-sm" />
-        <div className="w-2 h-2 rounded-full bg-[#2A52BE] shadow-sm" />
-        <div className="w-2 h-2 rounded-full bg-[#F4C430] shadow-sm" />
-        <div className="w-2 h-2 rounded-full bg-[#E07A5F] shadow-sm" />
-        <span className={cn("text-sm ml-2 font-serif", isDark ? "text-white/50" : "text-black/50")}>
-          تراث — Moroccan Heritage — ⵜⴰⵢⵙⵉ
-        </span>
+      {/* Premium Bottom Tagline with Cultural Elements */}
+      <div className="relative z-10 mt-8 flex flex-col items-center gap-4 animate-in fade-in duration-700 delay-300">
+        <div className="flex items-center gap-3">
+          <div className="w-2.5 h-2.5 rounded-full bg-turath-red shadow-lg saffron-glow" />
+          <div className="w-2.5 h-2.5 rounded-full bg-turath-green shadow-lg" />
+          <div className="w-2.5 h-2.5 rounded-full bg-turath-majorelle shadow-lg" />
+          <div className="w-2.5 h-2.5 rounded-full bg-turath-saffron shadow-lg" />
+          <div className="w-2.5 h-2.5 rounded-full bg-turath-earth shadow-lg" />
+        </div>
+        <p className={cn("text-center text-sm font-serif tracking-wider", isDark ? "text-white/60" : "text-foreground/60")}>
+          <span dir="rtl" className="block font-bold">تراث</span>
+          <span className="text-xs opacity-75">Moroccan Heritage Platform</span>
+          <span className="text-xs opacity-75 block mt-0.5">ⵜⴰⵙⵎⵓⴼⵜ ⵜⴰⵎⴰⵣⵉⴳⵜ</span>
+        </p>
       </div>
     </div>
   )

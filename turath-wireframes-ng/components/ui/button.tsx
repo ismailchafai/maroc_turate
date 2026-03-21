@@ -19,6 +19,11 @@ const buttonVariants = cva(
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
+        moroccan: 'bg-gradient-to-r from-turath-red to-turath-red-dark text-white hover:shadow-lg hover:scale-105 active:scale-95 border border-turath-saffron/30 transition-all duration-300',
+        saffron: 'bg-turath-saffron text-turath-charcoal hover:bg-turath-saffron-dark hover:shadow-lg font-bold transition-all duration-300',
+        emerald: 'bg-gradient-to-r from-turath-green to-turath-green-light text-white hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300',
+        majorelle: 'bg-gradient-to-r from-turath-majorelle to-turath-majorelle-light text-white hover:shadow-lg transition-all duration-300',
+        glass: 'glass-premium text-foreground hover:bg-white/20 transition-all duration-300',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
