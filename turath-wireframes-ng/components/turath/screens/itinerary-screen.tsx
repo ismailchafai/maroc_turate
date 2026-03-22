@@ -33,38 +33,38 @@ export function ItineraryScreen({ isDark }: ItineraryScreenProps) {
   const totalStops = ITINERARY_DATA.stops.length
 
   return (
-    <div className="h-full flex flex-col bg-background">
+    <div className="h-full flex flex-col bg-medina">
       {/* Header */}
-      <div className="pt-12 px-4 pb-4 border-b border-border bg-card">
-        <div className="flex items-center gap-3 mb-4">
-          <button onClick={goBack} className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 transition-colors" aria-label="Go back">
-            <ChevronLeftIcon className="w-5 h-5 text-foreground" />
+      <div className="pt-11 px-4 pb-3 border-b-2 border-turath-saffron/20 bg-white/70 backdrop-blur-sm">
+        <div className="flex items-center gap-3 mb-3">
+          <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-red/10 flex items-center justify-center hover:bg-turath-red/20 transition-colors" aria-label="Go back">
+            <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
           </button>
           <div className="flex-1">
-            <h1 className="text-2xl font-bold font-serif text-foreground">{ITINERARY_DATA.name}</h1>
-            <p className="text-lg font-serif text-[#F4C430]" dir="rtl">{ITINERARY_DATA.nameAr}</p>
+            <h1 className="text-lg font-bold font-serif text-foreground">{ITINERARY_DATA.name}</h1>
+            <p className="text-sm font-serif text-turath-saffron" dir="rtl">{ITINERARY_DATA.nameAr}</p>
           </div>
-          <button onClick={() => navigate('voice-ai')} className="w-10 h-10 rounded-full bg-[#2A52BE]/10 flex items-center justify-center hover:bg-[#2A52BE]/20 transition-colors" aria-label="AI Guide">
-            <WaveformIcon className="w-5 h-5 text-[#2A52BE]" />
+          <button onClick={() => navigate('voice-ai')} className="w-9 h-9 rounded-lg bg-turath-majorelle/15 flex items-center justify-center hover:bg-turath-majorelle/25 transition-colors" aria-label="AI Guide">
+            <WaveformIcon className="w-5 h-5 text-turath-majorelle" />
           </button>
         </div>
 
         {/* Transport mode */}
-        <div className="flex gap-2 mb-4">
+        <div className="flex gap-2 mb-3">
           {[
-            { id: 'walking' as const, label: 'Walking', Icon: WalkingIcon },
-            { id: 'car' as const, label: 'Car', Icon: CarIcon },
-            { id: 'public' as const, label: 'Transit', Icon: BusIcon },
+            { id: 'walking' as const, label: 'مشياً', Icon: WalkingIcon },
+            { id: 'car' as const, label: 'سيارة', Icon: CarIcon },
+            { id: 'public' as const, label: 'حافلة', Icon: BusIcon },
           ].map(({ id, label, Icon }) => (
             <button
               key={id}
               onClick={() => setTransportMode(id)}
-              className={cn("flex-1 py-2 px-3 rounded-xl flex items-center justify-center gap-2 transition-all text-sm font-medium",
-                transportMode === id ? "bg-[#C1272D] text-white shadow-md font-bold" : "bg-muted text-muted-foreground hover:bg-muted/80"
+              className={cn("flex-1 py-2 px-2 rounded-lg flex items-center justify-center gap-1.5 transition-all text-xs font-semibold",
+                transportMode === id ? "bg-turath-red text-white shadow-md" : "bg-white/50 text-foreground border border-turath-earth/20 hover:bg-turath-saffron/15"
               )}
             >
-              <Icon className="w-4 h-4" />
-              {label}
+              <Icon className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">{label}</span>
             </button>
           ))}
         </div>
@@ -75,8 +75,8 @@ export function ItineraryScreen({ isDark }: ItineraryScreenProps) {
             <button
               key={day}
               onClick={() => setSelectedDay(day)}
-              className={cn("flex-1 py-2 rounded-xl text-sm font-medium transition-all",
-                selectedDay === day ? "bg-[#2A52BE] text-white shadow-md font-bold" : "bg-muted text-muted-foreground hover:bg-muted/80"
+              className={cn("flex-1 py-2 rounded-lg text-xs font-bold transition-all",
+                selectedDay === day ? "bg-turath-majorelle text-white shadow-md" : "bg-white/50 text-foreground border border-turath-earth/20 hover:bg-turath-saffron/15"
               )}
             >
               Day {day}

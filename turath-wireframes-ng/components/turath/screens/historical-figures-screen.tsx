@@ -25,11 +25,11 @@ export function HistoricalFiguresScreen({ isDark }: HistoricalFiguresScreenProps
       <div className="absolute inset-0 opacity-[0.04] arabesque-ornate pointer-events-none" />
 
       {/* Header with cultural styling */}
-      <div className="relative z-10 px-6 pt-6 pb-4 border-b border-turath-saffron/20 glass-moroccan">
+      <div className="relative z-10 px-5 pt-6 pb-4 border-b-2 border-turath-saffron/20 glass-moroccan">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h1 className="text-3xl font-bold font-serif text-turath-red">Morocco's Legends</h1>
-            <p className="text-xs text-muted-foreground mt-1">Historical figures who shaped civilization</p>
+            <h1 className="text-2xl font-bold font-serif text-turath-red">أساطير المغرب</h1>
+            <p className="text-xs text-muted-foreground mt-1">Great figures of Morocco's history</p>
           </div>
         </div>
 

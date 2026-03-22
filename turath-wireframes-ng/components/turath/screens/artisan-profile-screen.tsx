@@ -54,30 +54,30 @@ export function ArtisanProfileScreen({ isDark }: ArtisanProfileScreenProps) {
   const [activeTab, setActiveTab] = useState<'portfolio' | 'products' | 'reviews'>('portfolio')
 
   return (
-    <div className="h-full flex flex-col overflow-y-auto">
+    <div className="h-full flex flex-col overflow-y-auto bg-medina">
       {/* Header */}
-      <div className="pt-12 px-4 pb-4 flex items-center justify-between bg-card relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 arabesque-pattern pointer-events-none" />
-        <button onClick={goBack} className="w-10 h-10 rounded-full bg-muted flex items-center justify-center relative z-10 hover:bg-black/5 dark:hover:bg-white/5 transition-colors" aria-label="Go back">
-          <ChevronLeftIcon className="w-5 h-5 text-foreground" />
+      <div className="pt-11 px-4 pb-3 flex items-center justify-between bg-white/60 backdrop-blur-sm border-b border-turath-saffron/20 relative overflow-hidden shadow-sm">
+        <div className="absolute inset-0 opacity-8 arabesque-pattern pointer-events-none" />
+        <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-red/10 flex items-center justify-center relative z-10 hover:bg-turath-red/20 transition-colors" aria-label="Go back">
+          <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
         </button>
-        <button onClick={() => navigate('marketplace')} className="px-4 py-2 bg-[#2A52BE] text-white rounded-xl text-sm font-bold font-serif shadow-md relative z-10 transition-transform active:scale-95">
-          View Shop
+        <button onClick={() => navigate('marketplace')} className="px-3.5 py-2 bg-turath-red text-white rounded-lg text-xs font-bold shadow-md relative z-10 transition-transform active:scale-95">
+          المتجر
         </button>
-        <button className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
-          <ShareIcon className="w-5 h-5 text-foreground" />
+        <button className="w-9 h-9 rounded-lg bg-turath-saffron/10 flex items-center justify-center">
+          <ShareIcon className="w-5 h-5 text-turath-saffron" />
         </button>
       </div>
 
       {/* Profile header */}
-      <div className="px-4 pb-6 bg-card border-b border-border">
+      <div className="px-4 pb-5 bg-white/70 backdrop-blur-sm border-b border-turath-earth/20">
         <div className="flex items-start gap-4">
           <div className="relative">
-            <div className="w-20 h-20 rounded-2xl bg-cover bg-center border-2 border-[#F4C430] shadow-lg" style={{ backgroundImage: `url(${ARTISAN_DATA.photo})` }} />
-            {ARTISAN_DATA.verified && <VerifiedIcon className="absolute -bottom-1 -right-1 w-6 h-6 text-[#2A52BE] drop-shadow-sm" />}
+            <div className="w-18 h-18 rounded-xl bg-cover bg-center border-2 border-turath-saffron shadow-md" style={{ backgroundImage: `url(${ARTISAN_DATA.photo})` }} />
+            {ARTISAN_DATA.verified && <VerifiedIcon className="absolute -bottom-1 -right-1 w-5 h-5 text-turath-red drop-shadow-sm" />}
           </div>
           <div className="flex-1">
-            <h1 className="text-2xl font-bold font-serif text-foreground">{ARTISAN_DATA.name}</h1>
+            <h1 className="text-xl font-bold font-serif text-foreground">{ARTISAN_DATA.name}</h1>
             <div className="flex items-center gap-2">
               <p className="text-lg text-[#F4C430] font-serif" dir="rtl">{ARTISAN_DATA.nameAr}</p>
               <span className="text-xs text-muted-foreground/50">|</span>

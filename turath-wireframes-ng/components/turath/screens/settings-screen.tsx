@@ -32,28 +32,28 @@ export function SettingsScreen({ isDark }: SettingsScreenProps) {
   }
 
   return (
-    <div className="h-full flex flex-col bg-background relative">
-      <div className="pt-12 px-4 pb-4 flex items-center gap-3 border-b border-[#F4C430]/20 bg-[#FAF7F0] dark:bg-card relative overflow-hidden shadow-sm">
-        <div className="absolute inset-0 arabesque-pattern opacity-10 pointer-events-none" />
-        <button onClick={goBack} className="w-10 h-10 rounded-full bg-background flex items-center justify-center relative z-10 shadow-sm hover:scale-105 transition-transform" aria-label="Go back">
-          <ChevronLeftIcon className="w-5 h-5 text-foreground" />
+    <div className="h-full flex flex-col bg-medina relative">
+      <div className="pt-11 px-4 pb-3 flex items-center gap-3 border-b-2 border-turath-saffron/20 bg-white/70 backdrop-blur-sm relative overflow-hidden shadow-sm">
+        <div className="absolute inset-0 arabesque-pattern opacity-8 pointer-events-none" />
+        <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-red/10 flex items-center justify-center relative z-10 hover:bg-turath-red/20 transition-colors" aria-label="Go back">
+          <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
         </button>
-        <h1 className="text-2xl font-bold font-serif text-foreground relative z-10">Settings</h1>
+        <h1 className="text-xl font-bold font-serif text-foreground relative z-10">الإعدادات</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto pb-8">
         {/* Profile */}
-        <div className="p-4 border-b border-border">
-          <h2 className="text-[11px] font-bold font-serif text-[#F4C430] tracking-[0.15em] mb-4">PROFILE</h2>
-          <button className="w-full flex items-center gap-4 p-4 bg-card rounded-2xl border border-border">
-            <div className="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center">
-              <UserIcon className="w-7 h-7 text-accent" />
+        <div className="p-3 border-b border-turath-earth/20">
+          <h2 className="text-xs font-bold font-serif text-turath-red tracking-widest mb-3 px-1">حسابي</h2>
+          <button className="w-full flex items-center gap-3 p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-turath-saffron/20 hover:border-turath-saffron/40 transition-all">
+            <div className="w-12 h-12 rounded-lg bg-turath-red/15 flex items-center justify-center flex-shrink-0">
+              <UserIcon className="w-5 h-5 text-turath-red" />
             </div>
             <div className="flex-1 text-left">
-              <p className="font-semibold text-foreground">Alexandra Chen</p>
-              <p className="text-sm text-muted-foreground">Edit profile</p>
+              <p className="font-semibold text-sm text-foreground">Alexandra Chen</p>
+              <p className="text-xs text-muted-foreground">عدّل ملفك الشخصي</p>
             </div>
-            <ChevronRightIcon className="w-5 h-5 text-muted-foreground" />
+            <ChevronRightIcon className="w-4 h-4 text-muted-foreground flex-shrink-0" />
           </button>
         </div>
 

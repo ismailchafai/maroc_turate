@@ -43,37 +43,36 @@ export function HomeMapScreen({ isDark }: HomeMapScreenProps) {
   }
 
   return (
-    <div className="h-full flex flex-col relative">
+    <div className="h-full flex flex-col relative bg-medina">
       {/* Premium search bar */}
-      <div className="absolute top-12 left-4 right-4 z-30 majestic-scale">
-        <div className="glass-premium rounded-2xl overflow-hidden">
-          <div className="absolute inset-0 zellige-ornate opacity-5 pointer-events-none" />
-          <div className="flex items-center gap-3 px-5 py-3.5 relative z-10">
+      <div className="absolute top-11 left-3 right-3 z-30 majestic-scale">
+        <div className="glass-moroccan rounded-xl overflow-hidden border border-turath-saffron/30">
+          <div className="flex items-center gap-3 px-4 py-3 relative z-10">
             <SearchIcon className="w-5 h-5 text-turath-red" />
             <input 
               type="text" 
-              placeholder="Search places, crafts, artisans..." 
+              placeholder="ابحث عن..." 
               className="flex-1 bg-transparent text-sm font-sans text-foreground placeholder:text-muted-foreground outline-none" 
             />
-            <button className="w-10 h-10 rounded-xl bg-gradient-to-br from-turath-majorelle to-turath-majorelle-dark text-white flex items-center justify-center hover:shadow-lg hover:scale-105 transition-all active:scale-95">
-              <MicIcon className="w-5 h-5" />
+            <button className="w-9 h-9 rounded-lg bg-gradient-to-br from-turath-red to-turath-earth text-white flex items-center justify-center hover:shadow-lg hover:scale-105 transition-all active:scale-95">
+              <MicIcon className="w-4 h-4" />
             </button>
           </div>
         </div>
       </div>
 
       {/* Filter chips */}
-      <div className="absolute top-28 left-0 right-0 z-20 px-4">
+      <div className="absolute top-24 left-0 right-0 z-20 px-3">
         <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
           {FILTER_CHIPS.map((chip) => (
             <button
               key={chip.id}
               onClick={() => setActiveFilter(chip.id)}
               className={cn(
-                "px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all",
+                "px-3 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border",
                 activeFilter === chip.id
-                  ? "bg-accent text-accent-foreground shadow-md"
-                  : "glass border border-border/50 text-foreground hover:bg-accent/10"
+                  ? "bg-turath-saffron text-turath-charcoal border-turath-saffron/50 shadow-md"
+                  : "glass-moroccan border-turath-saffron/20 text-foreground hover:bg-turath-saffron/15"
               )}
             >
               {chip.label}
@@ -82,12 +81,11 @@ export function HomeMapScreen({ isDark }: HomeMapScreenProps) {
         </div>
       </div>
 
-      {/* Premium map area with cultural elements */}
-      <div className="flex-1 relative bg-gradient-to-br from-turath-parchment via-turath-silk to-turath-parchment overflow-hidden">
-        {/* Layered cultural patterns */}
-        <div className="absolute inset-0 opacity-[0.08] zellige-ornate pointer-events-none" />
+      {/* Map area with Moroccan theme */}
+      <div className="flex-1 relative overflow-hidden bg-gradient-to-br from-medina via-turath-parchment to-medina">
+        {/* Moroccan patterns */}
+        <div className="absolute inset-0 opacity-[0.1] zellige-pattern pointer-events-none" />
         <div className="absolute inset-0 opacity-[0.06] amazigh-tribal pointer-events-none" />
-        <div className="absolute inset-0 opacity-[0.05] arabesque-ornate pointer-events-none" />
         
         {/* Enhanced map SVG with premium styling */}
         <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full" style={{ filter: 'drop-shadow(0 12px 24px rgba(193,39,45,0.08))' }}>
@@ -165,44 +163,45 @@ export function HomeMapScreen({ isDark }: HomeMapScreenProps) {
         </div>
       </div>
 
-      {/* Premium bottom sheet with cultural styling */}
-      <div className={cn("absolute bottom-20 left-0 right-0 glass-premium rounded-t-4xl shadow-2xl transition-all duration-300 z-20 overflow-hidden", bottomSheetExpanded ? "h-[60%]" : "h-[220px]")}>
-        {/* Zellige border accent */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-turath-red via-turath-saffron to-turath-green opacity-60" />
+      {/* Moroccan bottom sheet */}
+      <div className={cn("absolute bottom-20 left-0 right-0 glass-moroccan rounded-t-3xl shadow-2xl transition-all duration-300 z-20 overflow-hidden border border-turath-saffron/20", bottomSheetExpanded ? "h-[60%]" : "h-[210px]")}>
+        {/* Moroccan color accent */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-turath-red via-turath-saffron to-turath-earth opacity-70" />
         
-        <button onClick={() => setBottomSheetExpanded(!bottomSheetExpanded)} className="w-full flex justify-center py-4" aria-label={bottomSheetExpanded ? "Collapse" : "Expand"}>
-          <div className="w-12 h-1.5 bg-turath-saffron/40 rounded-full hover:bg-turath-saffron/60 transition-colors" />
+        <button onClick={() => setBottomSheetExpanded(!bottomSheetExpanded)} className="w-full flex justify-center py-3" aria-label={bottomSheetExpanded ? "Collapse" : "Expand"}>
+          <div className="w-10 h-1 bg-turath-saffron/50 rounded-full hover:bg-turath-saffron/80 transition-colors" />
         </button>
         
-        <div className="px-5 pb-4 overflow-y-auto">
-          <div className="flex items-center justify-between mb-5">
+        <div className="px-4 pb-4 overflow-y-auto">
+          <div className="flex items-center justify-between mb-4">
             <div>
-              <h3 className="text-lg font-bold text-foreground font-serif">Nearby Highlights</h3>
-              <p className="text-xs text-muted-foreground mt-0.5">Explore cultural treasures</p>
+              <h3 className="text-base font-bold text-foreground font-serif">المعالم القريبة</h3>
+              <p className="text-xs text-muted-foreground mt-0.5">Nearby heritage</p>
             </div>
-            <button onClick={() => navigate('region-detail')} className="text-sm text-turath-red font-semibold flex items-center gap-1 hover:gap-2 transition-all">
-              Explore all <ChevronRightIcon className="w-4 h-4" />
+            <button onClick={() => navigate('region-detail')} className="text-xs text-turath-red font-bold flex items-center gap-1 hover:gap-2 transition-all">
+              عرض المزيد
+              <ChevronRightIcon className="w-3 h-3" />
             </button>
           </div>
           
-          <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+          <div className="flex gap-2.5 overflow-x-auto pb-2 scrollbar-hide">
             {NEARBY_HIGHLIGHTS.map((place, idx) => (
               <button
                 key={place.id}
                 onClick={() => navigate('region-detail')}
-                className="flex-shrink-0 w-44 rounded-2xl overflow-hidden glass-moroccan border border-turath-saffron/20 shadow-md hover:shadow-lg hover:border-turath-saffron/40 transition-all active:scale-95"
-                style={{ animation: `slide-in-right 0.4s ease-out ${idx * 0.1}s both` }}
+                className="flex-shrink-0 w-40 rounded-xl overflow-hidden bg-white/60 backdrop-blur-sm border border-turath-saffron/25 shadow-sm hover:shadow-md hover:border-turath-saffron/50 transition-all active:scale-95"
+                style={{ animation: `slide-in-right 0.3s ease-out ${idx * 0.08}s both` }}
               >
-                <div className="relative h-28 overflow-hidden bg-gradient-to-br from-turath-earth to-turath-desert">
+                <div className="relative h-24 overflow-hidden bg-gradient-to-br from-turath-earth to-turath-desert">
                   <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${place.image})` }} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <div className="absolute bottom-2 left-2 px-2.5 py-1 bg-turath-red/90 backdrop-blur-sm rounded-lg text-xs font-semibold text-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-1.5 left-1.5 px-2 py-0.5 bg-turath-red/95 rounded-md text-xs font-semibold text-white">
                     {place.distance}
                   </div>
                 </div>
-                <div className="p-3 bg-background/50 backdrop-blur-sm">
-                  <h4 className="font-bold text-sm text-foreground truncate">{place.name}</h4>
-                  <p className="text-xs text-turath-saffron font-medium mt-0.5">{place.category}</p>
+                <div className="p-2.5 bg-white/80">
+                  <h4 className="font-bold text-xs text-foreground truncate">{place.name}</h4>
+                  <p className="text-xs text-turath-saffron font-semibold mt-0.5">{place.category}</p>
                 </div>
               </button>
             ))}

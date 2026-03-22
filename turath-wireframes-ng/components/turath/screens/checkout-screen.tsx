@@ -34,26 +34,25 @@ export function CheckoutScreen({ isDark }: CheckoutScreenProps) {
 
   if (ordered) {
     return (
-      <div className="h-full flex flex-col items-center justify-center px-8 text-center">
-        <div className="w-24 h-24 rounded-full bg-secondary/20 flex items-center justify-center mb-6">
-          <CheckIcon className="w-12 h-12 text-secondary" />
+      <div className="h-full flex flex-col items-center justify-center px-6 text-center bg-medina">
+        <div className="w-20 h-20 rounded-full bg-turath-green/20 flex items-center justify-center mb-6">
+          <CheckIcon className="w-10 h-10 text-turath-green" />
         </div>
-        <h1 className="text-2xl font-bold text-foreground mb-2">Order Placed!</h1>
-        <p className="text-muted-foreground mb-8">Your artisan items are being prepared with care. You will receive a confirmation shortly.</p>
-        <button onClick={() => navigate('profile')} className="w-full py-4 bg-primary text-primary-foreground rounded-2xl font-semibold shadow-lg">View Orders</button>
-        <button onClick={() => navigate('marketplace')} className="w-full py-3 mt-3 bg-muted text-foreground rounded-2xl font-medium">Continue Shopping</button>
+        <h1 className="text-2xl font-bold font-serif text-foreground mb-2">تم الطلب!</h1>
+        <p className="text-muted-foreground mb-10 text-sm">جاري تحضير طلبك بعناية فائقة. ستتلقى تأكيداً قريباً.</p>
+        <button onClick={() => navigate('profile')} className="w-full py-3 bg-turath-red text-white rounded-lg font-bold text-sm shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all">عرض طلباتي</button>
+        <button onClick={() => navigate('marketplace')} className="w-full py-3 mt-3 bg-white/70 text-foreground rounded-lg font-semibold text-sm border border-turath-saffron/20 hover:bg-white/80 transition-all">متابعة التسوق</button>
       </div>
     )
   }
 
   return (
-    <div className="h-full flex flex-col bg-background relative">
-      <div className="absolute inset-0 bg-[#FAF7F0] opacity-50 pointer-events-none" />
-      <div className="pt-12 px-4 pb-4 flex items-center gap-3 border-b border-border bg-card relative z-10 shadow-sm">
-        <button onClick={goBack} className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/5 transition-colors" aria-label="Go back">
-          <ChevronLeftIcon className="w-5 h-5 text-foreground" />
+    <div className="h-full flex flex-col bg-medina relative">
+      <div className="pt-11 px-4 pb-3 flex items-center gap-3 border-b-2 border-turath-saffron/20 bg-white/70 backdrop-blur-sm relative z-10 shadow-sm">
+        <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-red/10 flex items-center justify-center hover:bg-turath-red/20 transition-colors" aria-label="Go back">
+          <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
         </button>
-        <h1 className="text-2xl font-bold font-serif text-foreground">Checkout</h1>
+        <h1 className="text-xl font-bold font-serif text-foreground">الدفع</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto pb-40 relative z-10">
