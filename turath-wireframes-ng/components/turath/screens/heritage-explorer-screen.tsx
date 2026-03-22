@@ -27,18 +27,29 @@ export function HeritageExplorerScreen({ isDark }: HeritageExplorerScreenProps) 
       <div className="absolute inset-0 opacity-[0.06] zellige-ornate pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.04] amazigh-tribal pointer-events-none" />
 
-      {/* Header */}
-      <div className="relative z-10 px-6 pt-6 pb-5 border-b-1.5 border-turath-saffron/30 glass-moroccan shadow-sm">
-        <div className="flex items-center justify-between mb-4.5">
-          <h1 className="text-3.5xl font-bold font-serif text-turath-red">Heritage Explorer</h1>
+      {/* Header with Amazigh cultural branding */}
+      <div className="relative z-10 px-6 pt-6 pb-5 border-b-2 border-turath-saffron/35 glass-moroccan shadow-md bg-gradient-to-r from-slate-900/40 via-transparent to-transparent">
+        <div className="absolute inset-0 opacity-[0.08] zellige-pattern pointer-events-none" />
+        
+        <div className="flex items-center justify-between mb-4.5 relative z-10">
+          <div className="flex items-center gap-2.5">
+            <span className="text-2.5xl font-bold text-turath-saffron">ⵓ</span>
+            <h1 className="text-3.5xl font-bold font-serif text-turath-red">Heritage Explorer</h1>
+          </div>
           <div className="flex gap-2.5">
-            <button className="w-9 h-9 rounded-xl bg-turath-saffron/25 flex items-center justify-center hover:bg-turath-saffron/40 transition-all hover:shadow-md active:scale-95">
+            <button className="w-9 h-9 rounded-xl bg-turath-saffron/30 flex items-center justify-center hover:bg-turath-saffron/50 transition-all hover:shadow-md active:scale-95 border border-turath-saffron/20">
               <ChevronLeftIcon className="w-5.5 h-5.5 text-turath-red" />
             </button>
-            <button className="w-9 h-9 rounded-xl bg-turath-saffron/25 flex items-center justify-center hover:bg-turath-saffron/40 transition-all hover:shadow-md active:scale-95">
+            <button className="w-9 h-9 rounded-xl bg-turath-saffron/30 flex items-center justify-center hover:bg-turath-saffron/50 transition-all hover:shadow-md active:scale-95 border border-turath-saffron/20">
               <ChevronRightIcon className="w-5.5 h-5.5 text-turath-red" />
             </button>
           </div>
+        </div>
+        
+        <div className="flex items-center gap-2 text-sm mb-4 text-muted-foreground relative z-10">
+          <span className="text-turath-saffron font-bold tracking-wider">ⴰⵊⵔⴰⵡⴰⵍ</span>
+          <span className="text-turath-red/60">|</span>
+          <span>Moroccan Heritage & Traditions</span>
         </div>
         
         {/* Tab navigation */}

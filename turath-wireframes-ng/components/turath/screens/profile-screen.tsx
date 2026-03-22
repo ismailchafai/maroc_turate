@@ -69,9 +69,16 @@ export function ProfileScreen({ isDark }: ProfileScreenProps) {
       <div className="pt-12 px-5 pb-7 bg-[#2A52BE] text-white overflow-hidden relative shadow-lg">
         <div className="absolute inset-0 zellige-pattern opacity-12 pointer-events-none mix-blend-overlay" />
         <div className="flex items-center justify-between mb-5 relative z-10">
-          <div className="flex flex-col gap-0.5">
-            <h1 className="text-3.5xl font-bold font-serif">Profile</h1>
-            <span className="text-sm font-sans tracking-widest text-[#F4C430]/95">ⴰⵎⵓⵖ</span>
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-3">
+              <span className="text-3xl font-bold">ⵣ</span>
+              <h1 className="text-3.5xl font-bold font-serif">Profile</h1>
+            </div>
+            <div className="flex items-center gap-2 text-sm font-sans tracking-widest">
+              <span className="text-[#F4C430]/95">ⴰⵎⵓⵖ</span>
+              <span className="text-white/50">·</span>
+              <span className="text-white/80">Amazigh Explorer</span>
+            </div>
           </div>
           <button onClick={() => navigate('settings')} className="w-11 h-11 rounded-full bg-white/25 flex items-center justify-center hover:bg-white/35 transition-all hover:shadow-lg active:scale-95" aria-label="Settings">
             <SettingsIcon className="w-5.5 h-5.5 text-white" />

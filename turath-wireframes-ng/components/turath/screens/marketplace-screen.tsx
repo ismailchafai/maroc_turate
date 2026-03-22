@@ -47,9 +47,16 @@ export function MarketplaceScreen({ isDark }: MarketplaceScreenProps) {
         <div className="absolute inset-0 zellige-pattern opacity-[0.14] pointer-events-none" />
         
         <div className="flex items-center justify-between mb-4 relative z-10">
-          <div className="flex flex-col gap-0.5">
-            <h1 className="text-2.5xl font-bold font-serif text-foreground drop-shadow-sm">السوق</h1>
-            <p className="text-xs text-muted-foreground font-semibold">Artisan Marketplace</p>
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl font-bold text-turath-saffron">🇲🇦</span>
+              <h1 className="text-2.5xl font-bold font-serif text-foreground drop-shadow-sm">السوق</h1>
+            </div>
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <span className="font-bold tracking-wide text-turath-saffron">ⴰⵙⵓⵇ</span>
+              <span className="text-foreground/50">·</span>
+              <span className="font-semibold">Artisan Marketplace</span>
+            </div>
           </div>
           <button 
             onClick={() => navigate('checkout')} 

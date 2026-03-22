@@ -63,20 +63,28 @@ export function OnboardingScreen({ isDark }: OnboardingScreenProps) {
             </div>
           </div>
           
-          {/* App name */}
-          <h1 className="text-6xl font-bold font-serif text-white mb-3 drop-shadow-2xl tracking-tight">Turath</h1>
+          {/* App name with Amazigh symbol */}
+          <div className="flex items-center gap-4 mb-3">
+            <span className="text-5xl font-bold text-turath-saffron drop-shadow-lg">ⵣ</span>
+            <h1 className="text-6xl font-bold font-serif text-white drop-shadow-2xl tracking-tight">Turath</h1>
+          </div>
           
-          {/* Arabic and Tifinagh */}
+          {/* Arabic, Tifinagh and Amazigh branding */}
           <div className="flex flex-col items-center gap-3 mb-8">
             <p className="text-4xl font-serif text-turath-saffron drop-shadow-md font-bold" dir="rtl">تراث</p>
             <div className="w-20 h-px bg-gradient-to-r from-transparent via-turath-saffron/60 to-transparent" />
-            <p className="text-xl font-sans text-turath-saffron font-semibold tracking-widest">ⵜⴰⵢⵙⵉ</p>
+            <div className="flex items-center gap-2">
+              <p className="text-xl font-sans text-turath-saffron font-semibold tracking-widest">ⵜⴰⵢⵙⵉ</p>
+              <span className="text-turath-saffron/60">·</span>
+              <p className="text-lg font-bold text-turath-saffron tracking-wide">Amazigh Heritage</p>
+            </div>
           </div>
           
-          {/* Moroccan tagline */}
-          <p className="text-center text-white/80 text-sm mb-12 max-w-xs leading-relaxed px-2">
-            استكشف تراث المغرب الأصيل
-          </p>
+          {/* Moroccan & Amazigh tagline */}
+          <div className="text-center mb-12 px-2">
+            <p className="text-white/80 text-sm leading-relaxed mb-1">استكشف تراث المغرب الأصيل</p>
+            <p className="text-turath-saffron/80 text-xs font-semibold tracking-widest">ⴷⴰⴰⵍ ⴰⵊⵏⴱⴰⵔ ⴰⵎⴰⵣⵉⵖ</p>
+          </div>
           
           {/* Main CTA */}
           <button

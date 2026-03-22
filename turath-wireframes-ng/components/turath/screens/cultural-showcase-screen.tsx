@@ -22,28 +22,39 @@ export function CulturalShowcaseScreen({ isDark }: CulturalShowcaseScreenProps) 
       <div className="absolute inset-0 opacity-[0.05] calligraphy-flourish pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.04] arabesque-ornate pointer-events-none" />
 
-      {/* Header */}
-      <div className="relative z-10 px-6 pt-6 pb-4 border-b border-turath-saffron/20 glass-moroccan">
-        <h1 className="text-3xl font-bold font-serif text-turath-red mb-4">Living Traditions</h1>
+      {/* Header with strong Amazigh branding and dark background */}
+      <div className="relative z-10 px-6 pt-6 pb-5 border-b-2 border-turath-saffron/40 glass-moroccan bg-gradient-to-r from-slate-900/60 via-slate-800/40 to-transparent shadow-lg">
+        <div className="absolute inset-0 opacity-[0.08] zellige-pattern pointer-events-none" />
         
-        {/* Section tabs */}
-        <div className="flex overflow-x-auto gap-2 pb-2 scrollbar-hide">
+        <div className="flex items-center gap-3 mb-4 relative z-10">
+          <span className="text-3xl font-bold text-turath-red">ⵣ</span>
+          <h1 className="text-3.5xl font-bold font-serif text-turath-red">Living Traditions</h1>
+        </div>
+        
+        <div className="flex items-center gap-2 text-sm mb-4 text-muted-foreground relative z-10">
+          <span className="text-turath-saffron font-bold tracking-wider">ⴰⵊⵏⴱⴰⵔ</span>
+          <span className="text-turath-red/60">|</span>
+          <span>Moroccan & Amazigh Heritage</span>
+        </div>
+        
+        {/* Section tabs with enhanced styling */}
+        <div className="flex overflow-x-auto gap-2.5 pb-2 scrollbar-hide">
           {(['traditions', 'symbols', 'proverbs', 'recipes', 'calendar'] as const).map((section) => (
             <button
               key={section}
               onClick={() => setActiveSection(section)}
               className={cn(
-                'px-4 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-all duration-300',
+                'px-4.5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap transition-all duration-300 border-1.5 backdrop-blur-sm',
                 activeSection === section
-                  ? 'bg-gradient-to-r from-turath-red to-turath-red-dark text-white shadow-md'
-                  : 'bg-turath-saffron/20 text-turath-red hover:bg-turath-saffron/30'
+                  ? 'bg-gradient-to-r from-turath-red to-turath-earth text-white shadow-md ring-1 ring-turath-red/30'
+                  : 'bg-turath-saffron/20 text-turath-red hover:bg-turath-saffron/35 border-turath-saffron/40 hover:border-turath-saffron/60 hover:shadow-sm'
               )}
             >
-              {section === 'traditions' && 'Traditions'}
-              {section === 'symbols' && 'Symbols'}
-              {section === 'proverbs' && 'Proverbs'}
-              {section === 'recipes' && 'Recipes'}
-              {section === 'calendar' && 'Calendar'}
+              {section === 'traditions' && '🎭 Traditions'}
+              {section === 'symbols' && '✨ Symbols'}
+              {section === 'proverbs' && '💬 Proverbs'}
+              {section === 'recipes' && '🍲 Recipes'}
+              {section === 'calendar' && '📅 Calendar'}
             </button>
           ))}
         </div>
