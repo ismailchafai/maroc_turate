@@ -33,27 +33,27 @@ export function SettingsScreen({ isDark }: SettingsScreenProps) {
 
   return (
     <div className="h-full flex flex-col bg-medina relative">
-      <div className="pt-11 px-4 pb-3 flex items-center gap-3 border-b-2 border-turath-saffron/20 bg-white/70 backdrop-blur-sm relative overflow-hidden shadow-sm">
-        <div className="absolute inset-0 arabesque-pattern opacity-8 pointer-events-none" />
-        <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-red/10 flex items-center justify-center relative z-10 hover:bg-turath-red/20 transition-colors" aria-label="Go back">
-          <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
+      <div className="pt-11 px-4 pb-4 flex items-center gap-3.5 border-b-1.5 border-turath-saffron/30 bg-white/80 backdrop-blur-md relative overflow-hidden shadow-sm">
+        <div className="absolute inset-0 arabesque-pattern opacity-10 pointer-events-none" />
+        <button onClick={goBack} className="w-10 h-10 rounded-xl bg-turath-red/15 flex items-center justify-center relative z-10 hover:bg-turath-red/25 hover:shadow-md transition-all active:scale-95" aria-label="Go back">
+          <ChevronLeftIcon className="w-5.5 h-5.5 text-turath-red" />
         </button>
-        <h1 className="text-xl font-bold font-serif text-foreground relative z-10">الإعدادات</h1>
+        <h1 className="text-2xl font-bold font-serif text-foreground relative z-10">الإعدادات</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto pb-8">
         {/* Profile */}
         <div className="p-3 border-b border-turath-earth/20">
           <h2 className="text-xs font-bold font-serif text-turath-red tracking-widest mb-3 px-1">حسابي</h2>
-          <button className="w-full flex items-center gap-3 p-3 bg-white/70 backdrop-blur-sm rounded-lg border border-turath-saffron/20 hover:border-turath-saffron/40 transition-all">
-            <div className="w-12 h-12 rounded-lg bg-turath-red/15 flex items-center justify-center flex-shrink-0">
-              <UserIcon className="w-5 h-5 text-turath-red" />
+          <button className="w-full flex items-center gap-3.5 p-4 bg-white/80 backdrop-blur-md rounded-2xl border-1.5 border-turath-saffron/25 hover:border-turath-saffron/50 hover:shadow-md transition-all active:scale-[0.98]">
+            <div className="w-14 h-14 rounded-xl bg-turath-red/20 flex items-center justify-center flex-shrink-0 shadow-sm">
+              <UserIcon className="w-5.5 h-5.5 text-turath-red" />
             </div>
             <div className="flex-1 text-left">
               <p className="font-semibold text-sm text-foreground">Alexandra Chen</p>
-              <p className="text-xs text-muted-foreground">عدّل ملفك الشخصي</p>
+              <p className="text-xs text-muted-foreground/80 font-medium">عدّل ملفك الشخصي</p>
             </div>
-            <ChevronRightIcon className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+            <ChevronRightIcon className="w-5 h-5 text-muted-foreground flex-shrink-0" />
           </button>
         </div>
 

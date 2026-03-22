@@ -55,16 +55,16 @@ export function OnboardingScreen({ isDark }: OnboardingScreenProps) {
         <div className="relative z-10 flex flex-col items-center justify-center w-full majestic-scale">
           {/* Moroccan icon */}
           <div className="relative mb-10">
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-turath-saffron via-turath-earth to-turath-red blur-2xl opacity-60" />
-            <div className="relative w-24 h-24 rounded-2xl bg-gradient-to-br from-turath-saffron to-turath-red flex items-center justify-center shadow-2xl border-2 border-turath-saffron/40">
-              <svg className="w-14 h-14 text-white drop-shadow-xl" viewBox="0 0 24 24" fill="currentColor">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-turath-saffron via-turath-earth to-turath-red blur-3xl opacity-70" />
+            <div className="relative w-28 h-28 rounded-3xl bg-gradient-to-br from-turath-saffron to-turath-red flex items-center justify-center shadow-3xl border-3 border-turath-saffron/50 backdrop-blur-sm">
+              <svg className="w-16 h-16 text-white drop-shadow-xl" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
               </svg>
             </div>
           </div>
           
           {/* App name */}
-          <h1 className="text-5xl font-bold font-serif text-white mb-2 drop-shadow-lg">Turath</h1>
+          <h1 className="text-6xl font-bold font-serif text-white mb-3 drop-shadow-2xl tracking-tight">Turath</h1>
           
           {/* Arabic and Tifinagh */}
           <div className="flex flex-col items-center gap-3 mb-8">
@@ -81,10 +81,10 @@ export function OnboardingScreen({ isDark }: OnboardingScreenProps) {
           {/* Main CTA */}
           <button
             onClick={() => setStep('language')}
-            className="w-full max-w-xs py-3.5 px-8 bg-gradient-to-r from-turath-red to-turath-earth text-white rounded-xl font-bold text-base shadow-2xl hover:shadow-3xl hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 border border-turath-saffron/40 group mb-6"
+            className="w-full max-w-xs py-4 px-8 bg-gradient-to-r from-turath-red to-turath-earth text-white rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 border border-turath-saffron/50 group mb-6"
           >
             <span>ابدأ الآن</span>
-            <ChevronRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ChevronRightIcon className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
           </button>
           
           {/* Color dots */}
@@ -124,17 +124,17 @@ export function OnboardingScreen({ isDark }: OnboardingScreenProps) {
                   key={lang.code}
                   onClick={() => setSelectedLanguage(lang.code)}
                   className={cn(
-                    "flex flex-col items-center gap-2 p-4 rounded-xl border-2 transition-all duration-300",
+                    "flex flex-col items-center gap-2.5 p-5 rounded-2xl border-2.5 transition-all duration-300 backdrop-blur-sm",
                     selectedLanguage === lang.code
-                      ? "border-turath-saffron bg-turath-saffron/20 shadow-lg"
-                      : "border-turath-earth/30 bg-white/50 hover:border-turath-saffron/50 hover:bg-turath-saffron/10"
+                      ? "border-turath-saffron bg-turath-saffron/25 shadow-lg ring-2 ring-turath-saffron/20"
+                      : "border-turath-earth/40 bg-white/60 hover:border-turath-saffron/60 hover:bg-turath-saffron/15 hover:shadow-md"
                   )}
                   style={{ animation: `slide-in-right 0.3s ease-out ${idx * 0.05}s both` }}
                 >
-                  <span className="text-3xl">{lang.flag}</span>
+                  <span className="text-4xl">{lang.flag}</span>
                   <div className="text-center">
-                    <p className="font-semibold text-xs text-foreground">{lang.name}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">{lang.nativeName}</p>
+                    <p className="font-semibold text-sm text-foreground">{lang.name}</p>
+                    <p className="text-xs text-muted-foreground/80 mt-0.5 font-medium">{lang.nativeName}</p>
                   </div>
                   {selectedLanguage === lang.code && (
                     <div className="absolute top-1 right-1 w-4 h-4 bg-turath-saffron rounded-full flex items-center justify-center">
@@ -151,9 +151,9 @@ export function OnboardingScreen({ isDark }: OnboardingScreenProps) {
             onClick={() => setStep('interests')}
             disabled={!selectedLanguage}
             className={cn(
-              "w-full py-3 px-6 rounded-xl font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2",
+              "w-full py-3.5 px-6 rounded-2xl font-bold text-base transition-all duration-300 flex items-center justify-center gap-2",
               selectedLanguage
-                ? "bg-gradient-to-r from-turath-red to-turath-earth text-white shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 border border-turath-saffron/40"
+                ? "bg-gradient-to-r from-turath-red to-turath-earth text-white shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] border border-turath-saffron/50"
                 : "bg-turath-silk text-muted-foreground cursor-not-allowed"
             )}
           >
@@ -183,18 +183,18 @@ export function OnboardingScreen({ isDark }: OnboardingScreenProps) {
               key={interest.id}
               onClick={() => toggleInterest(interest.id)}
               className={cn(
-                "flex items-center gap-3 p-4 rounded-xl border-2 transition-all duration-300",
+                "flex items-center gap-3.5 p-4 rounded-2xl border-2 transition-all duration-300 backdrop-blur-sm",
                 selectedInterests.includes(interest.id)
-                  ? "border-turath-saffron bg-turath-saffron/20 shadow-md"
-                  : "border-turath-earth/30 bg-white/50 hover:border-turath-saffron/50 hover:bg-turath-saffron/10"
+                  ? "border-turath-saffron bg-turath-saffron/25 shadow-md ring-2 ring-turath-saffron/20"
+                  : "border-turath-earth/40 bg-white/60 hover:border-turath-saffron/60 hover:bg-turath-saffron/15 hover:shadow-md"
               )}
               style={{ animation: `slide-in-right 0.3s ease-out ${idx * 0.05}s both` }}
             >
               <div className={cn(
-                "w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 border",
+                "w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 border-1.5",
                 selectedInterests.includes(interest.id) 
-                  ? "bg-gradient-to-br from-turath-red to-turath-earth border-turath-saffron/40" 
-                  : "bg-turath-silk/50 border-turath-earth/20 hover:bg-turath-saffron/15"
+                  ? "bg-gradient-to-br from-turath-red to-turath-earth border-turath-saffron/50 shadow-md" 
+                  : "bg-turath-silk/60 border-turath-earth/30 hover:bg-turath-saffron/20 hover:border-turath-saffron/40 hover:shadow-sm"
               )}>
                 <InterestIcon 
                   interest={interest.id} 

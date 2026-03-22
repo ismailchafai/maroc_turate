@@ -56,25 +56,25 @@ export function ArtisanProfileScreen({ isDark }: ArtisanProfileScreenProps) {
   return (
     <div className="h-full flex flex-col overflow-y-auto bg-medina">
       {/* Header */}
-      <div className="pt-11 px-4 pb-3 flex items-center justify-between bg-white/60 backdrop-blur-sm border-b border-turath-saffron/20 relative overflow-hidden shadow-sm">
-        <div className="absolute inset-0 opacity-8 arabesque-pattern pointer-events-none" />
-        <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-red/10 flex items-center justify-center relative z-10 hover:bg-turath-red/20 transition-colors" aria-label="Go back">
-          <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
+      <div className="pt-11 px-4 pb-3.5 flex items-center justify-between bg-white/70 backdrop-blur-md border-b-1.5 border-turath-saffron/30 relative overflow-hidden shadow-sm">
+        <div className="absolute inset-0 opacity-10 arabesque-pattern pointer-events-none" />
+        <button onClick={goBack} className="w-10 h-10 rounded-xl bg-turath-red/15 flex items-center justify-center relative z-10 hover:bg-turath-red/25 transition-colors hover:shadow-md" aria-label="Go back">
+          <ChevronLeftIcon className="w-5.5 h-5.5 text-turath-red" />
         </button>
-        <button onClick={() => navigate('marketplace')} className="px-3.5 py-2 bg-turath-red text-white rounded-lg text-xs font-bold shadow-md relative z-10 transition-transform active:scale-95">
+        <button onClick={() => navigate('marketplace')} className="px-4 py-2.5 bg-turath-red text-white rounded-xl text-xs font-bold shadow-md relative z-10 transition-transform hover:scale-[1.02] active:scale-95">
           المتجر
         </button>
-        <button className="w-9 h-9 rounded-lg bg-turath-saffron/10 flex items-center justify-center">
-          <ShareIcon className="w-5 h-5 text-turath-saffron" />
+        <button className="w-10 h-10 rounded-xl bg-turath-saffron/15 flex items-center justify-center hover:bg-turath-saffron/25 transition-colors hover:shadow-md">
+          <ShareIcon className="w-5.5 h-5.5 text-turath-saffron" />
         </button>
       </div>
 
       {/* Profile header */}
-      <div className="px-4 pb-5 bg-white/70 backdrop-blur-sm border-b border-turath-earth/20">
-        <div className="flex items-start gap-4">
+      <div className="px-4 pb-6 bg-white/80 backdrop-blur-md border-b-1.5 border-turath-earth/30">
+        <div className="flex items-start gap-4.5">
           <div className="relative">
-            <div className="w-18 h-18 rounded-xl bg-cover bg-center border-2 border-turath-saffron shadow-md" style={{ backgroundImage: `url(${ARTISAN_DATA.photo})` }} />
-            {ARTISAN_DATA.verified && <VerifiedIcon className="absolute -bottom-1 -right-1 w-5 h-5 text-turath-red drop-shadow-sm" />}
+            <div className="w-20 h-20 rounded-2xl bg-cover bg-center border-3 border-turath-saffron shadow-lg" style={{ backgroundImage: `url(${ARTISAN_DATA.photo})` }} />
+            {ARTISAN_DATA.verified && <VerifiedIcon className="absolute -bottom-1 -right-1 w-6 h-6 text-turath-red drop-shadow-md" />}
           </div>
           <div className="flex-1">
             <h1 className="text-xl font-bold font-serif text-foreground">{ARTISAN_DATA.name}</h1>
@@ -99,9 +99,9 @@ export function ArtisanProfileScreen({ isDark }: ArtisanProfileScreenProps) {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 mt-4">
-          <button onClick={() => setIsFollowing(!isFollowing)} className={cn("flex-1 py-3 rounded-2xl font-medium font-serif transition-all shadow-sm", isFollowing ? "bg-muted text-foreground border border-border" : "bg-[#C1272D] text-white hover:bg-[#A00F1A]")}>{isFollowing ? 'Following' : 'Follow'}</button>
-          <button onClick={() => navigate('marketplace')} className="py-3 px-6 bg-[#2A52BE] text-white rounded-2xl font-bold font-serif shadow-[0_4px_20px_rgba(42,82,190,0.3)] hover:scale-[1.02] active:scale-[0.98] transition-transform">Shop</button>
+        <div className="flex items-center gap-3.5 mt-5">
+          <button onClick={() => setIsFollowing(!isFollowing)} className={cn("flex-1 py-3.5 rounded-2xl font-medium font-serif transition-all shadow-md", isFollowing ? "bg-muted text-foreground border-1.5 border-border" : "bg-[#C1272D] text-white hover:bg-[#A00F1A] hover:shadow-lg")}>{isFollowing ? 'Following' : 'Follow'}</button>
+          <button onClick={() => navigate('marketplace')} className="py-3.5 px-7 bg-[#2A52BE] text-white rounded-2xl font-bold font-serif shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-transform">Shop</button>
         </div>
 
         <p className="text-sm text-muted-foreground mt-4 leading-relaxed">{ARTISAN_DATA.bio}</p>
@@ -127,21 +127,21 @@ export function ArtisanProfileScreen({ isDark }: ArtisanProfileScreenProps) {
         )}
 
         {activeTab === 'products' && (
-          <div className="p-4 space-y-3">
+          <div className="p-4.5 space-y-3.5">
             {PRODUCTS.map((product) => (
-              <div key={product.id} className="flex gap-4 p-3 bg-card rounded-2xl border border-border">
-                <div className="w-24 h-24 rounded-xl bg-cover bg-center flex-shrink-0" style={{ backgroundImage: `url(${product.image})` }} />
+              <div key={product.id} className="flex gap-4.5 p-4 bg-card rounded-2xl border-1.5 border-border shadow-md hover:shadow-lg transition-all">
+                <div className="w-28 h-28 rounded-xl bg-cover bg-center flex-shrink-0 shadow-sm" style={{ backgroundImage: `url(${product.image})` }} />
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="font-semibold text-foreground">{product.name}</h3>
-                    <p className="text-lg font-bold text-primary mt-1">{product.price} MAD</p>
+                    <p className="text-lg font-bold text-primary mt-1.5">{product.price} MAD</p>
                   </div>
-                  <div className="flex gap-2">
-                    <button onClick={() => navigate('checkout')} className="flex-1 py-2 bg-[#2A52BE] text-white rounded-xl text-sm font-bold font-serif shadow-md hover:bg-[#1E4080] transition-colors flex items-center justify-center gap-2">
+                  <div className="flex gap-2.5">
+                    <button onClick={() => navigate('checkout')} className="flex-1 py-2.5 bg-[#2A52BE] text-white rounded-xl text-sm font-bold font-serif shadow-md hover:bg-[#1E4080] hover:shadow-lg transition-all flex items-center justify-center gap-2">
                       <CartIcon className="w-4 h-4" />
                       Add to Cart
                     </button>
-                    <button className="w-10 h-10 bg-muted rounded-xl flex items-center justify-center">
+                    <button className="w-11 h-11 bg-muted rounded-xl flex items-center justify-center hover:bg-muted/80 transition-colors">
                       <HeartIcon className="w-5 h-5 text-muted-foreground" />
                     </button>
                   </div>
@@ -152,20 +152,20 @@ export function ArtisanProfileScreen({ isDark }: ArtisanProfileScreenProps) {
         )}
 
         {activeTab === 'reviews' && (
-          <div className="p-4 space-y-4">
+          <div className="p-4.5 space-y-3.5">
             {REVIEWS.map((review) => (
-              <div key={review.id} className="p-4 bg-card rounded-2xl border border-border">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-cover bg-center" style={{ backgroundImage: `url(${review.photo})` }} />
+              <div key={review.id} className="p-4 bg-card rounded-2xl border-1.5 border-border shadow-sm hover:shadow-md transition-all">
+                <div className="flex items-center gap-3.5">
+                  <div className="w-12 h-12 rounded-full bg-cover bg-center flex-shrink-0 shadow-sm" style={{ backgroundImage: `url(${review.photo})` }} />
                   <div className="flex-1">
-                    <p className="font-medium text-foreground">{review.name}</p>
-                    <div className="flex items-center gap-1">
-                      {Array.from({ length: review.rating }).map((_, i) => <StarIcon key={i} className="w-3 h-3 text-accent" filled />)}
+                    <p className="font-semibold text-foreground">{review.name}</p>
+                    <div className="flex items-center gap-1.5 mt-1">
+                      {Array.from({ length: review.rating }).map((_, i) => <StarIcon key={i} className="w-3.5 h-3.5 text-accent" filled />)}
                     </div>
                   </div>
-                  <span className="text-xs text-muted-foreground">{review.date}</span>
+                  <span className="text-xs text-muted-foreground whitespace-nowrap">{review.date}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mt-3">{review.text}</p>
+                <p className="text-sm text-muted-foreground mt-3.5 leading-relaxed">{review.text}</p>
               </div>
             ))}
           </div>

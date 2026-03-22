@@ -55,54 +55,54 @@ export function RegionDetailScreen({ isDark }: RegionDetailScreenProps) {
         
         {/* Header buttons */}
         <div className="absolute top-10 left-3 right-3 flex items-center justify-between z-20">
-          <button onClick={goBack} className="w-9 h-9 rounded-lg glass-moroccan flex items-center justify-center border border-turath-saffron/30" aria-label="Go back">
-            <ChevronLeftIcon className="w-5 h-5 text-white" />
+          <button onClick={goBack} className="w-10 h-10 rounded-xl glass-moroccan flex items-center justify-center border-1.5 border-turath-saffron/40 hover:scale-110 transition-all active:scale-95" aria-label="Go back">
+            <ChevronLeftIcon className="w-5.5 h-5.5 text-white" />
           </button>
-          <button className="w-9 h-9 rounded-lg glass-moroccan flex items-center justify-center border border-turath-saffron/30" aria-label="Share">
-            <ShareIcon className="w-5 h-5 text-white" />
+          <button className="w-10 h-10 rounded-xl glass-moroccan flex items-center justify-center border-1.5 border-turath-saffron/40 hover:scale-110 transition-all active:scale-95" aria-label="Share">
+            <ShareIcon className="w-5.5 h-5.5 text-white" />
           </button>
         </div>
         
         {/* Title section */}
-        <div className="absolute bottom-3 left-4 right-4 z-20">
-          <h1 className="text-3xl font-bold font-serif text-white drop-shadow-lg mb-1">{REGION_DATA.name}</h1>
-          <div className="flex flex-col gap-0.5">
-            <h2 className="text-2xl font-serif text-turath-saffron drop-shadow-md font-bold" dir="rtl">{REGION_DATA.nameAr}</h2>
-            <p className="text-sm font-sans text-turath-saffron/90 drop-shadow-sm tracking-widest">ⵎⵕⵕⴰⴽⵛ - ⴰⵙⴼⵉ</p>
+        <div className="absolute bottom-4 left-4 right-4 z-20">
+          <h1 className="text-4xl font-bold font-serif text-white drop-shadow-2xl mb-2">{REGION_DATA.name}</h1>
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2.5xl font-serif text-turath-saffron drop-shadow-lg font-bold" dir="rtl">{REGION_DATA.nameAr}</h2>
+            <p className="text-sm font-sans text-turath-saffron/95 drop-shadow-md tracking-wide">ⵎⵕⵕⴰⴽⵛ - ⴰⵙⴼⵉ</p>
           </div>
         </div>
       </div>
 
       {/* Stats */}
-      <div className="flex items-center justify-around py-4 border-b-2 border-turath-earth/30 bg-white/70 backdrop-blur-sm relative overflow-hidden">
-        <div className="absolute inset-0 zellige-pattern opacity-4 pointer-events-none" />
+      <div className="flex items-center justify-around py-5 border-b-2 border-turath-earth/40 bg-white/80 backdrop-blur-md relative overflow-hidden shadow-sm">
+        <div className="absolute inset-0 zellige-pattern opacity-6 pointer-events-none" />
         <div className="text-center relative z-10">
-          <p className="text-2xl font-bold text-turath-red">{REGION_DATA.heritageSites}</p>
-          <p className="text-xs text-muted-foreground font-semibold mt-0.5">المواقع</p>
+          <p className="text-3xl font-bold text-turath-red">{REGION_DATA.heritageSites}</p>
+          <p className="text-xs text-muted-foreground font-semibold mt-1">المواقع</p>
         </div>
-        <div className="w-px h-9 bg-turath-earth/40 relative z-10" />
+        <div className="w-1 h-10 bg-turath-earth/50 relative z-10 rounded-full" />
         <div className="text-center relative z-10">
-          <p className="text-2xl font-bold text-turath-saffron">{REGION_DATA.artisans}</p>
-          <p className="text-xs text-muted-foreground font-semibold mt-0.5">الصنّاع</p>
+          <p className="text-3xl font-bold text-turath-saffron">{REGION_DATA.artisans}</p>
+          <p className="text-xs text-muted-foreground font-semibold mt-1">الصنّاع</p>
         </div>
-        <div className="w-px h-9 bg-turath-earth/40 relative z-10" />
+        <div className="w-1 h-10 bg-turath-earth/50 relative z-10 rounded-full" />
         <div className="text-center relative z-10">
-          <p className="text-2xl font-bold text-turath-majorelle">{REGION_DATA.itineraries}</p>
-          <p className="text-xs text-muted-foreground font-semibold mt-0.5">الرحلات</p>
+          <p className="text-3xl font-bold text-turath-majorelle">{REGION_DATA.itineraries}</p>
+          <p className="text-xs text-muted-foreground font-semibold mt-1">الرحلات</p>
         </div>
       </div>
 
       {/* Category tabs */}
-      <div className="px-3 pt-3 pb-2 bg-white/40 backdrop-blur-sm border-b border-turath-earth/20">
+      <div className="px-3 pt-3.5 pb-2.5 bg-white/50 backdrop-blur-md border-b-2 border-turath-earth/30">
         <div className="flex gap-2 overflow-x-auto scrollbar-hide">
           {CATEGORY_TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={cn("px-3.5 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border",
+              className={cn("px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border-1.5 backdrop-blur-sm",
                 activeTab === tab.id 
-                  ? "bg-turath-red text-white border-turath-red shadow-md" 
-                  : "glass-moroccan border-turath-saffron/20 text-foreground hover:bg-turath-saffron/15"
+                  ? "bg-turath-red text-white border-turath-red/60 shadow-md ring-1 ring-turath-red/20" 
+                  : "glass-moroccan border-turath-saffron/30 text-foreground hover:bg-turath-saffron/20 hover:border-turath-saffron/50 hover:shadow-sm"
               )}
             >
               {tab.label}
@@ -113,28 +113,28 @@ export function RegionDetailScreen({ isDark }: RegionDetailScreenProps) {
 
       {/* Content grid */}
       <div className="flex-1 overflow-y-auto px-3 pb-24">
-        <div className="grid grid-cols-2 gap-2.5 pt-3">
+        <div className="grid grid-cols-2 gap-3 pt-4">
           {filteredCards.map((card, idx) => (
             <button
               key={card.id}
               onClick={() => navigate('heritage-detail')}
-              className="rounded-lg overflow-hidden bg-white/80 backdrop-blur-sm border border-turath-earth/20 shadow-sm hover:shadow-md transition-all text-left active:scale-[0.97]"
+              className="rounded-2xl overflow-hidden bg-white/85 backdrop-blur-md border-1.5 border-turath-earth/30 shadow-md hover:shadow-lg transition-all text-left active:scale-[0.96]"
               style={{ animation: `slide-in-right 0.3s ease-out ${idx * 0.05}s both` }}
             >
-              <div className="relative h-24 overflow-hidden bg-gradient-to-br from-turath-earth to-turath-desert">
+              <div className="relative h-28 overflow-hidden bg-gradient-to-br from-turath-earth to-turath-desert">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${card.image})` }} />
-                <div className="absolute inset-0 bg-black/30" />
+                <div className="absolute inset-0 bg-black/40" />
                 <button 
                   onClick={(e) => { e.stopPropagation(); toggleSave(card.id) }} 
-                  className="absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-white/90 flex items-center justify-center" 
+                  className="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/95 flex items-center justify-center shadow-md" 
                   aria-label={savedItems[card.id] ? "Unsave" : "Save"}
                 >
-                  <HeartIcon className={cn("w-3.5 h-3.5", savedItems[card.id] ? "text-turath-red fill-turath-red" : "text-muted-foreground")} filled={savedItems[card.id]} />
+                  <HeartIcon className={cn("w-4 h-4", savedItems[card.id] ? "text-turath-red fill-turath-red" : "text-muted-foreground")} filled={savedItems[card.id]} />
                 </button>
               </div>
-              <div className="p-2.5 bg-white/90">
-                <h3 className="font-bold text-xs text-foreground truncate">{card.title}</h3>
-                <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{card.description}</p>
+              <div className="p-3 bg-white/90">
+                <h3 className="font-bold text-sm text-foreground truncate">{card.title}</h3>
+                <p className="text-xs text-muted-foreground line-clamp-1 mt-1 font-medium">{card.description}</p>
               </div>
             </button>
           ))}
@@ -142,12 +142,12 @@ export function RegionDetailScreen({ isDark }: RegionDetailScreenProps) {
       </div>
 
       {/* Bottom CTA */}
-      <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-medina via-medina/90 to-transparent pt-6">
+      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-medina via-medina/95 to-transparent pt-8">
         <button 
           onClick={() => navigate('itinerary')} 
-          className="w-full py-3 px-6 bg-gradient-to-r from-turath-red to-turath-earth text-white rounded-lg font-bold text-sm shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 border border-turath-saffron/40"
+          className="w-full py-3.5 px-6 bg-gradient-to-r from-turath-red to-turath-earth text-white rounded-2xl font-bold text-base shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2.5 border border-turath-saffron/50"
         >
-          <MapPinIcon className="w-4 h-4" />
+          <MapPinIcon className="w-5 h-5" />
           <span>ابدأ الرحلة</span>
         </button>
       </div>

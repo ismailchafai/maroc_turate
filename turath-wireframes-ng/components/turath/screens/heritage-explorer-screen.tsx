@@ -28,30 +28,30 @@ export function HeritageExplorerScreen({ isDark }: HeritageExplorerScreenProps) 
       <div className="absolute inset-0 opacity-[0.04] amazigh-tribal pointer-events-none" />
 
       {/* Header */}
-      <div className="relative z-10 px-6 pt-6 pb-4 border-b border-turath-saffron/20 glass-moroccan">
-        <div className="flex items-center justify-between mb-4">
-          <h1 className="text-3xl font-bold font-serif text-turath-red">Heritage Explorer</h1>
-          <div className="flex gap-2">
-            <button className="w-8 h-8 rounded-lg bg-turath-saffron/20 flex items-center justify-center hover:bg-turath-saffron/30 transition-colors">
-              <ChevronLeftIcon className="w-5 h-5 text-turath-red" />
+      <div className="relative z-10 px-6 pt-6 pb-5 border-b-1.5 border-turath-saffron/30 glass-moroccan shadow-sm">
+        <div className="flex items-center justify-between mb-4.5">
+          <h1 className="text-3.5xl font-bold font-serif text-turath-red">Heritage Explorer</h1>
+          <div className="flex gap-2.5">
+            <button className="w-9 h-9 rounded-xl bg-turath-saffron/25 flex items-center justify-center hover:bg-turath-saffron/40 transition-all hover:shadow-md active:scale-95">
+              <ChevronLeftIcon className="w-5.5 h-5.5 text-turath-red" />
             </button>
-            <button className="w-8 h-8 rounded-lg bg-turath-saffron/20 flex items-center justify-center hover:bg-turath-saffron/30 transition-colors">
-              <ChevronRightIcon className="w-5 h-5 text-turath-red" />
+            <button className="w-9 h-9 rounded-xl bg-turath-saffron/25 flex items-center justify-center hover:bg-turath-saffron/40 transition-all hover:shadow-md active:scale-95">
+              <ChevronRightIcon className="w-5.5 h-5.5 text-turath-red" />
             </button>
           </div>
         </div>
         
         {/* Tab navigation */}
-        <div className="flex gap-2">
+        <div className="flex gap-2.5">
           {(['map', 'crafts', 'heritage'] as const).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={cn(
-                'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300',
+                'px-4.5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 border-1.5',
                 activeTab === tab
-                  ? 'bg-gradient-to-r from-turath-red to-turath-red-dark text-white shadow-md'
-                  : 'bg-turath-saffron/20 text-turath-red hover:bg-turath-saffron/30'
+                  ? 'bg-gradient-to-r from-turath-red to-turath-red-dark text-white shadow-md border-turath-red/60 ring-1 ring-turath-red/20'
+                  : 'bg-turath-saffron/20 text-turath-red hover:bg-turath-saffron/35 border-turath-saffron/40 hover:border-turath-saffron/60 hover:shadow-sm'
               )}
             >
               {tab === 'map' && 'Morocco Map'}
