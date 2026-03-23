@@ -211,10 +211,66 @@
   }
 }
 
-/* ─── MOROCCAN ZELLIGE PATTERNS ─── */
+/* ─── MOROCCAN ZELLIGE PATTERNS & BACKGROUNDS ─── */
 /* Classic zellige geometric tiles */
 .zellige-pattern {
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232A52BE' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Moroccan red zellige background */
+.bg-zellige-red {
+  background: linear-gradient(135deg, #FAF7F0 0%, #F5EFE6 50%, #FAF7F0 100%);
+  background-image: 
+    linear-gradient(135deg, #C1272D 0%, #C1272D 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C1272D' fill-opacity='0.08'%3E%3Crect x='0' y='0' width='40' height='40'/%3E%3Crect x='40' y='40' width='40' height='40'/%3E%3Crect x='40' y='0' width='40' height='40' fill-opacity='0.05'/%3E%3Crect x='0' y='40' width='40' height='40' fill-opacity='0.05'/%3E%3C/g%3E%3C/svg%3E");
+  background-blend-mode: overlay;
+}
+
+/* Dark Moroccan background */
+.bg-moroccan-dark {
+  background: linear-gradient(135deg, #1A1515 0%, #2A2420 50%, #1A1515 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(193, 39, 45, 0.1) 0%, rgba(218, 165, 32, 0.05) 100%),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='darkGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23DAA520;stop-opacity:0.05'/%3E%3Cstop offset='100%25' style='stop-color:%23C1272D;stop-opacity:0.03'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23darkGrad)'/%3E%3C/svg%3E");
+}
+
+/* Heritage medina background */
+.bg-medina {
+  background: linear-gradient(180deg, #F5EFE6 0%, #FAF7F0 50%, #F0EADE 100%);
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23DAA520' stroke-width='0.8' fill='none' opacity='0.1'%3E%3Cpath d='M10 60 L50 20 L90 60 L50 100 Z'/%3E%3Cpath d='M60 20 L100 60 L60 100 L20 60 Z'/%3E%3Cpath d='M30 40 L50 20 L70 40 L50 60 Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Desert sand background */
+.bg-desert {
+  background: linear-gradient(135deg, #C47347 0%, #A0522D 50%, #8B4513 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(218, 165, 32, 0.15) 0%, rgba(224, 122, 95, 0.1) 100%),
+    url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='sandWave' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23DAA520;stop-opacity:0.08'/%3E%3Cstop offset='100%25' style='stop-color:%23E07A5F;stop-opacity:0.04'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 75 Q37.5 50 75 75 T150 75 L150 150 L0 150 Z' fill='url(%23sandWave)' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* Mountain/Atlas background */
+.bg-atlas {
+  background: linear-gradient(180deg, #2A52BE 0%, #4B0082 50%, #1A3480 100%);
+  background-image: 
+    linear-gradient(180deg, rgba(42, 82, 190, 0.2) 0%, transparent 50%, rgba(218, 165, 32, 0.1) 100%),
+    url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F4C430' opacity='0.06'%3E%3Cpolygon points='50,20 90,120 10,120'/%3E%3Cpolygon points='140,40 180,140 100,140'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Argan oil/Nature background */
+.bg-argan {
+  background: linear-gradient(135deg, #2E8B57 0%, #004620 50%, #2E8B57 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(46, 139, 87, 0.1) 0%, rgba(218, 165, 32, 0.05) 100%),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircles%3E%3Ccircle cx='20' cy='20' r='8' fill='%23DAA520' opacity='0.08'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%23F4C430' opacity='0.06'/%3E%3Ccircle cx='80' cy='30' r='7' fill='%23DAA520' opacity='0.07'/%3E%3C/circles%3E%3C/svg%3E");
+}
+
+/* Amazigh indigo background */
+.bg-amazigh-indigo {
+  background: linear-gradient(135deg, #4B0082 0%, #2A0050 50%, #4B0082 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(75, 0, 130, 0.2) 0%, rgba(218, 165, 32, 0.08) 100%),
+    url("data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23DAA520' stroke-width='1' fill='none' opacity='0.1'%3E%3Crect x='10' y='10' width='30' height='30'/%3E%3Crect x='50' y='10' width='30' height='30'/%3E%3Crect x='10' y='50' width='30' height='30'/%3E%3Crect x='50' y='50' width='30' height='30' stroke-dasharray='5,5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Intricate zellige with multiple colors */

@@ -66,41 +66,48 @@ export function ProfileScreen({ isDark }: ProfileScreenProps) {
   return (
     <div className="h-full flex flex-col">
       {/* Header */}
-      <div className="pt-12 px-4 pb-6 bg-[#2A52BE] text-white overflow-hidden relative shadow-md">
-        <div className="absolute inset-0 zellige-pattern opacity-10 pointer-events-none mix-blend-overlay" />
-        <div className="flex items-center justify-between mb-4 relative z-10">
-          <div className="flex flex-col gap-0.5">
-            <h1 className="text-3xl font-bold font-serif">Profile</h1>
-            <span className="text-sm font-sans tracking-widest text-[#F4C430]/90">ⴰⵎⵓⵖ</span>
+      <div className="pt-12 px-5 pb-7 bg-[#2A52BE] text-white overflow-hidden relative shadow-lg">
+        <div className="absolute inset-0 zellige-pattern opacity-12 pointer-events-none mix-blend-overlay" />
+        <div className="flex items-center justify-between mb-5 relative z-10">
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-3">
+              <span className="text-3xl font-bold">ⵣ</span>
+              <h1 className="text-3.5xl font-bold font-serif">Profile</h1>
+            </div>
+            <div className="flex items-center gap-2 text-sm font-sans tracking-widest">
+              <span className="text-[#F4C430]/95">ⴰⵎⵓⵖ</span>
+              <span className="text-white/50">·</span>
+              <span className="text-white/80">Amazigh Explorer</span>
+            </div>
           </div>
-          <button onClick={() => navigate('settings')} className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors" aria-label="Settings">
-            <SettingsIcon className="w-5 h-5 text-white" />
+          <button onClick={() => navigate('settings')} className="w-11 h-11 rounded-full bg-white/25 flex items-center justify-center hover:bg-white/35 transition-all hover:shadow-lg active:scale-95" aria-label="Settings">
+            <SettingsIcon className="w-5.5 h-5.5 text-white" />
           </button>
         </div>
 
-        <div className="flex items-center gap-4 relative z-10">
-          <div className="w-20 h-20 rounded-2xl bg-cover bg-center border-2 border-[#F4C430] shadow-lg" style={{ backgroundImage: `url(${USER_DATA.avatar})` }} />
+        <div className="flex items-center gap-4.5 relative z-10 mb-6">
+          <div className="w-22 h-22 rounded-2xl bg-cover bg-center border-3 border-[#F4C430] shadow-lg" style={{ backgroundImage: `url(${USER_DATA.avatar})` }} />
           <div className="flex-1">
-            <h2 className="text-2xl font-bold font-serif">{USER_DATA.name}</h2>
-            <div className="flex items-center gap-2 mt-1">
-              <span className="text-lg">🇺🇸</span>
-              <span className="text-sm text-muted-foreground">{USER_DATA.country}</span>
+            <h2 className="text-2.5xl font-bold font-serif">{USER_DATA.name}</h2>
+            <div className="flex items-center gap-2 mt-1.5">
+              <span className="text-xl">🇺🇸</span>
+              <span className="text-sm text-white/90">{USER_DATA.country}</span>
             </div>
-            <p className="text-xs text-white/80 mt-1">Member since {USER_DATA.memberSince}</p>
+            <p className="text-xs text-white/85 mt-1.5">Member since {USER_DATA.memberSince}</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-2 mt-6 relative z-10">
+        <div className="grid grid-cols-4 gap-2.5 relative z-10">
           {[
             { label: 'Regions', labelAmz: 'ⵜⵉⵎⵏⴰⴹⵉⵏ', value: USER_DATA.stats.regionsVisited },
             { label: 'Sites', labelAmz: 'ⵉⴷⵖⴰⵔⵏ', value: USER_DATA.stats.sitesExplored },
             { label: 'Artisans', labelAmz: 'ⵉⵏⴰⵥⵓⵕⵏ', value: USER_DATA.stats.artisansSupported },
             { label: 'Languages', labelAmz: 'ⵜⵓⵜⵍⴰⵢⵉⵏ', value: USER_DATA.stats.languagesUsed },
           ].map((stat, i) => (
-            <div key={i} className="text-center p-2 bg-black/20 rounded-xl border border-white/10 backdrop-blur-sm flex flex-col items-center">
+            <div key={i} className="text-center p-3 bg-black/25 rounded-xl border-1.5 border-white/15 backdrop-blur-sm flex flex-col items-center shadow-md">
               <p className="text-lg font-bold text-white font-serif">{stat.value}</p>
-              <p className="text-[10px] text-white/80 uppercase tracking-wider">{stat.label}</p>
-              <span className="text-[9px] font-sans opacity-70 mt-0.5">{stat.labelAmz}</span>
+              <p className="text-[10px] text-white/85 uppercase tracking-wider mt-0.5">{stat.label}</p>
+              <span className="text-[9px] font-sans opacity-75 mt-1">{stat.labelAmz}</span>
             </div>
           ))}
         </div>

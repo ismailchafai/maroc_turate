@@ -67,10 +67,10 @@ export function VoiceAIGuideScreen({ isDark }: VoiceAIGuideScreenProps) {
   }
 
   return (
-    <div className="h-full flex flex-col bg-[#0F0F0F] dark">
-      <div className="pt-12 px-4 pb-4 flex items-center justify-between border-b border-[#3A3836]/50">
-        <button onClick={goBack} className="w-10 h-10 rounded-full bg-[#1E1C1A] flex items-center justify-center hover:bg-[#2A2826] transition-colors" aria-label="Go back">
-          <ChevronLeftIcon className="w-5 h-5 text-[#F4C430]" />
+    <div className="h-full flex flex-col bg-moroccan-dark">
+      <div className="pt-11 px-4 pb-3 flex items-center justify-between border-b border-turath-saffron/20">
+        <button onClick={goBack} className="w-9 h-9 rounded-lg bg-turath-saffron/10 flex items-center justify-center hover:bg-turath-saffron/20 transition-colors" aria-label="Go back">
+          <ChevronLeftIcon className="w-5 h-5 text-turath-saffron" />
         </button>
         <h1 className="text-xl font-bold font-serif text-[#F5F0E8] drop-shadow-md">AI Guide</h1>
         <button className="w-10 h-10 rounded-full bg-[#1E1C1A] flex items-center justify-center hover:bg-[#2A2826] transition-colors">

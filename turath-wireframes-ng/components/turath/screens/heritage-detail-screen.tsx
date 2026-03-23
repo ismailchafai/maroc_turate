@@ -43,21 +43,21 @@ export function HeritageDetailScreen({ isDark }: HeritageDetailScreenProps) {
   const [isPlaying, setIsPlaying] = useState(false)
 
   return (
-    <div className="h-full flex flex-col overflow-y-auto">
-      {/* Immersive media viewer */}
-      <div className="relative h-[320px] flex-shrink-0">
+    <div className="h-full flex flex-col overflow-y-auto bg-medina">
+      {/* Image viewer */}
+      <div className="relative h-80 flex-shrink-0 bg-gradient-to-b from-turath-red/20 to-turath-parchment">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERITAGE_DATA.images[currentImageIndex]})` }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-medina via-black/20 to-transparent" />
 
-        <div className="absolute top-12 left-4 right-4 flex items-center justify-between">
-          <button onClick={goBack} className="w-10 h-10 rounded-full glass flex items-center justify-center" aria-label="Go back">
-            <ChevronLeftIcon className="w-5 h-5 text-foreground" />
+        <div className="absolute top-10 left-4 right-4 flex items-center justify-between z-10">
+          <button onClick={goBack} className="w-9 h-9 rounded-lg glass-moroccan flex items-center justify-center border border-turath-saffron/30" aria-label="Go back">
+            <ChevronLeftIcon className="w-5 h-5 text-white" />
           </button>
           <div className="flex gap-2">
-            <button onClick={() => setSaved(!saved)} className="w-10 h-10 rounded-full glass flex items-center justify-center" aria-label={saved ? "Unsave" : "Save"}>
-              <BookmarkIcon className={cn("w-5 h-5", saved ? "text-accent fill-accent" : "text-foreground")} filled={saved} />
+            <button onClick={() => setSaved(!saved)} className="w-9 h-9 rounded-lg glass-moroccan flex items-center justify-center border border-turath-saffron/30" aria-label={saved ? "Unsave" : "Save"}>
+              <BookmarkIcon className={cn("w-5 h-5", saved ? "text-turath-saffron fill-turath-saffron" : "text-white")} filled={saved} />
             </button>
-            <button className="w-10 h-10 rounded-full glass flex items-center justify-center" aria-label="Share">
+            <button className="w-9 h-9 rounded-lg glass-moroccan flex items-center justify-center border border-turath-saffron/30" aria-label="Share">
               <ShareIcon className="w-5 h-5 text-foreground" />
             </button>
             <button className="w-10 h-10 rounded-full glass flex items-center justify-center" aria-label="AR View">
