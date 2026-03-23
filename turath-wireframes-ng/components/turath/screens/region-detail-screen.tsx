@@ -47,11 +47,18 @@ export function RegionDetailScreen({ isDark }: RegionDetailScreenProps) {
   }
 
   return (
-    <div className="h-full flex flex-col bg-medina">
-      {/* Hero Image */}
-      <div className="relative h-64 bg-gradient-to-b from-turath-red/20 to-turath-parchment overflow-hidden">
+    <div className="h-full flex flex-col bg-gradient-to-b from-slate-900 via-medina to-slate-900">
+      {/* Moroccan background decorations */}
+      <div className="absolute inset-0 opacity-[0.08] zellige-pattern pointer-events-none" />
+      <div className="absolute inset-0 opacity-[0.06] arabesque-ornate pointer-events-none" />
+      <div className="absolute inset-0 opacity-[0.04] tifinagh-pattern pointer-events-none" />
+      {/* Hero Image with decorative frame */}
+      <div className="relative h-72 bg-gradient-to-b from-turath-red/20 to-turath-parchment overflow-hidden border-b-4 border-turath-saffron/30">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${REGION_DATA.image})` }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-medina via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-medina via-black/40 to-transparent" />
+        
+        {/* Moroccan pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.12] zellige-pattern pointer-events-none" />
         
         {/* Header buttons */}
         <div className="absolute top-10 left-3 right-3 flex items-center justify-between z-20">
@@ -73,36 +80,40 @@ export function RegionDetailScreen({ isDark }: RegionDetailScreenProps) {
         </div>
       </div>
 
-      {/* Stats */}
-      <div className="flex items-center justify-around py-5 border-b-2 border-turath-earth/40 bg-white/80 backdrop-blur-md relative overflow-hidden shadow-sm">
-        <div className="absolute inset-0 zellige-pattern opacity-6 pointer-events-none" />
-        <div className="text-center relative z-10">
-          <p className="text-3xl font-bold text-turath-red">{REGION_DATA.heritageSites}</p>
-          <p className="text-xs text-muted-foreground font-semibold mt-1">المواقع</p>
+      {/* Stats with premium styling */}
+      <div className="flex items-center justify-around py-6 px-4 border-b-3 border-turath-saffron/40 bg-gradient-to-r from-white/90 via-white/85 to-white/90 backdrop-blur-lg relative overflow-hidden shadow-lg">
+        <div className="absolute inset-0 zellige-pattern opacity-8 pointer-events-none" />
+        <div className="absolute inset-0 arabesque-ornate opacity-4 pointer-events-none" />
+        
+        <div className="text-center relative z-10 flex-1">
+          <p className="text-4xl font-bold text-turath-red">{REGION_DATA.heritageSites}</p>
+          <p className="text-xs text-muted-foreground font-bold mt-1.5 tracking-wide">المواقع التراثية</p>
         </div>
-        <div className="w-1 h-10 bg-turath-earth/50 relative z-10 rounded-full" />
-        <div className="text-center relative z-10">
-          <p className="text-3xl font-bold text-turath-saffron">{REGION_DATA.artisans}</p>
-          <p className="text-xs text-muted-foreground font-semibold mt-1">الصنّاع</p>
+        <div className="w-1.5 h-12 bg-gradient-to-b from-turath-saffron to-turath-red/60 relative z-10 rounded-full" />
+        <div className="text-center relative z-10 flex-1">
+          <p className="text-4xl font-bold text-turath-saffron">{REGION_DATA.artisans}</p>
+          <p className="text-xs text-muted-foreground font-bold mt-1.5 tracking-wide">الحرفيون</p>
         </div>
-        <div className="w-1 h-10 bg-turath-earth/50 relative z-10 rounded-full" />
-        <div className="text-center relative z-10">
-          <p className="text-3xl font-bold text-turath-majorelle">{REGION_DATA.itineraries}</p>
-          <p className="text-xs text-muted-foreground font-semibold mt-1">الرحلات</p>
+        <div className="w-1.5 h-12 bg-gradient-to-b from-turath-saffron to-turath-red/60 relative z-10 rounded-full" />
+        <div className="text-center relative z-10 flex-1">
+          <p className="text-4xl font-bold text-turath-majorelle">{REGION_DATA.itineraries}</p>
+          <p className="text-xs text-muted-foreground font-bold mt-1.5 tracking-wide">الرحلات</p>
         </div>
       </div>
 
-      {/* Category tabs */}
-      <div className="px-3 pt-3.5 pb-2.5 bg-white/50 backdrop-blur-md border-b-2 border-turath-earth/30">
-        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+      {/* Category tabs with enhanced styling */}
+      <div className="px-4 pt-4 pb-3 bg-gradient-to-r from-white/60 via-white/55 to-white/60 backdrop-blur-lg border-b-2 border-turath-saffron/35 relative overflow-hidden shadow-md">
+        <div className="absolute inset-0 zellige-pattern opacity-6 pointer-events-none" />
+        
+        <div className="flex gap-2.5 overflow-x-auto scrollbar-hide relative z-10">
           {CATEGORY_TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={cn("px-4 py-2.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border-1.5 backdrop-blur-sm",
+              className={cn("px-4.5 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all border-2 backdrop-blur-md shadow-sm hover:shadow-md",
                 activeTab === tab.id 
-                  ? "bg-turath-red text-white border-turath-red/60 shadow-md ring-1 ring-turath-red/20" 
-                  : "glass-moroccan border-turath-saffron/30 text-foreground hover:bg-turath-saffron/20 hover:border-turath-saffron/50 hover:shadow-sm"
+                  ? "bg-gradient-to-r from-turath-red to-turath-earth text-white border-turath-red/60 ring-2 ring-turath-red/30" 
+                  : "glass-moroccan border-turath-saffron/40 text-turath-red hover:bg-turath-saffron/25 hover:border-turath-saffron/60"
               )}
             >
               {tab.label}

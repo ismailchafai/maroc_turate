@@ -16,6 +16,8 @@ import { CheckoutScreen } from './screens/checkout-screen'
 import { ProfileScreen } from './screens/profile-screen'
 import { ChallengesScreen } from './screens/challenges-screen'
 import { SettingsScreen } from './screens/settings-screen'
+import HistoricalPhotosScreen from './screens/historical-photos-screen'
+import MoroccoTouristGuideScreen from './screens/morocco-tourist-guide-screen'
 
 const SCREEN_COMPONENTS: Record<ScreenId, ComponentType<{ isDark?: boolean }>> = {
   'onboarding': OnboardingScreen,
@@ -30,6 +32,8 @@ const SCREEN_COMPONENTS: Record<ScreenId, ComponentType<{ isDark?: boolean }>> =
   'profile': ProfileScreen,
   'challenges': ChallengesScreen,
   'settings': SettingsScreen,
+  'historical-photos': HistoricalPhotosScreen as any,
+  'tourist-guide': MoroccoTouristGuideScreen as any,
 }
 
 const SCREEN_LABELS: Record<ScreenId, string> = {
@@ -45,6 +49,8 @@ const SCREEN_LABELS: Record<ScreenId, string> = {
   'profile': 'Profile',
   'challenges': 'Challenges',
   'settings': 'Settings',
+  'historical-photos': 'Historical Photos',
+  'tourist-guide': 'Tourist Guide',
 }
 
 function AnimatedScreen({ screenId, isDark }: { screenId: ScreenId; isDark: boolean }) {

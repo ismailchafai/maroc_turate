@@ -24,12 +24,22 @@ export function HistoricalFiguresScreen({ isDark }: HistoricalFiguresScreenProps
       <div className="absolute inset-0 opacity-[0.06] calligraphy-flourish pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.04] arabesque-ornate pointer-events-none" />
 
-      {/* Header with cultural styling */}
-      <div className="relative z-10 px-5 pt-6 pb-4 border-b-2 border-turath-saffron/20 glass-moroccan">
-        <div className="flex items-center justify-between mb-4">
+      {/* Header with cultural styling and enhanced visibility */}
+      <div className="relative z-10 px-5 pt-6 pb-5 border-b-2 border-turath-saffron/40 glass-moroccan shadow-lg bg-gradient-to-r from-slate-900/70 via-slate-800/40 to-transparent">
+        <div className="absolute inset-0 zellige-pattern opacity-[0.1] pointer-events-none" />
+        <div className="absolute inset-0 arabesque-ornate opacity-[0.06] pointer-events-none" />
+        
+        <div className="flex items-center justify-between mb-4 relative z-10">
           <div>
-            <h1 className="text-2xl font-bold font-serif text-turath-red">أساطير المغرب</h1>
-            <p className="text-xs text-muted-foreground mt-1">Great figures of Morocco's history</p>
+            <div className="flex items-center gap-2.5 mb-2">
+              <span className="text-2.5xl font-bold">👑</span>
+              <h1 className="text-3xl font-bold font-serif text-turath-red">أساطير المغرب</h1>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-turath-saffron font-bold tracking-wider">ⴰⴳⴻⵍⵉⴼ</span>
+              <span className="text-turath-red/60">·</span>
+              <span className="text-muted-foreground">Great figures of Morocco's history</span>
+            </div>
           </div>
         </div>
 
@@ -184,21 +194,21 @@ export function HistoricalFiguresScreen({ isDark }: HistoricalFiguresScreenProps
           {/* All Figures Grid */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-turath-red">All Figures</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {HISTORICAL_FIGURES.map((figure, idx) => (
                 <button
                   key={figure.id}
                   onClick={() => setSelectedFigureIdx(idx)}
                   className={cn(
-                    'p-4 rounded-xl transition-all duration-300 border-2 text-center group',
+                    'p-5 rounded-2xl transition-all duration-300 border-2 text-center group backdrop-blur-md shadow-md hover:shadow-lg',
                     selectedFigureIdx === idx
-                      ? 'glass-premium border-turath-saffron bg-turath-saffron/20 shadow-lg'
-                      : 'glass-moroccan border-turath-saffron/20 hover:border-turath-saffron/40'
+                      ? 'glass-premium border-turath-saffron bg-gradient-to-br from-turath-saffron/30 to-turath-red/20 shadow-lg ring-2 ring-turath-saffron/40'
+                      : 'glass-moroccan border-turath-saffron/30 hover:border-turath-saffron/60 hover:bg-turath-saffron/15'
                   )}
                 >
-                  <p className="text-2xl mb-2">👤</p>
-                  <p className="text-xs font-bold text-turath-red line-clamp-2 mb-1">{figure.name}</p>
-                  <p className="text-xs text-muted-foreground">{figure.period.start} - {figure.period.end}</p>
+                  <p className="text-3xl mb-3">👤</p>
+                  <p className="text-sm font-bold text-turath-red line-clamp-2 mb-2">{figure.name}</p>
+                  <p className="text-xs text-muted-foreground font-semibold">{figure.period.start} - {figure.period.end}</p>
                 </button>
               ))}
             </div>
