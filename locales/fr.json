@@ -204,5 +204,50 @@
     "help": "Aide",
     "contact_us": "Nous contacter",
     "logout": "Déconnexion"
+  },
+  "heritage_detail_screen": {
+    "hear_story": "Écoutez l'histoire",
+    "listening": "À l'écoute...",
+    "historical_timeline": "Chronologie historique",
+    "related_content": "Contenu connexe",
+    "view_all": "Voir tout",
+    "share": "Partager",
+    "plan_visit": "Planifier une visite",
+    "unsave": "Ne pas enregistrer",
+    "save": "Enregistrer",
+    "ar_view": "Vue RA",
+    "view_image": "Afficher l'image"
+  },
+  "artisan_profile_screen": {
+    "view_shop": "Voir la boutique",
+    "portfolio": "Portfolio",
+    "products": "Produits",
+    "reviews": "Avis",
+    "shop": "Boutique",
+    "add_to_cart": "Ajouter au panier",
+    "following": "En cours de suivi",
+    "follow": "Suivre",
+    "mad": "MAD"
+  },
+  "profile_screen": {
+    "profile": "Profil",
+    "badges": "Badges",
+    "progress": "Progression",
+    "history": "Historique",
+    "regions": "Régions",
+    "sites": "Sites",
+    "artisans": "Artisans",
+    "languages": "Langues",
+    "regional_completion": "ACHÈVEMENT RÉGIONAL",
+    "recently_visited": "RÉCEMMENT VISITÉ",
+    "active_challenges": "DÉFIS ACTIFS",
+    "reward": "Récompense"
+  },
+  "voice_ai_guide_screen": {
+    "ai_guide": "Guide IA",
+    "ask_question": "Posez une question...",
+    "send": "Envoyer",
+    "listening": "À l'écoute...",
+    "speaking": "En cours de lecture..."
   }
 }

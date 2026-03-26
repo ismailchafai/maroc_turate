@@ -204,5 +204,50 @@
     "help": "Help",
     "contact_us": "Contact Us",
     "logout": "Logout"
+  },
+  "heritage_detail_screen": {
+    "hear_story": "Hear the Story",
+    "listening": "Listening...",
+    "historical_timeline": "Historical Timeline",
+    "related_content": "Related Content",
+    "view_all": "View all",
+    "share": "Share",
+    "plan_visit": "Plan Visit",
+    "unsave": "Unsave",
+    "save": "Save",
+    "ar_view": "AR View",
+    "view_image": "View image"
+  },
+  "artisan_profile_screen": {
+    "view_shop": "View Shop",
+    "portfolio": "Portfolio",
+    "products": "Products",
+    "reviews": "Reviews",
+    "shop": "Shop",
+    "add_to_cart": "Add to Cart",
+    "following": "Following",
+    "follow": "Follow",
+    "mad": "MAD"
+  },
+  "profile_screen": {
+    "profile": "Profile",
+    "badges": "Badges",
+    "progress": "Progress",
+    "history": "History",
+    "regions": "Regions",
+    "sites": "Sites",
+    "artisans": "Artisans",
+    "languages": "Languages",
+    "regional_completion": "REGIONAL COMPLETION",
+    "recently_visited": "RECENTLY VISITED",
+    "active_challenges": "ACTIVE CHALLENGES",
+    "reward": "Reward"
+  },
+  "voice_ai_guide_screen": {
+    "ai_guide": "AI Guide",
+    "ask_question": "Ask a question...",
+    "send": "Send",
+    "listening": "Listening...",
+    "speaking": "Speaking..."
   }
 }

@@ -204,5 +204,50 @@
     "help": "Tallalt",
     "contact_us": "Muddu izen inaɣ",
     "logout": "Frez"
+  },
+  "heritage_detail_screen": {
+    "hear_story": "Sseɣ tudert",
+    "listening": "Aseggem...",
+    "historical_timeline": "Azeqqa n akud",
+    "related_content": "Aglam n uzemren",
+    "view_all": "Sken akk",
+    "share": "Bdu",
+    "plan_visit": "Tmellit n usendel",
+    "unsave": "Kkes sekla",
+    "save": "Sekla",
+    "ar_view": "Tamaẓla n teɣlent",
+    "view_image": "Sken tugna"
+  },
+  "artisan_profile_screen": {
+    "view_shop": "Sken adandal",
+    "portfolio": "Asray n isefka",
+    "products": "Isefka",
+    "reviews": "Tiskandin",
+    "shop": "Adandal",
+    "add_to_cart": "Rnu asafu",
+    "following": "Saɣ",
+    "follow": "Saɣ",
+    "mad": "MAD"
+  },
+  "profile_screen": {
+    "profile": "Amaɣnu",
+    "badges": "Tizamurin",
+    "progress": "Aɣaras",
+    "history": "Azeqqa",
+    "regions": "Tadgigin",
+    "sites": "Isejjagen",
+    "artisans": "Isunagga",
+    "languages": "Tutlayin",
+    "regional_completion": "AƔARAS N TADGIGIN",
+    "recently_visited": "ASENDEL ARATAN",
+    "active_challenges": "ISEFKA TISFEDDIN",
+    "reward": "Ajenna"
+  },
+  "voice_ai_guide_screen": {
+    "ai_guide": "Amnid ameslugen",
+    "ask_question": "Suter tutayt...",
+    "send": "Azen",
+    "listening": "Aseggem...",
+    "speaking": "Awwal..."
   }
 }

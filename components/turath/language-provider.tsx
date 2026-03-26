@@ -117,12 +117,17 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// Default context for SSR
+const defaultContext: LanguageContextType = {
+  locale: 'fr',
+  setLocale: () => {},
+  t: (key: string, defaultValue?: string) => defaultValue || key,
+  dir: 'ltr',
+}
+
 export function useTranslation() {
   const context = useContext(LanguageContext)
   
-  if (!context) {
-    throw new Error('useTranslation must be used within LanguageProvider')
-  }
-  
-  return context
+  // Return default context during SSR, actual context on client
+  return context || defaultContext
 }

@@ -204,5 +204,50 @@
     "help": "مساعدة",
     "contact_us": "اتصل بنا",
     "logout": "تسجيل الخروج"
+  },
+  "heritage_detail_screen": {
+    "hear_story": "استمع للقصة",
+    "listening": "استماع جاري...",
+    "historical_timeline": "المسار الزمني التاريخي",
+    "related_content": "محتوى ذي صلة",
+    "view_all": "عرض الكل",
+    "share": "شارك",
+    "plan_visit": "خطط للزيارة",
+    "unsave": "إلغاء الحفظ",
+    "save": "حفظ",
+    "ar_view": "عرض الواقع المعزز",
+    "view_image": "عرض الصورة"
+  },
+  "artisan_profile_screen": {
+    "view_shop": "عرض المتجر",
+    "portfolio": "المحفظة",
+    "products": "المنتجات",
+    "reviews": "التقييمات",
+    "shop": "متجر",
+    "add_to_cart": "أضف إلى السلة",
+    "following": "متابع",
+    "follow": "متابعة",
+    "mad": "درهم"
+  },
+  "profile_screen": {
+    "profile": "الملف الشخصي",
+    "badges": "الشارات",
+    "progress": "التقدم",
+    "history": "السجل",
+    "regions": "المناطق",
+    "sites": "المواقع",
+    "artisans": "الحرفيون",
+    "languages": "اللغات",
+    "regional_completion": "إكمال المناطق",
+    "recently_visited": "تم الزيارة مؤخراً",
+    "active_challenges": "التحديات النشطة",
+    "reward": "الجائزة"
+  },
+  "voice_ai_guide_screen": {
+    "ai_guide": "مرشد ذكي",
+    "ask_question": "اطرح سؤالاً...",
+    "send": "إرسال",
+    "listening": "استماع جاري...",
+    "speaking": "جاري الكلام..."
   }
 }
