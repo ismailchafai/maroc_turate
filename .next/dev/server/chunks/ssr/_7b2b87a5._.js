@@ -230,16 +230,16 @@ __turbopack_context__.s([
 ]);
 const LANGUAGES = [
     {
-        code: 'ar',
-        name: 'Arabic',
-        nativeName: 'العربية',
-        flag: '🇲🇦'
-    },
-    {
         code: 'fr',
         name: 'French',
         nativeName: 'Français',
         flag: '🇫🇷'
+    },
+    {
+        code: 'ar',
+        name: 'Arabic',
+        nativeName: 'العربية',
+        flag: '🇲🇦'
     },
     {
         code: 'en',
@@ -248,58 +248,10 @@ const LANGUAGES = [
         flag: '🇬🇧'
     },
     {
-        code: 'es',
-        name: 'Spanish',
-        nativeName: 'Español',
-        flag: '🇪🇸'
-    },
-    {
-        code: 'de',
-        name: 'German',
-        nativeName: 'Deutsch',
-        flag: '🇩🇪'
-    },
-    {
-        code: 'it',
-        name: 'Italian',
-        nativeName: 'Italiano',
-        flag: '🇮🇹'
-    },
-    {
-        code: 'ja',
-        name: 'Japanese',
-        nativeName: '日本語',
-        flag: '🇯🇵'
-    },
-    {
-        code: 'zh',
-        name: 'Chinese',
-        nativeName: '中文',
-        flag: '🇨🇳'
-    },
-    {
-        code: 'ru',
-        name: 'Russian',
-        nativeName: 'Русский',
-        flag: '🇷🇺'
-    },
-    {
-        code: 'pt',
-        name: 'Portuguese',
-        nativeName: 'Português',
-        flag: '🇵🇹'
-    },
-    {
-        code: 'nl',
-        name: 'Dutch',
-        nativeName: 'Nederlands',
-        flag: '🇳🇱'
-    },
-    {
-        code: 'tr',
-        name: 'Turkish',
-        nativeName: 'Türkçe',
-        flag: '🇹🇷'
+        code: 'tzm',
+        name: 'Tamazight',
+        nativeName: 'ⵜⴰⵎⴰⵣⵉⵖⵜ',
+        flag: 'ⵣ'
     }
 ];
 const INTERESTS = [
@@ -1816,7 +1768,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/turath-types.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -1840,20 +1794,20 @@ function InterestIcon({ interest, selected }) {
                         r: "3"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 13,
+                        lineNumber: 14,
                         columnNumber: 122
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 13,
+                        lineNumber: 14,
                         columnNumber: 154
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 14
             }, this);
         case 'handicrafts':
@@ -1867,12 +1821,12 @@ function InterestIcon({ interest, selected }) {
                     d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 15,
+                    lineNumber: 16,
                     columnNumber: 122
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 14
             }, this);
         case 'history':
@@ -1886,12 +1840,12 @@ function InterestIcon({ interest, selected }) {
                     d: "M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4M4 21V10.5M20 21V10.5"
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 122
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 14
             }, this);
         case 'gastronomy':
@@ -1906,7 +1860,7 @@ function InterestIcon({ interest, selected }) {
                         d: "M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 122
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1916,13 +1870,13 @@ function InterestIcon({ interest, selected }) {
                         y2: "17"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 252
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 14
             }, this);
         case 'music':
@@ -1937,7 +1891,7 @@ function InterestIcon({ interest, selected }) {
                         d: "M9 18V5l12-2v13"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 122
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1946,7 +1900,7 @@ function InterestIcon({ interest, selected }) {
                         r: "3"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 150
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1955,13 +1909,13 @@ function InterestIcon({ interest, selected }) {
                         r: "3"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 181
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 14
             }, this);
         default:
@@ -1971,6 +1925,7 @@ function InterestIcon({ interest, selected }) {
 function OnboardingScreen({ isDark }) {
     void isDark;
     const { navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t, setLocale } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
     const [step, setStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('splash');
     const [selectedLanguage, setSelectedLanguage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [selectedInterests, setSelectedInterests] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -1993,12 +1948,12 @@ function OnboardingScreen({ isDark }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 48,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 47,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2017,42 +1972,42 @@ function OnboardingScreen({ isDark }) {
                                     fill: "none"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 58,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                lineNumber: 55,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                            lineNumber: 54,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-4xl font-bold text-foreground mb-2",
-                            children: "Turath"
+                            children: t('common.welcome_title')
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl font-serif text-accent mb-4",
                             dir: "rtl",
-                            children: "تراث"
+                            children: t('common.welcome_subtitle')
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                            lineNumber: 60,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-center text-muted-foreground text-sm mb-12 max-w-[240px]",
-                            children: "Explore Morocco's rich cultural heritage and artisan traditions"
+                            children: t('common.description')
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                            lineNumber: 61,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2060,29 +2015,29 @@ function OnboardingScreen({ isDark }) {
                             className: "w-full max-w-[280px] py-4 px-6 bg-primary text-primary-foreground rounded-2xl font-semibold text-lg shadow-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    children: "Get Started"
+                                    children: t('common.get_started')
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                            lineNumber: 64,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 53,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2092,18 +2047,18 @@ function OnboardingScreen({ isDark }) {
                         children: "Supported by Morocco Tourism"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 73,
+                        lineNumber: 75,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 72,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-            lineNumber: 46,
+            lineNumber: 48,
             columnNumber: 7
         }, this);
     }
@@ -2113,18 +2068,18 @@ function OnboardingScreen({ isDark }) {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "text-2xl font-bold text-foreground mb-2",
-                    children: "Choose your language"
+                    children: t('onboarding.choose_language')
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 82,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-sm text-muted-foreground mb-6",
-                    children: "Select your preferred language"
+                    children: t('onboarding.select_language')
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 83,
+                    lineNumber: 85,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2132,7 +2087,10 @@ function OnboardingScreen({ isDark }) {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-2 gap-3",
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LANGUAGES"].map((lang)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setSelectedLanguage(lang.code),
+                                onClick: ()=>{
+                                    setSelectedLanguage(lang.code);
+                                    setLocale(lang.code);
+                                },
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex items-center gap-3 p-4 rounded-2xl border-2 transition-all", selectedLanguage === lang.code ? "border-accent bg-accent/10" : "border-border bg-card hover:border-accent/50"),
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2140,7 +2098,7 @@ function OnboardingScreen({ isDark }) {
                                         children: lang.flag
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 102,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2151,7 +2109,7 @@ function OnboardingScreen({ isDark }) {
                                                 children: lang.name
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                                lineNumber: 99,
+                                                lineNumber: 104,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2159,52 +2117,52 @@ function OnboardingScreen({ isDark }) {
                                                 children: lang.nativeName
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 105,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 103,
                                         columnNumber: 17
                                     }, this),
                                     selectedLanguage === lang.code && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CheckIcon"], {
                                         className: "w-5 h-5 text-accent ml-auto"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 107,
                                         columnNumber: 52
                                     }, this)
                                 ]
                             }, lang.code, true, {
                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                lineNumber: 87,
+                                lineNumber: 89,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 85,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 84,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>setStep('interests'),
                     disabled: !selectedLanguage,
                     className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-full py-4 px-6 rounded-2xl font-semibold text-lg transition-all mt-4", selectedLanguage ? "bg-primary text-primary-foreground shadow-lg hover:bg-primary/90" : "bg-muted text-muted-foreground cursor-not-allowed"),
-                    children: "Continue"
+                    children: t('common.continue_button')
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                    lineNumber: 107,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-            lineNumber: 81,
+            lineNumber: 83,
             columnNumber: 7
         }, this);
     }
@@ -2213,18 +2171,18 @@ function OnboardingScreen({ isDark }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "text-2xl font-bold text-foreground mb-2",
-                children: "What interests you?"
+                children: t('onboarding.what_interests_you')
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 125,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-sm text-muted-foreground mb-6",
-                children: "Select topics you want to explore"
+                children: t('onboarding.select_interests')
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 126,
+                lineNumber: 131,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2243,12 +2201,12 @@ function OnboardingScreen({ isDark }) {
                                             selected: selectedInterests.includes(interest.id)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 146,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 145,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2256,10 +2214,10 @@ function OnboardingScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "font-semibold text-foreground",
-                                                children: interest.label
+                                                children: t(`onboarding.${interest.id}`)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 149,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2268,37 +2226,37 @@ function OnboardingScreen({ isDark }) {
                                                 children: interest.labelAr
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 150,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 148,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                lineNumber: 139,
+                                lineNumber: 144,
                                 columnNumber: 13
                             }, this),
                             selectedInterests.includes(interest.id) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CheckIcon"], {
                                 className: "w-6 h-6 text-accent"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                                lineNumber: 148,
+                                lineNumber: 153,
                                 columnNumber: 57
                             }, this)
                         ]
                     }, interest.id, true, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 129,
+                        lineNumber: 134,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 127,
+                lineNumber: 132,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2307,31 +2265,31 @@ function OnboardingScreen({ isDark }) {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-full py-4 px-6 rounded-2xl font-semibold text-lg transition-all mt-4 flex items-center justify-center gap-2", selectedInterests.length > 0 ? "bg-primary text-primary-foreground shadow-lg hover:bg-primary/90" : "bg-muted text-muted-foreground cursor-not-allowed"),
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        children: "Start Exploring"
+                        children: t('common.start_exploring')
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 162,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "font-serif",
                         dir: "rtl",
-                        children: "ابدأ الاستكشاف"
+                        children: t('common.start_exploring_ar')
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                        lineNumber: 163,
+                        lineNumber: 168,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-                lineNumber: 152,
+                lineNumber: 157,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/onboarding-screen.tsx",
-        lineNumber: 124,
+        lineNumber: 129,
         columnNumber: 5
     }, this);
 }
@@ -2345,9 +2303,11 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -2375,32 +2335,33 @@ const SCREEN_TAB_MAP = {
 const tabs = [
     {
         id: 'map',
-        label: 'Map',
+        labelKey: 'navigation.map',
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CompassIcon"]
     },
     {
         id: 'explore',
-        label: 'Explore',
+        labelKey: 'navigation.explore',
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GridIcon"]
     },
     {
         id: 'guide',
-        label: 'AI Guide',
+        labelKey: 'navigation.guide',
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WaveformIcon"]
     },
     {
         id: 'artisans',
-        label: 'Artisans',
+        labelKey: 'navigation.artisans',
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BasketIcon"]
     },
     {
         id: 'profile',
-        label: 'Profile',
+        labelKey: 'navigation.profile',
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["UserIcon"]
     }
 ];
 function BottomNavigation() {
     const { navigate, currentScreen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
     const activeTab = SCREEN_TAB_MAP[currentScreen] ?? 'map';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         className: "absolute bottom-0 left-0 right-0 z-50 pb-safe",
@@ -2410,8 +2371,9 @@ function BottomNavigation() {
                 className: "glass rounded-2xl border border-border/50 shadow-lg",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center justify-around px-2 py-3",
-                    children: tabs.map(({ id, label, Icon })=>{
+                    children: tabs.map(({ id, labelKey, Icon })=>{
                         const isActive = activeTab === id;
+                        const label = t(labelKey);
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>navigate(TAB_SCREEN_MAP[id]),
                             className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-col items-center gap-1 px-3 py-2 rounded-xl transition-all duration-200", "min-w-[52px] min-h-[44px]", isActive ? "text-accent bg-accent/10" : "text-muted-foreground hover:text-foreground"),
@@ -2422,7 +2384,7 @@ function BottomNavigation() {
                                     className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-5 h-5 transition-transform duration-200", isActive && "scale-110")
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/bottom-navigation.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 66,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2430,34 +2392,34 @@ function BottomNavigation() {
                                     children: label
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/bottom-navigation.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 72,
                                     columnNumber: 19
                                 }, this)
                             ]
                         }, id, true, {
                             fileName: "[project]/components/turath/bottom-navigation.tsx",
-                            lineNumber: 50,
+                            lineNumber: 53,
                             columnNumber: 17
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/components/turath/bottom-navigation.tsx",
-                    lineNumber: 46,
+                    lineNumber: 48,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/bottom-navigation.tsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/turath/bottom-navigation.tsx",
-            lineNumber: 44,
+            lineNumber: 46,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/turath/bottom-navigation.tsx",
-        lineNumber: 43,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }
@@ -2476,6 +2438,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/bottom-navigation.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -2484,83 +2447,85 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navi
 ;
 ;
 ;
-const MAP_PINS = [
-    {
-        id: 'fez',
-        name: 'Fez',
-        x: 55,
-        y: 35,
-        type: 'heritage'
-    },
-    {
-        id: 'marrakech',
-        name: 'Marrakech',
-        x: 45,
-        y: 55,
-        type: 'artisan'
-    },
-    {
-        id: 'chefchaouen',
-        name: 'Chefchaouen',
-        x: 50,
-        y: 28,
-        type: 'heritage'
-    },
-    {
-        id: 'essaouira',
-        name: 'Essaouira',
-        x: 30,
-        y: 52,
-        type: 'food'
-    },
-    {
-        id: 'atlas',
-        name: 'Atlas Mountains',
-        x: 55,
-        y: 60,
-        type: 'itinerary'
-    },
-    {
-        id: 'tangier',
-        name: 'Tangier',
-        x: 48,
-        y: 18,
-        type: 'heritage'
-    }
-];
-const NEARBY_HIGHLIGHTS = [
-    {
-        id: '1',
-        name: 'Al Quaraouiyine',
-        category: 'Heritage',
-        distance: '2.3 km',
-        image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400'
-    },
-    {
-        id: '2',
-        name: 'Chouara Tannery',
-        category: 'Artisan',
-        distance: '1.8 km',
-        image: 'https://images.unsplash.com/photo-1531219572328-a0171b4448a3?w=400'
-    },
-    {
-        id: '3',
-        name: 'Bab Boujloud',
-        category: 'Heritage',
-        distance: '3.1 km',
-        image: 'https://images.unsplash.com/photo-1553899017-9279a3e1c0c9?w=400'
-    },
-    {
-        id: '4',
-        name: 'Dar Batha',
-        category: 'Museum',
-        distance: '2.5 km',
-        image: 'https://images.unsplash.com/photo-1548018560-c7196548e84d?w=400'
-    }
-];
+;
 function HomeMapScreen({ isDark }) {
     void isDark;
     const { navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const MAP_PINS = [
+        {
+            id: 'fez',
+            name: t('home_map.fes'),
+            x: 55,
+            y: 35,
+            type: 'heritage'
+        },
+        {
+            id: 'marrakech',
+            name: t('home_map.marrakech'),
+            x: 45,
+            y: 55,
+            type: 'artisan'
+        },
+        {
+            id: 'chefchaouen',
+            name: t('home_map.chefchaouen'),
+            x: 50,
+            y: 28,
+            type: 'heritage'
+        },
+        {
+            id: 'essaouira',
+            name: t('home_map.essaouira'),
+            x: 30,
+            y: 52,
+            type: 'food'
+        },
+        {
+            id: 'atlas',
+            name: t('home_map.atlas'),
+            x: 55,
+            y: 60,
+            type: 'itinerary'
+        },
+        {
+            id: 'tangier',
+            name: t('home_map.tangier'),
+            x: 48,
+            y: 18,
+            type: 'heritage'
+        }
+    ];
+    const NEARBY_HIGHLIGHTS = [
+        {
+            id: '1',
+            name: t('home_map.al_quaraouiyine'),
+            category: t('home_map.cat_heritage'),
+            distance: '2.3 km',
+            image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400'
+        },
+        {
+            id: '2',
+            name: t('home_map.chouara'),
+            category: t('home_map.cat_artisan'),
+            distance: '1.8 km',
+            image: 'https://images.unsplash.com/photo-1531219572328-a0171b4448a3?w=400'
+        },
+        {
+            id: '3',
+            name: t('home_map.bab_boujloud'),
+            category: t('home_map.cat_heritage'),
+            distance: '3.1 km',
+            image: 'https://images.unsplash.com/photo-1553899017-9279a3e1c0c9?w=400'
+        },
+        {
+            id: '4',
+            name: t('home_map.dar_batha'),
+            category: t('home_map.cat_museum'),
+            distance: '2.5 km',
+            image: 'https://images.unsplash.com/photo-1548018560-c7196548e84d?w=400'
+        }
+    ];
     const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('all');
     const [bottomSheetExpanded, setBottomSheetExpanded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const getPinColor = (type)=>{
@@ -2589,16 +2554,16 @@ function HomeMapScreen({ isDark }) {
                                 className: "w-5 h-5 text-muted-foreground"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 51,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 type: "text",
-                                placeholder: "Search places, crafts, artisans...",
+                                placeholder: t('home_map.search_placeholder'),
                                 className: "flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 52,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2607,28 +2572,28 @@ function HomeMapScreen({ isDark }) {
                                     className: "w-5 h-5 text-primary"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 59,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 53,
+                                lineNumber: 58,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                        lineNumber: 50,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                    lineNumber: 49,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                lineNumber: 48,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2641,17 +2606,17 @@ function HomeMapScreen({ isDark }) {
                             children: chip.label
                         }, chip.id, false, {
                             fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                            lineNumber: 64,
+                            lineNumber: 69,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                    lineNumber: 62,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                lineNumber: 61,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2671,7 +2636,7 @@ function HomeMapScreen({ isDark }) {
                                 strokeWidth: "0.5"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 83,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2683,13 +2648,13 @@ function HomeMapScreen({ isDark }) {
                                 opacity: "0.5"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 84,
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                        lineNumber: 82,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     MAP_PINS.map((pin)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2704,12 +2669,12 @@ function HomeMapScreen({ isDark }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 95,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this)
                         }, pin.id, false, {
                             fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                            lineNumber: 88,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2723,18 +2688,18 @@ function HomeMapScreen({ isDark }) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                            lineNumber: 100,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                        lineNumber: 99,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                lineNumber: 81,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2748,12 +2713,12 @@ function HomeMapScreen({ isDark }) {
                             className: "w-10 h-1 bg-muted-foreground/30 rounded-full"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                            lineNumber: 107,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                        lineNumber: 106,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2764,34 +2729,35 @@ function HomeMapScreen({ isDark }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-lg font-semibold text-foreground",
-                                        children: "Nearby Highlights"
+                                        children: t('home_map.nearby_highlights', 'Nearby Highlights')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>navigate('region-detail'),
                                         className: "text-sm text-accent font-medium flex items-center gap-1",
                                         children: [
-                                            "View all ",
+                                            t('common.view_all', 'View all'),
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                lineNumber: 113,
-                                                columnNumber: 24
+                                                lineNumber: 118,
+                                                columnNumber: 50
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 117,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 110,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2810,7 +2776,7 @@ function HomeMapScreen({ isDark }) {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 129,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2818,13 +2784,13 @@ function HomeMapScreen({ isDark }) {
                                                         children: place.distance
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 130,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 128,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2835,7 +2801,7 @@ function HomeMapScreen({ isDark }) {
                                                         children: place.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 133,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2843,47 +2809,47 @@ function HomeMapScreen({ isDark }) {
                                                         children: place.category
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                        lineNumber: 129,
+                                                        lineNumber: 134,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                                lineNumber: 127,
+                                                lineNumber: 132,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, place.id, true, {
                                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                                lineNumber: 116,
+                                lineNumber: 121,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                        lineNumber: 109,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                lineNumber: 105,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BottomNavigation"], {}, void 0, false, {
                 fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-                lineNumber: 137,
+                lineNumber: 142,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/home-map-screen.tsx",
-        lineNumber: 46,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }
@@ -2901,7 +2867,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/turath-types.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -2976,6 +2944,7 @@ const CONTENT_CARDS = [
 function RegionDetailScreen({ isDark }) {
     void isDark;
     const { navigate, goBack } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('history');
     const [savedItems, setSavedItems] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(CONTENT_CARDS.reduce((acc, card)=>({
             ...acc,
@@ -3001,14 +2970,14 @@ function RegionDetailScreen({ isDark }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                        lineNumber: 53,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                        lineNumber: 54,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3022,12 +2991,12 @@ function RegionDetailScreen({ isDark }) {
                                     className: "w-5 h-5 text-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 56,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3037,18 +3006,18 @@ function RegionDetailScreen({ isDark }) {
                                     className: "w-5 h-5 text-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 59,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                        lineNumber: 55,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3059,7 +3028,7 @@ function RegionDetailScreen({ isDark }) {
                                 children: REGION_DATA.name
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 64,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3068,19 +3037,19 @@ function RegionDetailScreen({ isDark }) {
                                 children: REGION_DATA.nameAr
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 65,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                        lineNumber: 63,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                lineNumber: 52,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3094,48 +3063,16 @@ function RegionDetailScreen({ isDark }) {
                                 children: REGION_DATA.heritageSites
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 71,
+                                lineNumber: 73,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xs text-muted-foreground",
-                                children: "Heritage Sites"
+                                children: t('region_detail.heritage_sites')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 71,
+                                lineNumber: 73,
                                 columnNumber: 116
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                        lineNumber: 71,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-px h-10 bg-border"
-                    }, void 0, false, {
-                        fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                        lineNumber: 72,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-2xl font-bold text-accent",
-                                children: REGION_DATA.artisans
-                            }, void 0, false, {
-                                fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 73,
-                                columnNumber: 38
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-muted-foreground",
-                                children: "Artisans"
-                            }, void 0, false, {
-                                fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                lineNumber: 73,
-                                columnNumber: 110
                             }, this)
                         ]
                     }, void 0, true, {
@@ -3154,8 +3091,8 @@ function RegionDetailScreen({ isDark }) {
                         className: "text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-2xl font-bold text-secondary",
-                                children: REGION_DATA.itineraries
+                                className: "text-2xl font-bold text-accent",
+                                children: REGION_DATA.artisans
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
                                 lineNumber: 75,
@@ -3163,22 +3100,54 @@ function RegionDetailScreen({ isDark }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xs text-muted-foreground",
-                                children: "Itineraries"
+                                children: t('region_detail.artisans')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
                                 lineNumber: 75,
-                                columnNumber: 116
+                                columnNumber: 110
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
                         lineNumber: 75,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-px h-10 bg-border"
+                    }, void 0, false, {
+                        fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
+                        lineNumber: 76,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-2xl font-bold text-secondary",
+                                children: REGION_DATA.itineraries
+                            }, void 0, false, {
+                                fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
+                                lineNumber: 77,
+                                columnNumber: 38
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs text-muted-foreground",
+                                children: t('region_detail.itineraries')
+                            }, void 0, false, {
+                                fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
+                                lineNumber: 77,
+                                columnNumber: 116
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
+                        lineNumber: 77,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                lineNumber: 70,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3191,17 +3160,17 @@ function RegionDetailScreen({ isDark }) {
                             children: tab.label
                         }, tab.id, false, {
                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                            lineNumber: 82,
+                            lineNumber: 84,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                    lineNumber: 80,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                lineNumber: 79,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3223,7 +3192,7 @@ function RegionDetailScreen({ isDark }) {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 107,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3238,18 +3207,18 @@ function RegionDetailScreen({ isDark }) {
                                                 filled: savedItems[card.id]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                                lineNumber: 107,
+                                                lineNumber: 109,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 108,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 106,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3260,7 +3229,7 @@ function RegionDetailScreen({ isDark }) {
                                             children: card.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 113,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3268,29 +3237,29 @@ function RegionDetailScreen({ isDark }) {
                                             children: card.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 114,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 112,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, card.id, true, {
                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                            lineNumber: 99,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                    lineNumber: 97,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                lineNumber: 96,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3303,31 +3272,31 @@ function RegionDetailScreen({ isDark }) {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                            lineNumber: 122,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            children: "Start Itinerary"
+                            children: t('itinerary.start_itinerary', 'Start Itinerary')
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                            lineNumber: 123,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                    lineNumber: 121,
+                    lineNumber: 123,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-                lineNumber: 120,
+                lineNumber: 122,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/region-detail-screen.tsx",
-        lineNumber: 50,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
@@ -3344,66 +3313,69 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
 ;
-const HERITAGE_DATA = {
-    title: 'Koutoubia Mosque',
-    titleAr: 'جامع الكتبية',
-    description: `The Koutoubia Mosque is the largest mosque in Marrakech, Morocco. The mosque was founded in 1147 by the Almohad caliph Abd al-Mu'min after his conquest of Marrakesh. The minaret, completed under the reign of Yaqub al-Mansur (1184–1199), stands as one of the finest examples of Almohad architecture.`,
-    images: [
-        'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1548018560-c7196bf66e3c?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1580746738099-78d6833b3f84?w=800&h=600&fit=crop'
-    ],
-    pullQuote: 'صومعة الكتبية رمز من رموز مراكش العريقة',
-    pullQuoteEn: 'The Koutoubia Minaret — a timeless symbol of Marrakech',
-    timeline: [
-        {
-            year: '1147',
-            event: 'Foundation by Almohad caliph',
-            eventAr: 'تأسيس من طرف الموحدين'
-        },
-        {
-            year: '1158',
-            event: 'Reconstruction begins',
-            eventAr: 'بداية إعادة البناء'
-        },
-        {
-            year: '1195',
-            event: 'Minaret completed',
-            eventAr: 'اكتمال الصومعة'
-        },
-        {
-            year: '1990',
-            event: 'UNESCO recognition',
-            eventAr: 'اعتراف اليونسكو'
-        }
-    ],
-    relatedContent: [
-        {
-            id: '1',
-            title: 'Almohad Dynasty',
-            image: 'https://images.unsplash.com/photo-1548018560-c7196bf66e3c?w=200&h=150&fit=crop'
-        },
-        {
-            id: '2',
-            title: 'Islamic Architecture',
-            image: 'https://images.unsplash.com/photo-1580746738099-78d6833b3f84?w=200&h=150&fit=crop'
-        },
-        {
-            id: '3',
-            title: 'Marrakech Medina',
-            image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=200&h=150&fit=crop'
-        }
-    ]
-};
+;
 function HeritageDetailScreen({ isDark }) {
     void isDark;
     const { goBack, navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const HERITAGE_DATA = {
+        title: t('data.heritage_sites.koutoubia'),
+        titleAr: 'جامع الكتبية',
+        description: t('heritage_detail.koutoubia_desc'),
+        images: [
+            'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=800&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1548018560-c7196bf66e3c?w=800&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1580746738099-78d6833b3f84?w=800&h=600&fit=crop'
+        ],
+        pullQuote: 'صومعة الكتبية رمز من رموز مراكش العريقة',
+        pullQuoteEn: t('heritage_detail.pull_quote'),
+        timeline: [
+            {
+                year: '1147',
+                event: t('heritage_detail.timeline_1147'),
+                eventAr: 'تأسيس من طرف الموحدين'
+            },
+            {
+                year: '1158',
+                event: t('heritage_detail.timeline_1158'),
+                eventAr: 'بداية إعادة البناء'
+            },
+            {
+                year: '1195',
+                event: t('heritage_detail.timeline_1195'),
+                eventAr: 'اكتمال الصومعة'
+            },
+            {
+                year: '1990',
+                event: t('heritage_detail.timeline_1990'),
+                eventAr: 'اعتراف اليونسكو'
+            }
+        ],
+        relatedContent: [
+            {
+                id: '1',
+                title: t('heritage_detail.title_almohad'),
+                image: 'https://images.unsplash.com/photo-1548018560-c7196bf66e3c?w=200&h=150&fit=crop'
+            },
+            {
+                id: '2',
+                title: t('heritage_detail.title_islamic_arch'),
+                image: 'https://images.unsplash.com/photo-1580746738099-78d6833b3f84?w=200&h=150&fit=crop'
+            },
+            {
+                id: '3',
+                title: t('heritage_detail.title_medina'),
+                image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=200&h=150&fit=crop'
+            }
+        ]
+    };
     const [currentImageIndex, setCurrentImageIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [saved, setSaved] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isPlaying, setIsPlaying] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -3420,14 +3392,14 @@ function HeritageDetailScreen({ isDark }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 47,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 48,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3441,12 +3413,12 @@ function HeritageDetailScreen({ isDark }) {
                                     className: "w-5 h-5 text-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 51,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3461,12 +3433,12 @@ function HeritageDetailScreen({ isDark }) {
                                             filled: saved
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 61,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 60,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3476,12 +3448,12 @@ function HeritageDetailScreen({ isDark }) {
                                             className: "w-5 h-5 text-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3491,24 +3463,24 @@ function HeritageDetailScreen({ isDark }) {
                                             className: "w-5 h-5 text-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 66,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 54,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 50,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3519,12 +3491,12 @@ function HeritageDetailScreen({ isDark }) {
                                 "aria-label": `View image ${index + 1}`
                             }, index, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 69,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 67,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3535,7 +3507,7 @@ function HeritageDetailScreen({ isDark }) {
                                 children: HERITAGE_DATA.title
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 74,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3544,19 +3516,19 @@ function HeritageDetailScreen({ isDark }) {
                                 children: HERITAGE_DATA.titleAr
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 75,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 73,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3582,20 +3554,20 @@ function HeritageDetailScreen({ isDark }) {
                                             }
                                         }, i, false, {
                                             fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 96,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-medium",
-                                    children: "Listening..."
+                                    children: t('heritage_detail.listening')
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 99,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -3605,22 +3577,22 @@ function HeritageDetailScreen({ isDark }) {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 103,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-medium",
-                                    children: "Hear the Story"
+                                    children: t('heritage_detail.hear_story')
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 104,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 81,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3629,12 +3601,12 @@ function HeritageDetailScreen({ isDark }) {
                             children: HERITAGE_DATA.description
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                            lineNumber: 105,
+                            lineNumber: 110,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 104,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
@@ -3646,69 +3618,12 @@ function HeritageDetailScreen({ isDark }) {
                                 children: HERITAGE_DATA.pullQuote
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 109,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sm text-muted-foreground mt-2 text-center italic",
                                 children: HERITAGE_DATA.pullQuoteEn
-                            }, void 0, false, {
-                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 110,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 108,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-lg font-semibold text-foreground mb-4",
-                                children: "Historical Timeline"
-                            }, void 0, false, {
-                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 114,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-4 overflow-x-auto pb-2 scrollbar-hide",
-                                children: HERITAGE_DATA.timeline.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-shrink-0 w-32 p-3 bg-card rounded-2xl border border-border text-center",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xl font-bold text-primary",
-                                                children: item.year
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                                lineNumber: 118,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-foreground mt-1",
-                                                children: item.event
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                                lineNumber: 119,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-muted-foreground font-serif mt-1",
-                                                dir: "rtl",
-                                                children: item.eventAr
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                                lineNumber: 120,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, index, true, {
-                                        fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 117,
-                                        columnNumber: 15
-                                    }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
                                 lineNumber: 115,
@@ -3722,15 +3637,72 @@ function HeritageDetailScreen({ isDark }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-lg font-semibold text-foreground mb-4",
+                                children: t('heritage_detail.historical_timeline')
+                            }, void 0, false, {
+                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                                lineNumber: 119,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex gap-4 overflow-x-auto pb-2 scrollbar-hide",
+                                children: HERITAGE_DATA.timeline.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex-shrink-0 w-32 p-3 bg-card rounded-2xl border border-border text-center",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xl font-bold text-primary",
+                                                children: item.year
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                                                lineNumber: 123,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xs text-foreground mt-1",
+                                                children: item.event
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                                                lineNumber: 124,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xs text-muted-foreground font-serif mt-1",
+                                                dir: "rtl",
+                                                children: item.eventAr
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                                                lineNumber: 125,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, index, true, {
+                                        fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                                        lineNumber: 122,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                                lineNumber: 120,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
+                        lineNumber: 118,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center justify-between mb-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-lg font-semibold text-foreground",
-                                        children: "Related Content"
+                                        children: t('heritage_detail.related_content')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 128,
+                                        lineNumber: 133,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3741,19 +3713,19 @@ function HeritageDetailScreen({ isDark }) {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                                lineNumber: 129,
+                                                lineNumber: 134,
                                                 columnNumber: 98
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 127,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3769,7 +3741,7 @@ function HeritageDetailScreen({ isDark }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 139,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3777,30 +3749,30 @@ function HeritageDetailScreen({ isDark }) {
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 140,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, item.id, true, {
                                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 138,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 131,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 126,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                lineNumber: 80,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3813,14 +3785,14 @@ function HeritageDetailScreen({ isDark }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 145,
+                                lineNumber: 150,
                                 columnNumber: 11
                             }, this),
-                            "Share"
+                            t('heritage_detail.share')
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 144,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3831,26 +3803,26 @@ function HeritageDetailScreen({ isDark }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                                lineNumber: 149,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this),
-                            "Plan Visit"
+                            t('heritage_detail.plan_visit')
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                        lineNumber: 148,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-                lineNumber: 143,
+                lineNumber: 148,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/heritage-detail-screen.tsx",
-        lineNumber: 44,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
@@ -3959,12 +3931,12 @@ function ItineraryScreen({ isDark }) {
                                     className: "w-5 h-5 text-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                lineNumber: 40,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3975,7 +3947,7 @@ function ItineraryScreen({ isDark }) {
                                         children: ITINERARY_DATA.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 45,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3984,13 +3956,13 @@ function ItineraryScreen({ isDark }) {
                                         children: ITINERARY_DATA.nameAr
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 46,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4001,18 +3973,18 @@ function ItineraryScreen({ isDark }) {
                                     className: "w-5 h-5 text-secondary"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                lineNumber: 47,
+                                lineNumber: 48,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4041,19 +4013,19 @@ function ItineraryScreen({ isDark }) {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 67,
                                         columnNumber: 15
                                     }, this),
                                     label
                                 ]
                             }, id, true, {
                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 53,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4069,18 +4041,18 @@ function ItineraryScreen({ isDark }) {
                                 ]
                             }, day, true, {
                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                lineNumber: 75,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 73,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4097,17 +4069,17 @@ function ItineraryScreen({ isDark }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                lineNumber: 92,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                            lineNumber: 91,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 90,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4120,13 +4092,13 @@ function ItineraryScreen({ isDark }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 95,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                lineNumber: 89,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4138,7 +4110,7 @@ function ItineraryScreen({ isDark }) {
                             className: "absolute left-[27px] top-4 bottom-4 w-0.5 bg-border"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                            lineNumber: 101,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4154,24 +4126,24 @@ function ItineraryScreen({ isDark }) {
                                                     className: "w-6 h-6"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 110,
                                                     columnNumber: 39
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-lg font-bold",
                                                     children: index + 1
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 110,
                                                     columnNumber: 75
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 107,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 106,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4187,7 +4159,7 @@ function ItineraryScreen({ isDark }) {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                        lineNumber: 119,
+                                                        lineNumber: 120,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4198,7 +4170,7 @@ function ItineraryScreen({ isDark }) {
                                                                 children: stop.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                lineNumber: 121,
+                                                                lineNumber: 122,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4206,7 +4178,7 @@ function ItineraryScreen({ isDark }) {
                                                                 children: stop.description
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                lineNumber: 122,
+                                                                lineNumber: 123,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4219,14 +4191,14 @@ function ItineraryScreen({ isDark }) {
                                                                                 className: "w-3 h-3"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                                lineNumber: 124,
+                                                                                lineNumber: 125,
                                                                                 columnNumber: 67
                                                                             }, this),
                                                                             stop.time
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                        lineNumber: 124,
+                                                                        lineNumber: 125,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4236,59 +4208,59 @@ function ItineraryScreen({ isDark }) {
                                                                                 className: "w-3 h-3"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                                lineNumber: 125,
+                                                                                lineNumber: 126,
                                                                                 columnNumber: 67
                                                                             }, this),
                                                                             stop.distance
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                        lineNumber: 125,
+                                                                        lineNumber: 126,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                                lineNumber: 123,
+                                                                lineNumber: 124,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                        lineNumber: 120,
+                                                        lineNumber: 121,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                                lineNumber: 118,
+                                                lineNumber: 119,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                            lineNumber: 112,
+                                            lineNumber: 113,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, stop.id, true, {
                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 105,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                            lineNumber: 102,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                    lineNumber: 100,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                lineNumber: 99,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4308,7 +4280,7 @@ function ItineraryScreen({ isDark }) {
                                     strokeDasharray: "2,2"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 [
@@ -4325,18 +4297,18 @@ function ItineraryScreen({ isDark }) {
                                         fill: i < 2 ? "#1B4332" : "#C1121F"
                                     }, i, false, {
                                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 143,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                            lineNumber: 139,
+                            lineNumber: 140,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 138,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4348,37 +4320,37 @@ function ItineraryScreen({ isDark }) {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                    lineNumber: 148,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: "Start Navigation"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                            lineNumber: 147,
+                            lineNumber: 148,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                        lineNumber: 146,
+                        lineNumber: 147,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-                lineNumber: 137,
+                lineNumber: 138,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/itinerary-screen.tsx",
-        lineNumber: 36,
+        lineNumber: 37,
         columnNumber: 5
     }, this);
 }
@@ -4530,12 +4502,12 @@ function VoiceAIGuideScreen({ isDark }) {
                             className: "w-5 h-5 text-[#F5F0E8]"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 73,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                        lineNumber: 72,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -4543,7 +4515,7 @@ function VoiceAIGuideScreen({ isDark }) {
                         children: "AI Guide"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                        lineNumber: 75,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4552,18 +4524,18 @@ function VoiceAIGuideScreen({ isDark }) {
                             className: "w-5 h-5 text-[#F5F0E8]"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 77,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                lineNumber: 71,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4576,7 +4548,7 @@ function VoiceAIGuideScreen({ isDark }) {
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("absolute inset-0 rounded-full border-4 border-[#C9A84C] transition-all duration-500", isSpeaking && "gold-pulse")
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                lineNumber: 84,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4601,23 +4573,23 @@ function VoiceAIGuideScreen({ isDark }) {
                                             }
                                         }, i, false, {
                                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 89,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                lineNumber: 85,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                        lineNumber: 83,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4625,13 +4597,13 @@ function VoiceAIGuideScreen({ isDark }) {
                         children: isListening ? 'Listening...' : isSpeaking ? 'Speaking...' : 'Tap the mic to speak'
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                        lineNumber: 93,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                lineNumber: 82,
+                lineNumber: 83,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4653,17 +4625,17 @@ function VoiceAIGuideScreen({ isDark }) {
                                             d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 104,
                                             columnNumber: 129
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 104,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 103,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4674,7 +4646,7 @@ function VoiceAIGuideScreen({ isDark }) {
                                             children: message.content
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 108,
                                             columnNumber: 17
                                         }, this),
                                         message.tags && message.tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4684,34 +4656,34 @@ function VoiceAIGuideScreen({ isDark }) {
                                                     children: tag
                                                 }, tag, false, {
                                                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 111,
                                                     columnNumber: 48
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                            lineNumber: 109,
+                                            lineNumber: 110,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                    lineNumber: 106,
+                                    lineNumber: 107,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, message.id, true, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 100,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                    lineNumber: 98,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                lineNumber: 97,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4724,17 +4696,17 @@ function VoiceAIGuideScreen({ isDark }) {
                             children: q.en
                         }, i, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 123,
+                            lineNumber: 124,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                    lineNumber: 121,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                lineNumber: 120,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4752,7 +4724,7 @@ function VoiceAIGuideScreen({ isDark }) {
                             autoFocus: true
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 134,
+                            lineNumber: 135,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4772,31 +4744,31 @@ function VoiceAIGuideScreen({ isDark }) {
                                         y2: "13"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 137,
                                         columnNumber: 121
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polygon", {
                                         points: "22 2 15 22 11 13 2 9 22 2"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 137,
                                         columnNumber: 160
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                lineNumber: 136,
+                                lineNumber: 137,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 135,
+                            lineNumber: 136,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                    lineNumber: 133,
+                    lineNumber: 134,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center justify-center gap-4",
@@ -4808,12 +4780,12 @@ function VoiceAIGuideScreen({ isDark }) {
                                 className: "w-5 h-5 text-[#F5F0E8]"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                lineNumber: 142,
+                                lineNumber: 143,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 141,
+                            lineNumber: 142,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4823,12 +4795,12 @@ function VoiceAIGuideScreen({ isDark }) {
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-7 h-7", isListening ? "text-white" : "text-[#1A1A1A]")
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                lineNumber: 145,
+                                lineNumber: 146,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 144,
+                            lineNumber: 145,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4837,34 +4809,34 @@ function VoiceAIGuideScreen({ isDark }) {
                                 className: "w-5 h-5 text-[#F5F0E8]"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                                lineNumber: 148,
+                                lineNumber: 149,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                            lineNumber: 147,
+                            lineNumber: 148,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                    lineNumber: 140,
+                    lineNumber: 141,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                lineNumber: 131,
+                lineNumber: 132,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BottomNavigation"], {}, void 0, false, {
                 fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-                lineNumber: 154,
+                lineNumber: 155,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/voice-ai-guide-screen.tsx",
-        lineNumber: 70,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
@@ -4882,6 +4854,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/bottom-navigation.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -4889,70 +4862,71 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navi
 ;
 ;
 ;
-const ARTISAN_DATA = {
-    name: 'Fatima Zahra',
-    nameAr: 'فاطمة الزهراء',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop',
-    craft: 'Traditional Zellige',
-    craftAr: 'الزليج التقليدي',
-    city: 'Fes',
-    rating: 4.9,
-    reviewCount: 127,
-    verified: true,
-    bio: 'Third-generation zellige artisan specializing in traditional Moroccan mosaic art. My family has been crafting zellige tiles in the medina of Fes for over 80 years, preserving ancient techniques passed down through generations.',
-    followers: 2340,
-    following: false
-};
-const PORTFOLIO = [
-    'https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?w=400&h=400&fit=crop',
-    'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=400&fit=crop',
-    'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=400&fit=crop',
-    'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=400&fit=crop',
-    'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=400&fit=crop',
-    'https://images.unsplash.com/photo-1603204077779-bed963ea7d0e?w=400&h=400&fit=crop'
-];
-const PRODUCTS = [
-    {
-        id: '1',
-        name: 'Zellige Table',
-        price: 4500,
-        image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=300&h=300&fit=crop'
-    },
-    {
-        id: '2',
-        name: 'Mosaic Mirror',
-        price: 1800,
-        image: 'https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?w=300&h=300&fit=crop'
-    },
-    {
-        id: '3',
-        name: 'Tile Set (25pc)',
-        price: 750,
-        image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=300&h=300&fit=crop'
-    }
-];
-const REVIEWS = [
-    {
-        id: '1',
-        name: 'Sarah M.',
-        photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
-        rating: 5,
-        text: 'Absolutely stunning craftsmanship! The zellige table is the centerpiece of my home.',
-        date: '2 weeks ago'
-    },
-    {
-        id: '2',
-        name: 'Ahmed K.',
-        photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-        rating: 5,
-        text: 'Authentic Moroccan artistry. Highly recommended!',
-        date: '1 month ago'
-    }
-];
+;
 function ArtisanProfileScreen({ isDark }) {
     void isDark;
     const { goBack, navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
-    const [isFollowing, setIsFollowing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(ARTISAN_DATA.following);
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const artisanData = {
+        name: t('demo_artisan.name'),
+        nameAr: 'فاطمة الزهراء',
+        photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop',
+        craft: t('demo_artisan.craft'),
+        city: t('demo_artisan.city'),
+        rating: 4.9,
+        reviewCount: 127,
+        verified: true,
+        bio: t('demo_artisan.bio'),
+        followers: 2340,
+        following: false
+    };
+    const PORTFOLIO = [
+        'https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=400&fit=crop',
+        'https://images.unsplash.com/photo-1603204077779-bed963ea7d0e?w=400&h=400&fit=crop'
+    ];
+    const PRODUCTS = [
+        {
+            id: '1',
+            name: t('demo_artisan.product1'),
+            price: 4500,
+            image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=300&h=300&fit=crop'
+        },
+        {
+            id: '2',
+            name: t('demo_artisan.product2'),
+            price: 1800,
+            image: 'https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?w=300&h=300&fit=crop'
+        },
+        {
+            id: '3',
+            name: t('demo_artisan.product3'),
+            price: 750,
+            image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=300&h=300&fit=crop'
+        }
+    ];
+    const REVIEWS = [
+        {
+            id: '1',
+            name: t('demo_artisan.review1_name'),
+            photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+            rating: 5,
+            text: t('demo_artisan.review1_text'),
+            date: t('demo_artisan.time_2w')
+        },
+        {
+            id: '2',
+            name: t('demo_artisan.review2_name'),
+            photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+            rating: 5,
+            text: t('demo_artisan.review2_text'),
+            date: t('demo_artisan.time_1m')
+        }
+    ];
+    const [isFollowing, setIsFollowing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(artisanData.following);
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('portfolio');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "h-full flex flex-col overflow-y-auto",
@@ -4968,21 +4942,21 @@ function ArtisanProfileScreen({ isDark }) {
                             className: "w-5 h-5 text-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                            lineNumber: 59,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 58,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>navigate('marketplace'),
                         className: "px-4 py-2 bg-accent text-accent-foreground rounded-xl text-sm font-medium",
-                        children: "View Shop"
+                        children: t('artisan_profile_screen.view_shop')
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 61,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4991,18 +4965,18 @@ function ArtisanProfileScreen({ isDark }) {
                             className: "w-5 h-5 text-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                            lineNumber: 65,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 64,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                lineNumber: 57,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5017,24 +4991,24 @@ function ArtisanProfileScreen({ isDark }) {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-20 h-20 rounded-2xl bg-cover bg-center border-2 border-accent",
                                         style: {
-                                            backgroundImage: `url(${ARTISAN_DATA.photo})`
+                                            backgroundImage: `url(${artisanData.photo})`
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this),
-                                    ARTISAN_DATA.verified && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["VerifiedIcon"], {
+                                    artisanData.verified && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["VerifiedIcon"], {
                                         className: "absolute -bottom-1 -right-1 w-6 h-6 text-secondary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 74,
-                                        columnNumber: 39
+                                        lineNumber: 77,
+                                        columnNumber: 38
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 72,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5042,27 +5016,27 @@ function ArtisanProfileScreen({ isDark }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                         className: "text-xl font-bold text-foreground",
-                                        children: ARTISAN_DATA.name
+                                        children: artisanData.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 80,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-accent font-serif",
                                         dir: "rtl",
-                                        children: ARTISAN_DATA.nameAr
+                                        children: artisanData.nameAr
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 81,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-muted-foreground mt-1",
-                                        children: ARTISAN_DATA.craft
+                                        children: artisanData.craft
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5072,15 +5046,15 @@ function ArtisanProfileScreen({ isDark }) {
                                                 className: "w-4 h-4 text-muted-foreground"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 84,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-sm text-muted-foreground",
-                                                children: ARTISAN_DATA.city
+                                                children: artisanData.city
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 85,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5091,51 +5065,51 @@ function ArtisanProfileScreen({ isDark }) {
                                                         filled: true
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 84,
+                                                        lineNumber: 87,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-sm font-medium text-foreground",
-                                                        children: ARTISAN_DATA.rating
+                                                        children: artisanData.rating
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 85,
+                                                        lineNumber: 88,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-sm text-muted-foreground",
                                                         children: [
                                                             "(",
-                                                            ARTISAN_DATA.reviewCount,
+                                                            artisanData.reviewCount,
                                                             ")"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 86,
+                                                        lineNumber: 89,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 86,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 83,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 76,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 71,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5144,39 +5118,39 @@ function ArtisanProfileScreen({ isDark }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setIsFollowing(!isFollowing),
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 py-3 rounded-2xl font-medium transition-all", isFollowing ? "bg-muted text-foreground border border-border" : "bg-primary text-primary-foreground"),
-                                children: isFollowing ? 'Following' : 'Follow'
+                                children: isFollowing ? t('artisan_profile_screen.following') : t('artisan_profile_screen.follow')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 93,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>navigate('marketplace'),
                                 className: "py-3 px-6 bg-accent text-accent-foreground rounded-2xl font-medium",
-                                children: "Shop"
+                                children: t('artisan_profile_screen.shop')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 94,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 92,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-sm text-muted-foreground mt-4 leading-relaxed",
-                        children: ARTISAN_DATA.bio
+                        children: artisanData.bio
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 97,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                lineNumber: 70,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5188,15 +5162,15 @@ function ArtisanProfileScreen({ isDark }) {
                 ].map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setActiveTab(tab),
                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 py-3 text-sm font-medium transition-all border-b-2 capitalize", activeTab === tab ? "text-primary border-primary" : "text-muted-foreground border-transparent"),
-                        children: tab === 'products' ? 'Shop' : tab.charAt(0).toUpperCase() + tab.slice(1)
+                        children: t(`artisan_profile_screen.${tab}`)
                     }, tab, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 103,
+                        lineNumber: 106,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                lineNumber: 101,
+                lineNumber: 104,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5211,12 +5185,12 @@ function ArtisanProfileScreen({ isDark }) {
                                 }
                             }, i, false, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 114,
+                                lineNumber: 117,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 112,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this),
                     activeTab === 'products' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5231,7 +5205,7 @@ function ArtisanProfileScreen({ isDark }) {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 126,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5244,24 +5218,25 @@ function ArtisanProfileScreen({ isDark }) {
                                                         children: product.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 129,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-lg font-bold text-primary mt-1",
                                                         children: [
                                                             product.price,
-                                                            " MAD"
+                                                            " ",
+                                                            t('artisan_profile_screen.mad')
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 130,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 128,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5275,14 +5250,14 @@ function ArtisanProfileScreen({ isDark }) {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                                lineNumber: 131,
+                                                                lineNumber: 134,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            "Add to Cart"
+                                                            t('artisan_profile_screen.add_to_cart')
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 133,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5291,35 +5266,35 @@ function ArtisanProfileScreen({ isDark }) {
                                                             className: "w-5 h-5 text-muted-foreground"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                            lineNumber: 135,
+                                                            lineNumber: 138,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 134,
+                                                        lineNumber: 137,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 129,
+                                                lineNumber: 132,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 127,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, product.id, true, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 122,
+                                lineNumber: 125,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 120,
+                        lineNumber: 123,
                         columnNumber: 11
                     }, this),
                     activeTab === 'reviews' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5337,7 +5312,7 @@ function ArtisanProfileScreen({ isDark }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 149,
+                                                lineNumber: 152,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5348,7 +5323,7 @@ function ArtisanProfileScreen({ isDark }) {
                                                         children: review.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 151,
+                                                        lineNumber: 154,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5360,18 +5335,18 @@ function ArtisanProfileScreen({ isDark }) {
                                                                 filled: true
                                                             }, i, false, {
                                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                                lineNumber: 153,
+                                                                lineNumber: 156,
                                                                 columnNumber: 76
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 155,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 153,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5379,13 +5354,13 @@ function ArtisanProfileScreen({ isDark }) {
                                                 children: review.date
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 159,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 151,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5393,35 +5368,35 @@ function ArtisanProfileScreen({ isDark }) {
                                         children: review.text
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                        lineNumber: 158,
+                                        lineNumber: 161,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, review.id, true, {
                                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                                lineNumber: 147,
+                                lineNumber: 150,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                        lineNumber: 145,
+                        lineNumber: 148,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                lineNumber: 110,
+                lineNumber: 113,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BottomNavigation"], {}, void 0, false, {
                 fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-                lineNumber: 165,
+                lineNumber: 168,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/artisan-profile-screen.tsx",
-        lineNumber: 55,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
@@ -5440,7 +5415,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/bottom-navigation.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -5529,6 +5506,7 @@ const PRODUCTS = [
 function MarketplaceScreen({ isDark }) {
     void isDark;
     const { navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
     const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [likedProducts, setLikedProducts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(PRODUCTS.reduce((acc, p)=>({
             ...acc,
@@ -5553,10 +5531,10 @@ function MarketplaceScreen({ isDark }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-2xl font-bold text-foreground",
-                                children: "Artisan Shop"
+                                children: t('marketplace.marketplace', 'Artisan Shop')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 48,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5567,7 +5545,7 @@ function MarketplaceScreen({ isDark }) {
                                         className: "w-5 h-5 text-foreground"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 52,
                                         columnNumber: 13
                                     }, this),
                                     cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5575,19 +5553,19 @@ function MarketplaceScreen({ isDark }) {
                                         children: cartCount
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 53,
                                         columnNumber: 31
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 49,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5600,22 +5578,22 @@ function MarketplaceScreen({ isDark }) {
                                         className: "w-5 h-5 text-muted-foreground"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 59,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "text",
-                                        placeholder: "Search products...",
+                                        placeholder: t('common.search'),
                                         className: "flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 60,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 56,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5624,18 +5602,18 @@ function MarketplaceScreen({ isDark }) {
                                     className: "w-5 h-5 text-accent-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 60,
+                                lineNumber: 62,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                        lineNumber: 55,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5644,10 +5622,10 @@ function MarketplaceScreen({ isDark }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveCategory(null),
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all", !activeCategory ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"),
-                                children: "All"
+                                children: t('home_map.all')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 66,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CRAFT_CATEGORIES"].map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5656,19 +5634,19 @@ function MarketplaceScreen({ isDark }) {
                                     children: cat
                                 }, cat, false, {
                                     fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                        lineNumber: 65,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5682,34 +5660,35 @@ function MarketplaceScreen({ isDark }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-lg font-semibold text-foreground",
-                                        children: "Featured Artisans"
+                                        children: t('marketplace.artisan_products', 'Featured Artisans')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 79,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>navigate('artisan-profile'),
                                         className: "text-sm text-accent font-medium flex items-center gap-1",
                                         children: [
-                                            "View all ",
+                                            t('common.view_all', 'View all'),
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                lineNumber: 78,
-                                                columnNumber: 142
+                                                lineNumber: 80,
+                                                columnNumber: 168
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 80,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 76,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5727,12 +5706,12 @@ function MarketplaceScreen({ isDark }) {
                                                     className: "absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                    lineNumber: 84,
+                                                    lineNumber: 86,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 85,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5745,7 +5724,7 @@ function MarketplaceScreen({ isDark }) {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 89,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5753,7 +5732,7 @@ function MarketplaceScreen({ isDark }) {
                                                         children: artisan.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 90,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5764,30 +5743,30 @@ function MarketplaceScreen({ isDark }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 91,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 88,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, artisan.id, true, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 80,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5798,7 +5777,7 @@ function MarketplaceScreen({ isDark }) {
                                 children: "Products"
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 97,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5817,7 +5796,7 @@ function MarketplaceScreen({ isDark }) {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 102,
+                                                        lineNumber: 104,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5832,12 +5811,12 @@ function MarketplaceScreen({ isDark }) {
                                                             filled: likedProducts[product.id]
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                            lineNumber: 104,
+                                                            lineNumber: 106,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 103,
+                                                        lineNumber: 105,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5848,13 +5827,13 @@ function MarketplaceScreen({ isDark }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 106,
+                                                        lineNumber: 108,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5865,7 +5844,7 @@ function MarketplaceScreen({ isDark }) {
                                                         children: product.artisan
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 111,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -5873,7 +5852,7 @@ function MarketplaceScreen({ isDark }) {
                                                         children: product.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 112,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5884,47 +5863,47 @@ function MarketplaceScreen({ isDark }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 113,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 110,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, product.id, true, {
                                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                                lineNumber: 98,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                        lineNumber: 96,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                lineNumber: 74,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BottomNavigation"], {}, void 0, false, {
                 fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-                lineNumber: 119,
+                lineNumber: 121,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/marketplace-screen.tsx",
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }
@@ -5941,53 +5920,55 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
 ;
-const CART_ITEMS = [
-    {
-        id: '1',
-        name: 'Zellige Table',
-        price: 4500,
-        image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=200&h=200&fit=crop',
-        artisan: 'Fatima Zahra',
-        quantity: 1
-    },
-    {
-        id: '2',
-        name: 'Leather Pouf',
-        price: 890,
-        image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=200&fit=crop',
-        artisan: 'Hassan B.',
-        quantity: 2
-    }
-];
-const SHIPPING_OPTIONS = [
-    {
-        id: 'standard',
-        name: 'Standard Shipping',
-        price: 150,
-        days: '7-14 days'
-    },
-    {
-        id: 'express',
-        name: 'Express Shipping',
-        price: 350,
-        days: '3-5 days'
-    },
-    {
-        id: 'premium',
-        name: 'Premium Shipping',
-        price: 600,
-        days: '1-2 days'
-    }
-];
+;
 function CheckoutScreen({ isDark }) {
-    void isDark;
     const { goBack, navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const CART_ITEMS = [
+        {
+            id: '1',
+            name: t('demo_artisan.product1'),
+            price: 4500,
+            image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=200&h=200&fit=crop',
+            artisan: t('demo_artisan.name'),
+            quantity: 1
+        },
+        {
+            id: '2',
+            name: t('data.products.leather_pouf'),
+            price: 890,
+            image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=200&fit=crop',
+            artisan: t('data.artisans.hassan_benchekroun'),
+            quantity: 2
+        }
+    ];
+    const SHIPPING_OPTIONS = [
+        {
+            id: 'standard',
+            name: t('data.shipping_options.standard'),
+            price: 150,
+            days: t('data.shipping_options.standard_days')
+        },
+        {
+            id: 'express',
+            name: t('data.shipping_options.express'),
+            price: 350,
+            days: t('data.shipping_options.express_days')
+        },
+        {
+            id: 'premium',
+            name: t('data.shipping_options.premium'),
+            price: 600,
+            days: t('data.shipping_options.premium_days')
+        }
+    ];
     const [selectedShipping, setSelectedShipping] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('standard');
     const [ordered, setOrdered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const subtotal = CART_ITEMS.reduce((acc, item)=>acc + item.price * item.quantity, 0);
@@ -6005,52 +5986,52 @@ function CheckoutScreen({ isDark }) {
                         className: "w-12 h-12 text-secondary"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 39,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                    lineNumber: 38,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "text-2xl font-bold text-foreground mb-2",
-                    children: "Order Placed!"
-                }, void 0, false, {
-                    fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                    lineNumber: 41,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-muted-foreground mb-8",
-                    children: "Your artisan items are being prepared with care. You will receive a confirmation shortly."
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/checkout-screen.tsx",
                     lineNumber: 42,
                     columnNumber: 9
                 }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                    className: "text-2xl font-bold text-foreground mb-2",
+                    children: t('checkout.order_placed')
+                }, void 0, false, {
+                    fileName: "[project]/components/turath/screens/checkout-screen.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-muted-foreground mb-8",
+                    children: t('checkout.order_success_msg')
+                }, void 0, false, {
+                    fileName: "[project]/components/turath/screens/checkout-screen.tsx",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>navigate('profile'),
                     className: "w-full py-4 bg-primary text-primary-foreground rounded-2xl font-semibold shadow-lg",
-                    children: "View Orders"
+                    children: t('checkout.view_orders')
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                    lineNumber: 43,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>navigate('marketplace'),
                     className: "w-full py-3 mt-3 bg-muted text-foreground rounded-2xl font-medium",
-                    children: "Continue Shopping"
+                    children: t('checkout.continue_shopping')
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                    lineNumber: 44,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-            lineNumber: 37,
+            lineNumber: 41,
             columnNumber: 7
         }, this);
     }
@@ -6068,26 +6049,26 @@ function CheckoutScreen({ isDark }) {
                             className: "w-5 h-5 text-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                            lineNumber: 53,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 52,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-xl font-bold text-foreground",
-                        children: "Checkout"
+                        children: t('navigation.checkout')
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 55,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                lineNumber: 51,
+                lineNumber: 55,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6097,11 +6078,11 @@ function CheckoutScreen({ isDark }) {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "ORDER SUMMARY"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('checkout.order_summary')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 61,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6116,7 +6097,7 @@ function CheckoutScreen({ isDark }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 65,
+                                                lineNumber: 69,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6127,65 +6108,69 @@ function CheckoutScreen({ isDark }) {
                                                         children: item.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 67,
+                                                        lineNumber: 71,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-sm text-muted-foreground",
                                                         children: [
-                                                            "by ",
+                                                            t('checkout.by'),
+                                                            " ",
                                                             item.artisan,
-                                                            " · Qty: ",
+                                                            " · ",
+                                                            t('checkout.qty'),
+                                                            ": ",
                                                             item.quantity
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 68,
+                                                        lineNumber: 72,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-primary font-bold mt-1",
                                                         children: [
                                                             item.price * item.quantity,
-                                                            " MAD"
+                                                            " ",
+                                                            t('checkout.mad')
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 69,
+                                                        lineNumber: 73,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 66,
+                                                lineNumber: 70,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, item.id, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 62,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 60,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "ARTISAN SUPPORT"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('checkout.artisan_support')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 78,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6193,18 +6178,18 @@ function CheckoutScreen({ isDark }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "font-semibold text-foreground",
-                                        children: "Supporting Local Artisans"
+                                        children: t('checkout.supporting_local')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-muted-foreground mt-1",
-                                        children: "85% of your purchase goes directly to the maker"
+                                        children: t('checkout.purchase_goes')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6215,45 +6200,18 @@ function CheckoutScreen({ isDark }) {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-muted-foreground",
-                                                        children: "Artisan receives"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 84,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "font-semibold text-secondary",
-                                                        children: [
-                                                            artisanEarnings,
-                                                            " MAD"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 85,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 83,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex justify-between text-sm",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-muted-foreground",
-                                                        children: "Platform fee (15%)"
+                                                        children: t('checkout.artisan_receives')
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
                                                         lineNumber: 88,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-muted-foreground",
+                                                        className: "font-semibold text-secondary",
                                                         children: [
-                                                            platformFee,
-                                                            " MAD"
+                                                            artisanEarnings,
+                                                            " ",
+                                                            t('checkout.mad')
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
@@ -6265,34 +6223,63 @@ function CheckoutScreen({ isDark }) {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
                                                 lineNumber: 87,
                                                 columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex justify-between text-sm",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-muted-foreground",
+                                                        children: t('checkout.platform_fee')
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/turath/screens/checkout-screen.tsx",
+                                                        lineNumber: 92,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-muted-foreground",
+                                                        children: [
+                                                            platformFee,
+                                                            " ",
+                                                            t('checkout.mad')
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/turath/screens/checkout-screen.tsx",
+                                                        lineNumber: 93,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/turath/screens/checkout-screen.tsx",
+                                                lineNumber: 91,
+                                                columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 79,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 77,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "SHIPPING"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('marketplace.shipping')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 97,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6310,12 +6297,12 @@ function CheckoutScreen({ isDark }) {
                                                             className: "w-3 h-3 text-accent-foreground"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                            lineNumber: 103,
+                                                            lineNumber: 107,
                                                             columnNumber: 56
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 102,
+                                                        lineNumber: 106,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6326,7 +6313,7 @@ function CheckoutScreen({ isDark }) {
                                                                 children: option.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                                lineNumber: 106,
+                                                                lineNumber: 110,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6334,58 +6321,59 @@ function CheckoutScreen({ isDark }) {
                                                                 children: option.days
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                                lineNumber: 107,
+                                                                lineNumber: 111,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 109,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 105,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-semibold text-foreground",
                                                 children: [
                                                     option.price,
-                                                    " MAD"
+                                                    " ",
+                                                    t('checkout.mad')
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 110,
+                                                lineNumber: 114,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, option.id, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 104,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 98,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 96,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "TOTAL"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('checkout.total')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 118,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6396,27 +6384,28 @@ function CheckoutScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-muted-foreground",
-                                                children: "Subtotal"
+                                                children: t('checkout.subtotal')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 124,
                                                 columnNumber: 51
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-foreground",
                                                 children: [
                                                     subtotal,
-                                                    " MAD"
+                                                    " ",
+                                                    t('checkout.mad')
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 120,
-                                                columnNumber: 106
+                                                lineNumber: 124,
+                                                columnNumber: 122
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6424,27 +6413,28 @@ function CheckoutScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-muted-foreground",
-                                                children: "Shipping"
+                                                children: t('checkout.shipping_cost')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 121,
+                                                lineNumber: 125,
                                                 columnNumber: 51
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-foreground",
                                                 children: [
                                                     shippingCost,
-                                                    " MAD"
+                                                    " ",
+                                                    t('checkout.mad')
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 121,
-                                                columnNumber: 106
+                                                lineNumber: 125,
+                                                columnNumber: 127
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 125,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6452,45 +6442,46 @@ function CheckoutScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-semibold text-foreground",
-                                                children: "Total"
+                                                children: t('checkout.total')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 127,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xl font-bold text-primary",
                                                 children: [
                                                     total,
-                                                    " MAD"
+                                                    " ",
+                                                    t('checkout.mad')
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 124,
+                                                lineNumber: 128,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 126,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 119,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 117,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                lineNumber: 58,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6500,13 +6491,15 @@ function CheckoutScreen({ isDark }) {
                         onClick: ()=>setOrdered(true),
                         className: "w-full py-4 bg-primary text-primary-foreground rounded-2xl font-semibold shadow-lg hover:bg-primary/90 transition-colors mb-3",
                         children: [
-                            "Pay ",
+                            t('checkout.pay'),
+                            " ",
                             total,
-                            " MAD"
+                            " ",
+                            t('checkout.mad')
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 132,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6523,19 +6516,19 @@ function CheckoutScreen({ isDark }) {
                                             d: "M17.0508 13.6963C17.0274 11.2283 18.9903 10.0351 19.0879 9.97363C17.9512 8.27148 16.1836 8.04297 15.5576 8.01855C14.0576 7.86816 12.6035 8.91211 11.8418 8.91211C11.0644 8.91211 9.87305 8.03418 8.60449 8.06543C6.96973 8.09668 5.44434 9.02441 4.60254 10.5244C2.86816 13.5771 4.16309 18.1084 5.82129 20.5781C6.65039 21.7871 7.62598 23.1396 8.89355 23.0869C10.1279 23.0293 10.5986 22.2803 12.0752 22.2803C13.5361 22.2803 13.9746 23.0869 15.2754 23.0498C16.6162 23.0293 17.4551 21.8496 18.2471 20.626C19.2031 19.2217 19.5869 17.8564 19.6035 17.7842C19.5684 17.7715 17.0781 16.7861 17.0508 13.6963Z"
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 141,
                                             columnNumber: 78
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 141,
                                         columnNumber: 13
                                     }, this),
-                                    "Apple Pay"
+                                    t('checkout.apple_pay')
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 136,
+                                lineNumber: 140,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6550,7 +6543,7 @@ function CheckoutScreen({ isDark }) {
                                                 fill: "#4285F4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 145,
                                                 columnNumber: 58
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -6558,7 +6551,7 @@ function CheckoutScreen({ isDark }) {
                                                 fill: "#34A853"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 145,
                                                 columnNumber: 262
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -6566,7 +6559,7 @@ function CheckoutScreen({ isDark }) {
                                                 fill: "#FBBC05"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 145,
                                                 columnNumber: 489
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -6574,38 +6567,38 @@ function CheckoutScreen({ isDark }) {
                                                 fill: "#EA4335"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 145,
                                                 columnNumber: 735
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this),
-                                    "Google Pay"
+                                    t('checkout.google_pay')
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                                lineNumber: 140,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                        lineNumber: 135,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-                lineNumber: 131,
+                lineNumber: 135,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/checkout-screen.tsx",
-        lineNumber: 50,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
 }
@@ -6623,6 +6616,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/bottom-navigation.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -6630,118 +6624,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navi
 ;
 ;
 ;
-const USER_DATA = {
-    name: 'Alexandra Chen',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop',
-    country: 'United States',
-    memberSince: 'March 2024',
-    stats: {
-        regionsVisited: 4,
-        sitesExplored: 23,
-        artisansSupported: 7,
-        languagesUsed: 3
-    }
-};
-const BADGES = [
-    {
-        id: '1',
-        name: 'Sahara Explorer',
-        icon: 'desert',
-        unlocked: true
-    },
-    {
-        id: '2',
-        name: 'Zellige Master',
-        icon: 'tile',
-        unlocked: true
-    },
-    {
-        id: '3',
-        name: 'Storyteller',
-        icon: 'book',
-        unlocked: true
-    },
-    {
-        id: '4',
-        name: 'Medina Walker',
-        icon: 'walk',
-        unlocked: false
-    },
-    {
-        id: '5',
-        name: 'Culture Champion',
-        icon: 'star',
-        unlocked: false
-    },
-    {
-        id: '6',
-        name: 'Heritage Guardian',
-        icon: 'shield',
-        unlocked: false
-    }
-];
-const REGION_PROGRESS = [
-    {
-        id: '1',
-        name: 'Marrakech-Safi',
-        progress: 75,
-        color: '#C1121F'
-    },
-    {
-        id: '2',
-        name: 'Fes-Meknes',
-        progress: 45,
-        color: '#C9A84C'
-    },
-    {
-        id: '3',
-        name: 'Casablanca-Settat',
-        progress: 30,
-        color: '#1B4332'
-    },
-    {
-        id: '4',
-        name: 'Draa-Tafilalet',
-        progress: 60,
-        color: '#8B5A2B'
-    }
-];
-const RECENT_HISTORY = [
-    {
-        id: '1',
-        name: 'Koutoubia Mosque',
-        image: 'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=200&h=150&fit=crop',
-        date: '2 days ago'
-    },
-    {
-        id: '2',
-        name: 'Bahia Palace',
-        image: 'https://images.unsplash.com/photo-1548018560-c7196bf66e3c?w=200&h=150&fit=crop',
-        date: '3 days ago'
-    },
-    {
-        id: '3',
-        name: "Jemaa el-Fnaa",
-        image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=200&h=150&fit=crop',
-        date: '1 week ago'
-    }
-];
-const ACTIVE_CHALLENGES = [
-    {
-        id: '1',
-        title: 'Visit 5 UNESCO sites in Marrakech',
-        progress: 3,
-        total: 5,
-        reward: 'Heritage Guardian Badge'
-    },
-    {
-        id: '2',
-        title: 'Support 3 local artisans',
-        progress: 2,
-        total: 3,
-        reward: '10% Discount Coupon'
-    }
-];
+;
 function BadgeIcon({ type, unlocked }) {
     const color = unlocked ? "text-accent-foreground" : "text-muted-foreground";
     switch(type){
@@ -6754,12 +6637,12 @@ function BadgeIcon({ type, unlocked }) {
                     d: "M12 2L8 10l-6 2 6 2 4 8 4-8 6-2-6-2-4-8z"
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                    lineNumber: 51,
+                    lineNumber: 19,
                     columnNumber: 105
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 51,
+                lineNumber: 19,
                 columnNumber: 27
             }, this);
         case 'tile':
@@ -6777,7 +6660,7 @@ function BadgeIcon({ type, unlocked }) {
                         height: "7"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 52,
+                        lineNumber: 20,
                         columnNumber: 133
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -6787,7 +6670,7 @@ function BadgeIcon({ type, unlocked }) {
                         height: "7"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 52,
+                        lineNumber: 20,
                         columnNumber: 173
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -6797,7 +6680,7 @@ function BadgeIcon({ type, unlocked }) {
                         height: "7"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 52,
+                        lineNumber: 20,
                         columnNumber: 214
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -6807,13 +6690,13 @@ function BadgeIcon({ type, unlocked }) {
                         height: "7"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 52,
+                        lineNumber: 20,
                         columnNumber: 255
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 52,
+                lineNumber: 20,
                 columnNumber: 25
             }, this);
         case 'book':
@@ -6828,20 +6711,20 @@ function BadgeIcon({ type, unlocked }) {
                         d: "M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 53,
+                        lineNumber: 21,
                         columnNumber: 133
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 53,
+                        lineNumber: 21,
                         columnNumber: 176
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 53,
+                lineNumber: 21,
                 columnNumber: 25
             }, this);
         case 'walk':
@@ -6858,20 +6741,20 @@ function BadgeIcon({ type, unlocked }) {
                         r: "2"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 54,
+                        lineNumber: 22,
                         columnNumber: 133
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M15 22v-4l-3-3 2-4 3 1v-3M9 22l3-8-2-3"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 54,
+                        lineNumber: 22,
                         columnNumber: 163
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 54,
+                lineNumber: 22,
                 columnNumber: 25
             }, this);
         case 'star':
@@ -6883,12 +6766,12 @@ function BadgeIcon({ type, unlocked }) {
                     points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                    lineNumber: 55,
+                    lineNumber: 23,
                     columnNumber: 103
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 55,
+                lineNumber: 23,
                 columnNumber: 25
             }, this);
         case 'shield':
@@ -6902,12 +6785,12 @@ function BadgeIcon({ type, unlocked }) {
                     d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                    lineNumber: 56,
+                    lineNumber: 24,
                     columnNumber: 135
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 56,
+                lineNumber: 24,
                 columnNumber: 27
             }, this);
         default:
@@ -6915,13 +6798,126 @@ function BadgeIcon({ type, unlocked }) {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-6 h-6", color)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 57,
+                lineNumber: 25,
                 columnNumber: 21
             }, this);
     }
 }
 function ProfileScreen({ isDark }) {
     void isDark;
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const USER_DATA = {
+        name: t('demo_user.name'),
+        avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop',
+        country: t('demo_user.country'),
+        memberSince: t('demo_user.member_since_date'),
+        stats: {
+            regionsVisited: 4,
+            sitesExplored: 23,
+            artisansSupported: 7,
+            languagesUsed: 3
+        }
+    };
+    const BADGES = [
+        {
+            id: '1',
+            name: t('data.badges.sahara_explorer'),
+            icon: 'desert',
+            unlocked: true
+        },
+        {
+            id: '2',
+            name: t('data.badges.zellige_master'),
+            icon: 'tile',
+            unlocked: true
+        },
+        {
+            id: '3',
+            name: t('data.badges.storyteller'),
+            icon: 'book',
+            unlocked: true
+        },
+        {
+            id: '4',
+            name: t('data.badges.medina_walker'),
+            icon: 'walk',
+            unlocked: false
+        },
+        {
+            id: '5',
+            name: t('data.badges.culture_champion'),
+            icon: 'star',
+            unlocked: false
+        },
+        {
+            id: '6',
+            name: t('data.badges.heritage_guardian'),
+            icon: 'shield',
+            unlocked: false
+        }
+    ];
+    const REGION_PROGRESS = [
+        {
+            id: '1',
+            name: t('data.regions.marrakech_safi'),
+            progress: 75,
+            color: '#C1121F'
+        },
+        {
+            id: '2',
+            name: t('data.regions.fes_meknes'),
+            progress: 45,
+            color: '#C9A84C'
+        },
+        {
+            id: '3',
+            name: t('data.regions.casablanca_settat'),
+            progress: 30,
+            color: '#1B4332'
+        },
+        {
+            id: '4',
+            name: t('data.regions.draa_tafilalet'),
+            progress: 60,
+            color: '#8B5A2B'
+        }
+    ];
+    const RECENT_HISTORY = [
+        {
+            id: '1',
+            name: t('data.heritage_sites.koutoubia'),
+            image: 'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=200&h=150&fit=crop',
+            date: t('demo_user.time_2d')
+        },
+        {
+            id: '2',
+            name: t('data.heritage_sites.bahia_palace'),
+            image: 'https://images.unsplash.com/photo-1548018560-c7196bf66e3c?w=200&h=150&fit=crop',
+            date: t('demo_user.time_3d')
+        },
+        {
+            id: '3',
+            name: t('data.heritage_sites.jemaa_el_fnaa'),
+            image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=200&h=150&fit=crop',
+            date: t('demo_user.time_1w')
+        }
+    ];
+    const ACTIVE_CHALLENGES = [
+        {
+            id: '1',
+            title: t('data.challenge_titles.visit_5_unesco'),
+            progress: 3,
+            total: 5,
+            reward: t('data.rewards.heritage_guardian')
+        },
+        {
+            id: '2',
+            title: t('data.challenge_titles.support_3_artisans'),
+            progress: 2,
+            total: 3,
+            reward: t('data.rewards.discount_10')
+        }
+    ];
     const { navigate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('badges');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6935,10 +6931,10 @@ function ProfileScreen({ isDark }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-xl font-bold text-foreground",
-                                children: "Profile"
+                                children: t('navigation.profile')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 71,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6949,18 +6945,18 @@ function ProfileScreen({ isDark }) {
                                     className: "w-5 h-5 text-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 72,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 70,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6973,7 +6969,7 @@ function ProfileScreen({ isDark }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 78,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6984,7 +6980,7 @@ function ProfileScreen({ isDark }) {
                                         children: USER_DATA.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6995,7 +6991,7 @@ function ProfileScreen({ isDark }) {
                                                 children: "🇺🇸"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 87,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7003,55 +6999,56 @@ function ProfileScreen({ isDark }) {
                                                 children: USER_DATA.country
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 88,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xs text-muted-foreground mt-1",
                                         children: [
-                                            "Member since ",
+                                            t('demo_user.member_since_prefix'),
+                                            " ",
                                             USER_DATA.memberSince
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 90,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 79,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 77,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-4 gap-2 mt-4",
                         children: [
                             {
-                                label: 'Regions',
+                                label: t('profile_screen.regions'),
                                 value: USER_DATA.stats.regionsVisited
                             },
                             {
-                                label: 'Sites',
+                                label: t('profile_screen.sites'),
                                 value: USER_DATA.stats.sitesExplored
                             },
                             {
-                                label: 'Artisans',
+                                label: t('profile_screen.artisans'),
                                 value: USER_DATA.stats.artisansSupported
                             },
                             {
-                                label: 'Languages',
+                                label: t('profile_screen.languages'),
                                 value: USER_DATA.stats.languagesUsed
                             }
                         ].map((stat, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7062,7 +7059,7 @@ function ProfileScreen({ isDark }) {
                                         children: stat.value
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7070,24 +7067,24 @@ function ProfileScreen({ isDark }) {
                                         children: stat.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, i, true, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 96,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 89,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 69,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7099,15 +7096,15 @@ function ProfileScreen({ isDark }) {
                 ].map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setActiveTab(tab),
                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 py-3 text-sm font-medium transition-all border-b-2 capitalize", activeTab === tab ? "text-primary border-primary" : "text-muted-foreground border-transparent"),
-                        children: tab.charAt(0).toUpperCase() + tab.slice(1)
+                        children: t(`profile_screen.${tab}`)
                     }, tab, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 107,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 105,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7127,12 +7124,12 @@ function ProfileScreen({ isDark }) {
                                                 unlocked: badge.unlocked
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 125,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 124,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7140,34 +7137,34 @@ function ProfileScreen({ isDark }) {
                                             children: badge.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 127,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, badge.id, true, {
                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 123,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                            lineNumber: 116,
+                            lineNumber: 121,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 115,
+                        lineNumber: 120,
                         columnNumber: 11
                     }, this),
                     activeTab === 'progress' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 space-y-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-sm font-semibold text-muted-foreground",
-                                children: "REGIONAL COMPLETION"
+                                className: "text-sm font-semibold text-muted-foreground mb-3",
+                                children: t('profile_screen.regional_completion')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 131,
+                                lineNumber: 136,
                                 columnNumber: 13
                             }, this),
                             REGION_PROGRESS.map((region)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7181,7 +7178,7 @@ function ProfileScreen({ isDark }) {
                                                     children: region.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 140,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7195,13 +7192,13 @@ function ProfileScreen({ isDark }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 141,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 139,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7214,24 +7211,24 @@ function ProfileScreen({ isDark }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 139,
+                                                lineNumber: 144,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 143,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, region.id, true, {
                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 130,
+                        lineNumber: 135,
                         columnNumber: 11
                     }, this),
                     activeTab === 'history' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7239,10 +7236,10 @@ function ProfileScreen({ isDark }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "RECENTLY VISITED"
+                                children: t('profile_screen.recently_visited')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 148,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7258,7 +7255,7 @@ function ProfileScreen({ isDark }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 157,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7269,7 +7266,7 @@ function ProfileScreen({ isDark }) {
                                                         children: place.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 159,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7277,37 +7274,37 @@ function ProfileScreen({ isDark }) {
                                                         children: place.date
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                        lineNumber: 155,
+                                                        lineNumber: 160,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 158,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                                 className: "w-5 h-5 text-muted-foreground self-center"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 157,
+                                                lineNumber: 162,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, place.id, true, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 156,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 149,
+                                lineNumber: 154,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 147,
+                        lineNumber: 152,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7318,34 +7315,35 @@ function ProfileScreen({ isDark }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-sm font-semibold text-muted-foreground",
-                                        children: "ACTIVE CHALLENGES"
+                                        children: t('profile_screen.active_challenges')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 172,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>navigate('challenges'),
                                         className: "text-sm text-accent font-medium flex items-center gap-1",
                                         children: [
-                                            "View all ",
+                                            t('common.view_all'),
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                lineNumber: 168,
-                                                columnNumber: 137
+                                                lineNumber: 173,
+                                                columnNumber: 151
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 166,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7361,12 +7359,12 @@ function ProfileScreen({ isDark }) {
                                                         className: "w-5 h-5 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                        lineNumber: 175,
+                                                        lineNumber: 180,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                    lineNumber: 174,
+                                                    lineNumber: 179,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7377,18 +7375,19 @@ function ProfileScreen({ isDark }) {
                                                             children: challenge.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                            lineNumber: 178,
+                                                            lineNumber: 183,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-xs text-muted-foreground mt-1",
                                                             children: [
-                                                                "Reward: ",
+                                                                t('profile_screen.reward'),
+                                                                ": ",
                                                                 challenge.reward
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                            lineNumber: 179,
+                                                            lineNumber: 184,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7403,12 +7402,12 @@ function ProfileScreen({ isDark }) {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                                        lineNumber: 182,
+                                                                        lineNumber: 187,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                                    lineNumber: 181,
+                                                                    lineNumber: 186,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7420,58 +7419,58 @@ function ProfileScreen({ isDark }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                                    lineNumber: 184,
+                                                                    lineNumber: 189,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                            lineNumber: 180,
+                                                            lineNumber: 185,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                                    lineNumber: 177,
+                                                    lineNumber: 182,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 178,
                                             columnNumber: 17
                                         }, this)
                                     }, challenge.id, false, {
                                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 177,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                                lineNumber: 170,
+                                lineNumber: 175,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                        lineNumber: 165,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 113,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$bottom$2d$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BottomNavigation"], {}, void 0, false, {
                 fileName: "[project]/components/turath/screens/profile-screen.tsx",
-                lineNumber: 194,
+                lineNumber: 199,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/profile-screen.tsx",
-        lineNumber: 67,
+        lineNumber: 72,
         columnNumber: 5
     }, this);
 }
@@ -7488,149 +7487,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
 ;
-const CHALLENGE_CATEGORIES = [
-    {
-        id: 'all',
-        label: 'All'
-    },
-    {
-        id: 'explorer',
-        label: 'Explorer'
-    },
-    {
-        id: 'cultural',
-        label: 'Cultural'
-    },
-    {
-        id: 'artisan',
-        label: 'Artisan'
-    },
-    {
-        id: 'historian',
-        label: 'Historian'
-    }
-];
-const CHALLENGES = [
-    {
-        id: '1',
-        title: 'Visit 5 UNESCO sites in Marrakech',
-        description: 'Explore the most significant heritage locations in the Red City',
-        category: 'explorer',
-        progress: 3,
-        total: 5,
-        reward: 'Heritage Guardian Badge',
-        rewardIcon: 'shield',
-        active: true
-    },
-    {
-        id: '2',
-        title: 'Support 3 local artisans',
-        description: 'Purchase authentic crafts directly from makers',
-        category: 'artisan',
-        progress: 2,
-        total: 3,
-        reward: '10% Discount Coupon',
-        rewardIcon: 'ticket',
-        active: true
-    },
-    {
-        id: '3',
-        title: 'Use AI Guide in 3 languages',
-        description: 'Explore cultural content in multiple languages',
-        category: 'cultural',
-        progress: 1,
-        total: 3,
-        reward: 'Polyglot Badge',
-        rewardIcon: 'globe',
-        active: true
-    },
-    {
-        id: '4',
-        title: 'Learn about Almohad Dynasty',
-        description: 'Complete the historical journey through Almohad sites',
-        category: 'historian',
-        progress: 0,
-        total: 4,
-        reward: 'Historian Badge',
-        rewardIcon: 'book',
-        active: false
-    },
-    {
-        id: '5',
-        title: 'Walk 10km in Fes Medina',
-        description: 'Explore the ancient streets on foot',
-        category: 'explorer',
-        progress: 4,
-        total: 10,
-        reward: 'Medina Walker Badge',
-        rewardIcon: 'walk',
-        active: true
-    }
-];
-const LEADERBOARD = [
-    {
-        rank: 1,
-        name: 'Sarah M.',
-        country: 'UK',
-        flag: '🇬🇧',
-        points: 2840,
-        badge: 'Heritage Guardian'
-    },
-    {
-        rank: 2,
-        name: 'Ahmed K.',
-        country: 'Morocco',
-        flag: '🇲🇦',
-        points: 2650,
-        badge: 'Zellige Master'
-    },
-    {
-        rank: 3,
-        name: 'You',
-        country: 'USA',
-        flag: '🇺🇸',
-        points: 1920,
-        badge: 'Storyteller',
-        isUser: true
-    },
-    {
-        rank: 4,
-        name: 'Marie L.',
-        country: 'France',
-        flag: '🇫🇷',
-        points: 1850,
-        badge: 'Explorer'
-    },
-    {
-        rank: 5,
-        name: 'Kenji T.',
-        country: 'Japan',
-        flag: '🇯🇵',
-        points: 1720,
-        badge: 'Artisan Supporter'
-    }
-];
-const UNLOCKED_REWARDS = [
-    {
-        id: '1',
-        type: 'coupon',
-        title: '15% Off Next Purchase',
-        code: 'TURATH15',
-        expiry: 'Valid until Dec 2024'
-    },
-    {
-        id: '2',
-        type: 'content',
-        title: 'Exclusive Zellige Video',
-        description: 'Behind the scenes with master craftsmen'
-    }
-];
+;
+// Data arrays moved inside component for translation
 function CategoryIcon({ category, active }) {
     const color = active ? "text-primary" : "text-muted-foreground";
     switch(category){
@@ -7639,7 +7504,7 @@ function CategoryIcon({ category, active }) {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-6 h-6", color)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 40,
+                lineNumber: 14,
                 columnNumber: 29
             }, this);
         case 'cultural':
@@ -7656,7 +7521,7 @@ function CategoryIcon({ category, active }) {
                         r: "10"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 41,
+                        lineNumber: 15,
                         columnNumber: 137
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -7666,20 +7531,20 @@ function CategoryIcon({ category, active }) {
                         y2: "12"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 41,
+                        lineNumber: 15,
                         columnNumber: 169
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 41,
+                        lineNumber: 15,
                         columnNumber: 207
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 41,
+                lineNumber: 15,
                 columnNumber: 29
             }, this);
         case 'artisan':
@@ -7693,12 +7558,12 @@ function CategoryIcon({ category, active }) {
                     d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
                 }, void 0, false, {
                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                    lineNumber: 42,
+                    lineNumber: 16,
                     columnNumber: 136
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 42,
+                lineNumber: 16,
                 columnNumber: 28
             }, this);
         case 'historian':
@@ -7713,20 +7578,20 @@ function CategoryIcon({ category, active }) {
                         d: "M4 19.5A2.5 2.5 0 0 1 6.5 17H20"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 43,
+                        lineNumber: 17,
                         columnNumber: 138
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 43,
+                        lineNumber: 17,
                         columnNumber: 181
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 43,
+                lineNumber: 17,
                 columnNumber: 30
             }, this);
         default:
@@ -7735,7 +7600,7 @@ function CategoryIcon({ category, active }) {
                 filled: true
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 44,
+                lineNumber: 18,
                 columnNumber: 21
             }, this);
     }
@@ -7743,6 +7608,144 @@ function CategoryIcon({ category, active }) {
 function ChallengesScreen({ isDark }) {
     void isDark;
     const { goBack } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const CHALLENGE_CATEGORIES = [
+        {
+            id: 'all',
+            label: t('home_map.all')
+        },
+        {
+            id: 'explorer',
+            label: t('challenges.explorer')
+        },
+        {
+            id: 'cultural',
+            label: t('challenges.cultural')
+        },
+        {
+            id: 'artisan',
+            label: t('challenges.artisan')
+        },
+        {
+            id: 'historian',
+            label: t('challenges.historian')
+        }
+    ];
+    const CHALLENGES = [
+        {
+            id: '1',
+            title: t('data.challenge_titles.visit_5_unesco'),
+            description: t('data.challenge_descriptions.visit_5_unesco'),
+            category: 'explorer',
+            progress: 3,
+            total: 5,
+            reward: t('data.rewards.heritage_guardian'),
+            rewardIcon: 'shield',
+            active: true
+        },
+        {
+            id: '2',
+            title: t('data.challenge_titles.support_3_artisans'),
+            description: t('data.challenge_descriptions.support_3_artisans'),
+            category: 'artisan',
+            progress: 2,
+            total: 3,
+            reward: t('data.rewards.discount_10'),
+            rewardIcon: 'ticket',
+            active: true
+        },
+        {
+            id: '3',
+            title: t('data.challenge_titles.ai_guide_3_languages'),
+            description: t('data.challenge_descriptions.ai_guide_3_languages'),
+            category: 'cultural',
+            progress: 1,
+            total: 3,
+            reward: t('data.rewards.polyglot_badge'),
+            rewardIcon: 'globe',
+            active: true
+        },
+        {
+            id: '4',
+            title: t('data.challenge_titles.almohad_dynasty'),
+            description: t('data.challenge_descriptions.almohad_dynasty'),
+            category: 'historian',
+            progress: 0,
+            total: 4,
+            reward: t('data.rewards.historian_badge'),
+            rewardIcon: 'book',
+            active: false
+        },
+        {
+            id: '5',
+            title: t('data.challenge_titles.walk_10km_fes'),
+            description: t('data.challenge_descriptions.walk_10km_fes'),
+            category: 'explorer',
+            progress: 4,
+            total: 10,
+            reward: t('data.rewards.medina_walker'),
+            rewardIcon: 'walk',
+            active: true
+        }
+    ];
+    const LEADERBOARD = [
+        {
+            rank: 1,
+            name: 'Sarah M.',
+            country: 'UK',
+            flag: '🇬🇧',
+            points: 2840,
+            badge: t('data.rewards.heritage_guardian')
+        },
+        {
+            rank: 2,
+            name: 'Ahmed K.',
+            country: 'Morocco',
+            flag: '🇲🇦',
+            points: 2650,
+            badge: t('data.rewards.zellige_master')
+        },
+        {
+            rank: 3,
+            name: t('data.leaderboard.you'),
+            country: 'USA',
+            flag: '🇺🇸',
+            points: 1920,
+            badge: t('data.rewards.storyteller'),
+            isUser: true
+        },
+        {
+            rank: 4,
+            name: 'Marie L.',
+            country: 'France',
+            flag: '🇫🇷',
+            points: 1850,
+            badge: t('challenges.explorer')
+        },
+        {
+            rank: 5,
+            name: 'Kenji T.',
+            country: 'Japan',
+            flag: '🇯🇵',
+            points: 1720,
+            badge: t('challenges.artisan')
+        }
+    ];
+    const UNLOCKED_REWARDS = [
+        {
+            id: '1',
+            type: 'coupon',
+            title: t('data.rewards.discount_15'),
+            code: 'TURATH15',
+            expiry: t('challenges.valid_until_dec')
+        },
+        {
+            id: '2',
+            type: 'content',
+            title: t('challenges.exclusive_video'),
+            description: t('challenges.behind_scenes')
+        }
+    ];
     const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('all');
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('challenges');
     const filteredChallenges = activeCategory === 'all' ? CHALLENGES : CHALLENGES.filter((c)=>c.category === activeCategory);
@@ -7763,26 +7766,26 @@ function ChallengesScreen({ isDark }) {
                                     className: "w-5 h-5 text-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 64,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-xl font-bold text-foreground",
-                                children: "Challenges & Rewards"
+                                children: t('challenges.challenges_rewards_title')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 67,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 63,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7794,21 +7797,21 @@ function ChallengesScreen({ isDark }) {
                         ].map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveTab(tab),
                                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 py-2 rounded-xl text-sm font-medium capitalize transition-all", activeTab === tab ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"),
-                                children: tab.charAt(0).toUpperCase() + tab.slice(1)
+                                children: tab === 'rewards' ? t('challenges.rewards_tab') : t(`challenges.${tab}`)
                             }, tab, false, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 71,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 69,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 62,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7824,12 +7827,12 @@ function ChallengesScreen({ isDark }) {
                                         children: cat.label
                                     }, cat.id, false, {
                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 88,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 81,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7846,12 +7849,12 @@ function ChallengesScreen({ isDark }) {
                                                         active: challenge.active
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                        lineNumber: 93,
+                                                        lineNumber: 98,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                    lineNumber: 92,
+                                                    lineNumber: 97,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7862,7 +7865,7 @@ function ChallengesScreen({ isDark }) {
                                                             children: challenge.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 96,
+                                                            lineNumber: 101,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7870,7 +7873,7 @@ function ChallengesScreen({ isDark }) {
                                                             children: challenge.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 97,
+                                                            lineNumber: 102,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7885,12 +7888,12 @@ function ChallengesScreen({ isDark }) {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                        lineNumber: 100,
+                                                                        lineNumber: 105,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                    lineNumber: 99,
+                                                                    lineNumber: 104,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7902,13 +7905,13 @@ function ChallengesScreen({ isDark }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                    lineNumber: 102,
+                                                                    lineNumber: 107,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 98,
+                                                            lineNumber: 103,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7918,7 +7921,7 @@ function ChallengesScreen({ isDark }) {
                                                                     className: "w-4 h-4 text-accent"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                    lineNumber: 105,
+                                                                    lineNumber: 110,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7926,35 +7929,35 @@ function ChallengesScreen({ isDark }) {
                                                                     children: challenge.reward
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                    lineNumber: 106,
+                                                                    lineNumber: 111,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 104,
+                                                            lineNumber: 109,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 100,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 96,
                                             columnNumber: 19
                                         }, this)
                                     }, challenge.id, false, {
                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 95,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 88,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -7969,7 +7972,7 @@ function ChallengesScreen({ isDark }) {
                                         children: entry.rank
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 125,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7983,7 +7986,7 @@ function ChallengesScreen({ isDark }) {
                                                         children: entry.flag
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 130,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7991,13 +7994,13 @@ function ChallengesScreen({ isDark }) {
                                                         children: entry.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 131,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                lineNumber: 124,
+                                                lineNumber: 129,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8005,13 +8008,13 @@ function ChallengesScreen({ isDark }) {
                                                 children: entry.badge
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 133,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 128,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8022,43 +8025,43 @@ function ChallengesScreen({ isDark }) {
                                                 children: entry.points.toLocaleString()
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 136,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-xs text-muted-foreground",
-                                                children: "points"
+                                                children: t('challenges.points_suffix')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 137,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 135,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, entry.rank, true, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 119,
+                                lineNumber: 124,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 117,
+                        lineNumber: 122,
                         columnNumber: 11
                     }, this),
                     activeTab === 'rewards' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 space-y-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-sm font-semibold text-muted-foreground",
-                                children: "UNLOCKED REWARDS"
+                                className: "text-sm font-semibold text-muted-foreground uppercase",
+                                children: t('challenges.unlocked_rewards')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                lineNumber: 141,
+                                lineNumber: 146,
                                 columnNumber: 13
                             }, this),
                             UNLOCKED_REWARDS.map((reward)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8084,7 +8087,7 @@ function ChallengesScreen({ isDark }) {
                                                             ry: "2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 147,
+                                                            lineNumber: 152,
                                                             columnNumber: 133
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -8094,13 +8097,13 @@ function ChallengesScreen({ isDark }) {
                                                             y2: "10"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 147,
+                                                            lineNumber: 152,
                                                             columnNumber: 189
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 152,
                                                     columnNumber: 23
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                     className: "w-6 h-6 text-secondary",
@@ -8113,7 +8116,7 @@ function ChallengesScreen({ isDark }) {
                                                             points: "23 7 16 12 23 17 23 7"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 154,
                                                             columnNumber: 133
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -8125,18 +8128,18 @@ function ChallengesScreen({ isDark }) {
                                                             ry: "2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 154,
                                                             columnNumber: 174
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                    lineNumber: 149,
+                                                    lineNumber: 154,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 150,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8147,7 +8150,7 @@ function ChallengesScreen({ isDark }) {
                                                         children: reward.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                        lineNumber: 153,
+                                                        lineNumber: 158,
                                                         columnNumber: 21
                                                     }, this),
                                                     reward.code && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8158,7 +8161,7 @@ function ChallengesScreen({ isDark }) {
                                                                 children: reward.code
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                lineNumber: 156,
+                                                                lineNumber: 161,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8166,13 +8169,13 @@ function ChallengesScreen({ isDark }) {
                                                                 children: "Copy"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                                lineNumber: 157,
+                                                                lineNumber: 162,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                        lineNumber: 155,
+                                                        lineNumber: 160,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8180,42 +8183,42 @@ function ChallengesScreen({ isDark }) {
                                                         children: reward.expiry || reward.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                        lineNumber: 160,
+                                                        lineNumber: 165,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 157,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 149,
                                         columnNumber: 17
                                     }, this)
                                 }, reward.id, false, {
                                     fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 148,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                        lineNumber: 140,
+                        lineNumber: 145,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-                lineNumber: 78,
+                lineNumber: 83,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/challenges-screen.tsx",
-        lineNumber: 61,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }
@@ -8233,7 +8236,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/turath-types.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/icons.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -8243,7 +8248,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navi
 function SettingsScreen({ isDark }) {
     void isDark;
     const { goBack } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavigation"])();
-    const [selectedLanguage, setSelectedLanguage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('en');
+    const { t, locale, setLocale } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslation"])();
+    const [selectedLanguage, setSelectedLanguage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(locale);
     const [notifications, setNotifications] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         newContent: true,
         challenges: true,
@@ -8276,26 +8282,26 @@ function SettingsScreen({ isDark }) {
                             className: "w-5 h-5 text-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                            lineNumber: 38,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 37,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-xl font-bold text-foreground",
-                        children: "Settings"
+                        children: t('settings.settings')
                     }, void 0, false, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 40,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                lineNumber: 36,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8305,11 +8311,11 @@ function SettingsScreen({ isDark }) {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "PROFILE"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('profile.my_profile')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 46,
+                                lineNumber: 48,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8321,12 +8327,12 @@ function SettingsScreen({ isDark }) {
                                             className: "w-7 h-7 text-accent"
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 48,
+                                        lineNumber: 50,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8334,54 +8340,54 @@ function SettingsScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "font-semibold text-foreground",
-                                                children: "Alexandra Chen"
+                                                children: t('demo_user.name')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 52,
+                                                lineNumber: 54,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-sm text-muted-foreground",
-                                                children: "Edit profile"
+                                                children: t('settings.profile_edit')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 53,
+                                                lineNumber: 55,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 53,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                         className: "w-5 h-5 text-muted-foreground"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 57,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 47,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "LANGUAGE"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('settings.language')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 61,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8394,12 +8400,12 @@ function SettingsScreen({ isDark }) {
                                             className: "w-5 h-5 text-secondary"
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8407,10 +8413,10 @@ function SettingsScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "font-medium text-foreground",
-                                                children: "App Language"
+                                                children: t('settings.app_language')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 67,
+                                                lineNumber: 69,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8418,43 +8424,43 @@ function SettingsScreen({ isDark }) {
                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$turath$2d$types$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LANGUAGES"].find((l)=>l.code === selectedLanguage)?.name || 'English'
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 70,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 68,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChevronRightIcon"], {
                                         className: "w-5 h-5 text-muted-foreground"
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 72,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 62,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 60,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "NOTIFICATIONS"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('settings.notifications')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 76,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8462,23 +8468,23 @@ function SettingsScreen({ isDark }) {
                                 children: [
                                     {
                                         id: 'newContent',
-                                        label: 'New Content',
-                                        description: 'Heritage sites, stories, and guides'
+                                        label: t('settings.new_content'),
+                                        description: t('settings.new_content_desc')
                                     },
                                     {
                                         id: 'challenges',
-                                        label: 'Challenges',
-                                        description: 'Progress updates and new challenges'
+                                        label: t('challenges.challenges'),
+                                        description: t('settings.challenges_desc')
                                     },
                                     {
                                         id: 'artisanUpdates',
-                                        label: 'Artisan Updates',
-                                        description: 'New products from followed artisans'
+                                        label: t('settings.artisan_updates'),
+                                        description: t('settings.artisan_updates_desc')
                                     },
                                     {
                                         id: 'promotions',
-                                        label: 'Promotions',
-                                        description: 'Discounts and special offers'
+                                        label: t('settings.promotions'),
+                                        description: t('settings.promotions_desc')
                                     }
                                 ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center gap-4 p-4 bg-card rounded-2xl border border-border",
@@ -8491,7 +8497,7 @@ function SettingsScreen({ isDark }) {
                                                         children: item.label
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 86,
+                                                        lineNumber: 88,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8499,13 +8505,13 @@ function SettingsScreen({ isDark }) {
                                                         children: item.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 89,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 87,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8515,40 +8521,40 @@ function SettingsScreen({ isDark }) {
                                                     className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("absolute top-1 w-5 h-5 rounded-full bg-white shadow transition-transform", notifications[item.id] ? "translate-x-6" : "translate-x-1")
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 92,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 89,
+                                                lineNumber: 91,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, item.id, true, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 77,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4 border-b border-border",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "ACCESSIBILITY"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('settings.accessibility')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 99,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8559,10 +8565,10 @@ function SettingsScreen({ isDark }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "font-medium text-foreground mb-3",
-                                                children: "Text Size"
+                                                children: t('settings.text_size')
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 104,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8577,33 +8583,33 @@ function SettingsScreen({ isDark }) {
                                                                     textSize: size
                                                                 })),
                                                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 py-2 rounded-xl text-sm font-medium capitalize transition-all", accessibility.textSize === size ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"),
-                                                        children: size
+                                                        children: t(`settings.${size}`)
                                                     }, size, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 107,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 105,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 103,
                                         columnNumber: 13
                                     }, this),
                                     [
                                         {
                                             key: 'highContrast',
-                                            label: 'High Contrast',
-                                            desc: 'Increase visual contrast'
+                                            label: t('settings.high_contrast'),
+                                            desc: t('settings.high_contrast_desc')
                                         },
                                         {
                                             key: 'audioDescriptions',
-                                            label: 'Audio Descriptions',
-                                            desc: 'Spoken descriptions for visual content'
+                                            label: t('settings.audio_desc'),
+                                            desc: t('settings.audio_desc_desc')
                                         }
                                     ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center gap-4 p-4 bg-card rounded-2xl border border-border",
@@ -8616,7 +8622,7 @@ function SettingsScreen({ isDark }) {
                                                             children: item.label
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                            lineNumber: 117,
+                                                            lineNumber: 119,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8624,13 +8630,13 @@ function SettingsScreen({ isDark }) {
                                                             children: item.desc
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                            lineNumber: 118,
+                                                            lineNumber: 120,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 118,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8643,41 +8649,41 @@ function SettingsScreen({ isDark }) {
                                                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("absolute top-1 w-5 h-5 rounded-full bg-white shadow transition-transform", accessibility[item.key] ? "translate-x-6" : "translate-x-1")
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 123,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                    lineNumber: 120,
+                                                    lineNumber: 122,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, item.key, true, {
                                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 117,
                                             columnNumber: 15
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 100,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 98,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "p-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-sm font-semibold text-muted-foreground mb-3",
-                                children: "ABOUT"
+                                className: "text-sm font-semibold text-muted-foreground mb-3 uppercase",
+                                children: t('settings.about')
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 130,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8685,10 +8691,10 @@ function SettingsScreen({ isDark }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-muted-foreground text-center",
-                                        children: "Turath is developed in partnership with:"
+                                        children: t('settings.developed_by')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 132,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8716,12 +8722,12 @@ function SettingsScreen({ isDark }) {
                                                             children: org.abbr
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                            lineNumber: 137,
+                                                            lineNumber: 139,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 136,
+                                                        lineNumber: 138,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8729,44 +8735,44 @@ function SettingsScreen({ isDark }) {
                                                         children: org.abbr
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 141,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, org.abbr, true, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 137,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 135,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-xs text-center text-muted-foreground",
-                                        children: "Version 1.0.0 · Made with ❤️ in Morocco"
+                                        children: t('settings.version_info')
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 131,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                        lineNumber: 129,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                lineNumber: 43,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             showLanguageModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8779,25 +8785,25 @@ function SettingsScreen({ isDark }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-lg font-semibold text-foreground",
-                                    children: "Select Language"
+                                    children: t('settings.select_language')
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 155,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setShowLanguageModal(false),
                                     className: "text-accent font-medium",
-                                    children: "Done"
+                                    children: t('settings.done')
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 156,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                            lineNumber: 152,
+                            lineNumber: 154,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8816,7 +8822,7 @@ function SettingsScreen({ isDark }) {
                                                 children: lang.flag
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 162,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8827,7 +8833,7 @@ function SettingsScreen({ isDark }) {
                                                         children: lang.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 162,
+                                                        lineNumber: 164,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8835,53 +8841,53 @@ function SettingsScreen({ isDark }) {
                                                         children: lang.nativeName
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 165,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 161,
+                                                lineNumber: 163,
                                                 columnNumber: 21
                                             }, this),
                                             selectedLanguage === lang.code && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CheckIcon"], {
                                                 className: "w-5 h-5 text-accent"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 167,
                                                 columnNumber: 56
                                             }, this)
                                         ]
                                     }, lang.code, true, {
                                         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 161,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                                lineNumber: 157,
+                                lineNumber: 159,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                            lineNumber: 156,
+                            lineNumber: 158,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                    lineNumber: 151,
+                    lineNumber: 153,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/screens/settings-screen.tsx",
-                lineNumber: 150,
+                lineNumber: 152,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/screens/settings-screen.tsx",
-        lineNumber: 35,
+        lineNumber: 37,
         columnNumber: 5
     }, this);
 }
@@ -8897,6 +8903,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/navigation-provider.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/language-provider.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$phone$2d$frame$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/phone-frame.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$screens$2f$onboarding$2d$screen$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/screens/onboarding-screen.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$screens$2f$home$2d$map$2d$screen$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/screens/home-map-screen.tsx [app-ssr] (ecmascript)");
@@ -8911,6 +8918,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$scre
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$screens$2f$challenges$2d$screen$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/screens/challenges-screen.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$screens$2f$settings$2d$screen$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/turath/screens/settings-screen.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -8988,12 +8996,12 @@ function AnimatedScreen({ screenId, isDark }) {
             isDark: isDark
         }, void 0, false, {
             fileName: "[project]/components/turath/app-shell.tsx",
-            lineNumber: 86,
+            lineNumber: 87,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/turath/app-shell.tsx",
-        lineNumber: 79,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }
@@ -9015,12 +9023,12 @@ function AppContent() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/components/turath/app-shell.tsx",
-                    lineNumber: 109,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/turath/app-shell.tsx",
-                lineNumber: 108,
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9049,7 +9057,7 @@ function AppContent() {
                                                     strokeLinejoin: "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 126,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -9060,7 +9068,7 @@ function AppContent() {
                                                     strokeLinejoin: "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                                    lineNumber: 126,
+                                                    lineNumber: 127,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -9071,18 +9079,18 @@ function AppContent() {
                                                     strokeLinejoin: "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 128,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/turath/app-shell.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 125,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -9094,7 +9102,7 @@ function AppContent() {
                                                 children: "/"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/app-shell.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 132,
                                                 columnNumber: 22
                                             }, this),
                                             " ",
@@ -9103,19 +9111,19 @@ function AppContent() {
                                                 children: SCREEN_LABELS[currentScreen]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/app-shell.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 132,
                                                 columnNumber: 72
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/app-shell.tsx",
-                                lineNumber: 122,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9142,7 +9150,7 @@ function AppContent() {
                                                         rx: "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 147,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -9153,7 +9161,7 @@ function AppContent() {
                                                         rx: "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                                        lineNumber: 147,
+                                                        lineNumber: 148,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -9164,7 +9172,7 @@ function AppContent() {
                                                         rx: "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                                        lineNumber: 148,
+                                                        lineNumber: 149,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -9175,20 +9183,20 @@ function AppContent() {
                                                         rx: "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 150,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/turath/app-shell.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 146,
                                                 columnNumber: 15
                                             }, this),
                                             "Screens"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 138,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -9209,20 +9217,20 @@ function AppContent() {
                                                     r: "5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 166,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                                    lineNumber: 166,
+                                                    lineNumber: 167,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/turath/app-shell.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 165,
                                             columnNumber: 17
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                             width: "14",
@@ -9235,29 +9243,29 @@ function AppContent() {
                                                 d: "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/turath/app-shell.tsx",
-                                                lineNumber: 170,
+                                                lineNumber: 171,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/turath/app-shell.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 170,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/turath/app-shell.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 156,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/turath/app-shell.tsx",
-                                lineNumber: 135,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 117,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this),
                     showMenu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9270,7 +9278,7 @@ function AppContent() {
                                     children: "JUMP TO SCREEN"
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 185,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9284,29 +9292,29 @@ function AppContent() {
                                             children: SCREEN_LABELS[id]
                                         }, id, false, {
                                             fileName: "[project]/components/turath/app-shell.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 190,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                    lineNumber: 187,
+                                    lineNumber: 188,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/turath/app-shell.tsx",
-                            lineNumber: 183,
+                            lineNumber: 184,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 179,
+                        lineNumber: 180,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/app-shell.tsx",
-                lineNumber: 116,
+                lineNumber: 117,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9321,17 +9329,17 @@ function AppContent() {
                                     isDark: isDark
                                 }, id, false, {
                                     fileName: "[project]/components/turath/app-shell.tsx",
-                                    lineNumber: 215,
+                                    lineNumber: 216,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/turath/app-shell.tsx",
-                            lineNumber: 213,
+                            lineNumber: 214,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 212,
+                        lineNumber: 213,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9342,13 +9350,13 @@ function AppContent() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 221,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/app-shell.tsx",
-                lineNumber: 211,
+                lineNumber: 212,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -9358,21 +9366,21 @@ function AppContent() {
                         className: "w-2 h-2 rounded-full bg-[#C1121F]"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 232,
+                        lineNumber: 233,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-2 h-2 rounded-full bg-[#C9A84C]"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 233,
+                        lineNumber: 234,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-2 h-2 rounded-full bg-[#1B4332]"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 234,
+                        lineNumber: 235,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -9380,32 +9388,38 @@ function AppContent() {
                         children: "Turath — Moroccan Cultural Heritage"
                     }, void 0, false, {
                         fileName: "[project]/components/turath/app-shell.tsx",
-                        lineNumber: 235,
+                        lineNumber: 236,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/turath/app-shell.tsx",
-                lineNumber: 231,
+                lineNumber: 232,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/turath/app-shell.tsx",
-        lineNumber: 99,
+        lineNumber: 100,
         columnNumber: 5
     }, this);
 }
 function AppShell() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NavigationProvider"], {
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AppContent, {}, void 0, false, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$language$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LanguageProvider"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$turath$2f$navigation$2d$provider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NavigationProvider"], {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AppContent, {}, void 0, false, {
+                fileName: "[project]/components/turath/app-shell.tsx",
+                lineNumber: 248,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/components/turath/app-shell.tsx",
-            lineNumber: 246,
+            lineNumber: 247,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/turath/app-shell.tsx",
-        lineNumber: 245,
+        lineNumber: 246,
         columnNumber: 5
     }, this);
 }

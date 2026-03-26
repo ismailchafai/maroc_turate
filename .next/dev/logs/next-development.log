@@ -1,10 +1,282 @@
-[00:00:01.173] Server  LOG     
-[00:00:01.174] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:01.174] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+[00:00:01.509] Server  LOG     ✓ Ready in 930ms
+[00:00:04.970] Server  WARN    ⚠ Cross origin request detected from 192.168.100.144 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:06.603] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.625] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.960] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.960] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.960] Browser LOG     %c[Vercel Web Analytics]%c [view] http://192.168.100.144:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.100.144:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485022855} /_vercel/insights/view
+[00:00:06.992] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.992] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.992] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485022947} /_vercel/insights/view
+[00:00:07.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.962] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485023140} /_vercel/insights/view
+[00:07:47.770] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:07:47.771] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:07:47.776] Server  LOG     ✓ Compiled in 122ms
+[00:07:48.813] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:48.819] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:49.963] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:49.963] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:49.963] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485484997} /_vercel/insights/view
+[00:07:49.964] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:49.964] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:49.964] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485485080} /_vercel/insights/view
+[00:08:40.285] Server  LOG     ✓ Compiled in 99ms
+[00:10:19.270] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:19.272] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:19.275] Server  LOG     ✓ Compiled in 118ms
+[00:10:19.965] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:19.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:20.986] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:20.986] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:10:20.986] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485636195} /_vercel/insights/view
+[00:10:20.987] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:20.987] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:10:20.987] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485636169} /_vercel/insights/view
+[00:11:40.648] Server  LOG     ✓ Compiled in 528ms
+[00:11:51.477] Server  LOG     ✓ Compiled in 108ms
+[00:12:48.588] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:12:48.593] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:12:48.597] Server  LOG     ✓ Compiled in 84ms
+[00:12:49.321] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:49.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:49.964] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:49.964] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:49.964] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485785499} /_vercel/insights/view
+[00:12:49.966] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:49.966] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:49.966] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485785531} /_vercel/insights/view
+[00:13:28.894] Server  LOG     ✓ Compiled in 93ms
+[00:14:53.503] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:14:53.506] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:14:53.598] Server  LOG     ✓ Compiled in 93ms
+[00:14:54.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:54.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:54.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:54.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:14:54.962] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485910283} /_vercel/insights/view
+[00:14:54.965] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:54.965] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:14:54.965] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774485910422} /_vercel/insights/view
+[00:15:40.631] Server  LOG     ✓ Compiled in 59ms
+[00:16:19.159] Server  LOG     ✓ Compiled in 121ms
+[00:16:40.839] Server  LOG     ✓ Compiled in 449ms
+[00:18:25.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:26.005] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:26.005] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:18:26.005] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486121960} /_vercel/insights/view
+[00:18:42.540] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
 
-[00:00:01.175] Server  LOG       	- include was updated to add '.next/dev/types/**/*.ts'
-[00:00:01.176] Server  LOG     
-[00:00:01.339] Server  LOG     ✓ Ready in 906ms
-[00:00:12.401] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:12.401] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:12.401] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774480853592} /_vercel/insights/view
+  ...
+    <NavigationProvider>
+      <AppContent>
+        <div className="min-h-scre...">
+          <div>
+          <div>
+          <div className="relative z-10">
+            <PhoneFrame isDark={false}>
+              <div className="relative w...">
+                <div>
+                <div>
+                <div className="w-full h-f...">
+                  <div className="relative w...">
+                    <AnimatedScreen>
+                    <AnimatedScreen>
+                    <AnimatedScreen screenId="region-detail" isDark={false}>
+                      <div className="absolute i...">
+                        <RegionDetailScreen isDark={false}>
+                          <div className="h-full fle...">
+                            <div>
+                            <div>
+                            <div>
+                            <div className="flex-1 ove...">
+                              <div className="grid grid-...">
+>                               <button
+>                                 onClick={function onClick}
+>                                 className="rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:..."
+>                               >
+                                  <div className="relative h...">
+                                    <div>
+>                                   <button
+>                                     onClick={function onClick}
+>                                     className="absolute top-2 right-2 w-8 h-8 rounded-full bg-background/80 flex ite..."
+>                                     aria-label="Save"
+>                                   >
+                                  ...
+                                ...
+                            ...
+                    ...
+                ...
+            ...
+          ...
+
+[00:18:42.540] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:26:59.470] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:26:59.471] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/fr.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:26:59.475] Server  LOG     ✓ Compiled in 95ms
+[00:27:00.275] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:00.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:00.490] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:00.490] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:27:00.490] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486636446} /_vercel/insights/view
+[00:27:00.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:00.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:27:00.962] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486636605} /_vercel/insights/view
+[00:28:00.818] Server  LOG     ✓ Compiled in 271ms
+[00:28:02.713] Server  LOG     ✓ Compiled in 129ms
+[00:28:23.557] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:23.557] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:28:23.557] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486719432} /_vercel/insights/view
+[00:28:38.742] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <NavigationProvider>
+      <AppContent>
+        <div className="min-h-scre...">
+          <div>
+          <div>
+          <div className="relative z-10">
+            <PhoneFrame isDark={false}>
+              <div className="relative w...">
+                <div>
+                <div>
+                <div className="w-full h-f...">
+                  <div className="relative w...">
+                    <AnimatedScreen>
+                    <AnimatedScreen>
+                    <AnimatedScreen screenId="region-detail" isDark={false}>
+                      <div className="absolute i...">
+                        <RegionDetailScreen isDark={false}>
+                          <div className="h-full fle...">
+                            <div>
+                            <div>
+                            <div>
+                            <div className="flex-1 ove...">
+                              <div className="grid grid-...">
+>                               <button
+>                                 onClick={function onClick}
+>                                 className="rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:..."
+>                               >
+                                  <div className="relative h...">
+                                    <div>
+>                                   <button
+>                                     onClick={function onClick}
+>                                     className="absolute top-2 right-2 w-8 h-8 rounded-full bg-background/80 flex ite..."
+>                                     aria-label="Save"
+>                                   >
+                                  ...
+                                ...
+                            ...
+                    ...
+                ...
+            ...
+          ...
+
+[00:28:38.742] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:28:55.542] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:55.542] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:28:55.542] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486751463} /_vercel/insights/view
+[00:30:15.989] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:15.990] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:15.990] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:16.101] Server  LOG     ✓ Compiled in 63ms
+[00:30:16.881] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:17.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:17.803] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:17.803] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:17.803] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486833675} /_vercel/insights/view
+[00:30:17.961] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:17.961] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:17.961] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486833140} /_vercel/insights/view
+[00:30:17.963] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:17.963] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:17.963] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486833400} /_vercel/insights/view
+[00:30:18.027] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:18.032] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:18.034] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:18.116] Server  LOG     ✓ Compiled in 59ms
+[00:30:18.773] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:18.784] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:19.367] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:19.367] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:19.367] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486835271} /_vercel/insights/view
+[00:30:19.961] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:19.961] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:19.961] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486834946} /_vercel/insights/view
+[00:30:19.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:19.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:19.962] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486834930} /_vercel/insights/view
+[00:30:39.176] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:39.177] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:39.181] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./locales/tzm.json (json) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:39.262] Server  LOG     ✓ Compiled in 73ms
+[00:30:39.886] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:39.893] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:40.508] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:40.508] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:40.508] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486856419} /_vercel/insights/view
+[00:30:40.962] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:40.962] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:40.962] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486856061} /_vercel/insights/view
+[00:30:40.963] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:40.963] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:40.963] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486856058} /_vercel/insights/view
+[00:30:44.686] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:44.860] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:44.860] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:30:44.860] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774486860815} /_vercel/insights/view
+[00:30:59.058] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <NavigationProvider>
+      <AppContent>
+        <div className="min-h-scre...">
+          <div>
+          <div>
+          <div className="relative z-10">
+            <PhoneFrame isDark={false}>
+              <div className="relative w...">
+                <div>
+                <div>
+                <div className="w-full h-f...">
+                  <div className="relative w...">
+                    <AnimatedScreen>
+                    <AnimatedScreen>
+                    <AnimatedScreen screenId="region-detail" isDark={false}>
+                      <div className="absolute i...">
+                        <RegionDetailScreen isDark={false}>
+                          <div className="h-full fle...">
+                            <div>
+                            <div>
+                            <div>
+                            <div className="flex-1 ove...">
+                              <div className="grid grid-...">
+>                               <button
+>                                 onClick={function onClick}
+>                                 className="rounded-2xl overflow-hidden bg-card border border-border shadow-sm hover:..."
+>                               >
+                                  <div className="relative h...">
+                                    <div>
+>                                   <button
+>                                     onClick={function onClick}
+>                                     className="absolute top-2 right-2 w-8 h-8 rounded-full bg-background/80 flex ite..."
+>                                     aria-label="Save"
+>                                   >
+                                  ...
+                                ...
+                            ...
+                    ...
+                ...
+            ...
+          ...
+
+[00:30:59.058] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
