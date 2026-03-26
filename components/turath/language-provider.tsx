@@ -85,11 +85,8 @@ function detectBrowserLanguage(): Locale {
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('fr')
-  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    setIsClient(true)
-    
     // Try to get saved locale from localStorage
     const savedLocale = localStorage.getItem('app_locale') as Locale | null
     
@@ -134,11 +131,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLocale,
     t,
     dir: getDirection(locale),
-  }
-
-  // Don't render children until client-side hydration is complete to avoid mismatches
-  if (!isClient) {
-    return <>{children}</>
   }
 
   return (
