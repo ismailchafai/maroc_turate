@@ -1,6 +1,10 @@
 "use client"
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react'
+import frTranslations from '@/locales/fr.json'
+import arTranslations from '@/locales/ar.json'
+import enTranslations from '@/locales/en.json'
+import tzmTranslations from '@/locales/tzm.json'
 
 type Locale = 'fr' | 'ar' | 'en' | 'tzm'
 
@@ -18,38 +22,11 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 const translations: Record<Locale, TranslationData> = {
-  fr: {},
-  ar: {},
-  en: {},
-  tzm: {},
+  fr: frTranslations,
+  ar: arTranslations,
+  en: enTranslations,
+  tzm: tzmTranslations,
 }
-
-// Load translations (they will be imported dynamically)
-let translationsLoaded = false
-
-async function loadTranslations() {
-  if (translationsLoaded) return
-  
-  try {
-    const [fr, ar, en, tzm] = await Promise.all([
-      import('@/locales/fr.json').then(m => m.default),
-      import('@/locales/ar.json').then(m => m.default),
-      import('@/locales/en.json').then(m => m.default),
-      import('@/locales/tzm.json').then(m => m.default),
-    ])
-    
-    translations.fr = fr
-    translations.ar = ar
-    translations.en = en
-    translations.tzm = tzm
-    translationsLoaded = true
-  } catch (error) {
-    console.error("[v0] Failed to load translations:", error)
-  }
-}
-
-// Initialize translations immediately
-loadTranslations()
 
 function getTranslation(locale: Locale, key: string): string {
   const keys = key.split('.')

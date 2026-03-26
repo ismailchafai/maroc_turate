@@ -21,7 +21,8 @@
     "loading": "Itaka...",
     "error": "Tafukt",
     "success": "Yessaf",
-    "description": "Sned deg usmenyaf d isunag n Lmughrib"
+    "description": "Sned deg usmenyaf d isunag n Lmughrib",
+    "view_all": "Sken akk"
   },
   "onboarding": {
     "choose_language": "Fren tutlayt inek",
@@ -63,7 +64,8 @@
     "festivals": "Ifeṛka",
     "itineraries": "Isenan",
     "show_map": "Sken takarṭa",
-    "list_view": "Tamaẓla n urkalis"
+    "list_view": "Tamaẓla n urkalis",
+    "nearby_highlights": "Isejjagen yuɣalen"
   },
   "region_detail": {
     "heritage_sites": "Isejjagen n usmenyaf",
@@ -90,6 +92,7 @@
     "share_this": "Bdu aya"
   },
   "marketplace": {
+    "marketplace": "Adandal n usunagga",
     "products": "Isefka",
     "artisan_products": "Isefka n umusunag",
     "price": "Tqima",
@@ -141,7 +144,8 @@
     "walking_time": "Akud n iseɣwan",
     "transport_mode": "Abrid n usmenyaf",
     "mark_complete": "Rnan aferḍi",
-    "continue_itinerary": "Tkuzi usmenyaf"
+    "continue_itinerary": "Tkuzi usmenyaf",
+    "start_itinerary": "Bdu usmenyaf"
   },
   "voice_guide": {
     "ai_guide": "Amnid ameslugen",

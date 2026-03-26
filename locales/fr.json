@@ -21,7 +21,8 @@
     "loading": "Chargement...",
     "error": "Erreur",
     "success": "Succès",
-    "description": "Explorez la riche patrimoine culturel et les traditions artisanales du Maroc"
+    "description": "Explorez la riche patrimoine culturel et les traditions artisanales du Maroc",
+    "view_all": "Voir tout"
   },
   "onboarding": {
     "choose_language": "Choisissez votre langue",
@@ -63,7 +64,8 @@
     "festivals": "Festivals",
     "itineraries": "Itinéraires",
     "show_map": "Afficher la carte",
-    "list_view": "Vue liste"
+    "list_view": "Vue liste",
+    "nearby_highlights": "Points d'intérêt à proximité"
   },
   "region_detail": {
     "heritage_sites": "Sites patrimoniaux",
@@ -90,6 +92,7 @@
     "share_this": "Partager cela"
   },
   "marketplace": {
+    "marketplace": "Boutique d'artisans",
     "products": "Produits",
     "artisan_products": "Produits de l'artisan",
     "price": "Prix",
@@ -141,7 +144,8 @@
     "walking_time": "Temps de marche",
     "transport_mode": "Mode de transport",
     "mark_complete": "Marquer comme complété",
-    "continue_itinerary": "Continuer l'itinéraire"
+    "continue_itinerary": "Continuer l'itinéraire",
+    "start_itinerary": "Commencer l'itinéraire"
   },
   "voice_guide": {
     "ai_guide": "Guide IA",

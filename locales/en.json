@@ -21,7 +21,8 @@
     "loading": "Loading...",
     "error": "Error",
     "success": "Success",
-    "description": "Explore Morocco's rich cultural heritage and artisan traditions"
+    "description": "Explore Morocco's rich cultural heritage and artisan traditions",
+    "view_all": "View all"
   },
   "onboarding": {
     "choose_language": "Choose your language",
@@ -63,7 +64,8 @@
     "festivals": "Festivals",
     "itineraries": "Itineraries",
     "show_map": "Show Map",
-    "list_view": "List View"
+    "list_view": "List View",
+    "nearby_highlights": "Nearby Highlights"
   },
   "region_detail": {
     "heritage_sites": "Heritage Sites",
@@ -90,6 +92,7 @@
     "share_this": "Share this"
   },
   "marketplace": {
+    "marketplace": "Artisan Marketplace",
     "products": "Products",
     "artisan_products": "Artisan Products",
     "price": "Price",
@@ -141,7 +144,8 @@
     "walking_time": "Walking Time",
     "transport_mode": "Transport Mode",
     "mark_complete": "Mark Complete",
-    "continue_itinerary": "Continue Itinerary"
+    "continue_itinerary": "Continue Itinerary",
+    "start_itinerary": "Start Itinerary"
   },
   "voice_guide": {
     "ai_guide": "AI Guide",

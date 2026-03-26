@@ -21,7 +21,8 @@
     "loading": "جاري التحميل...",
     "error": "خطأ",
     "success": "نجح",
-    "description": "اكتشف الثراء الثقافي والتقاليد الحرفية للمغرب"
+    "description": "اكتشف الثراء الثقافي والتقاليد الحرفية للمغرب",
+    "view_all": "عرض الكل"
   },
   "onboarding": {
     "choose_language": "اختر لغتك",
@@ -63,7 +64,8 @@
     "festivals": "المهرجانات",
     "itineraries": "المسارات",
     "show_map": "إظهار الخريطة",
-    "list_view": "عرض القائمة"
+    "list_view": "عرض القائمة",
+    "nearby_highlights": "النقاط البارزة القريبة"
   },
   "region_detail": {
     "heritage_sites": "مواقع التراث",
@@ -90,6 +92,7 @@
     "share_this": "شارك هذا"
   },
   "marketplace": {
+    "marketplace": "متجر الحرفيين",
     "products": "المنتجات",
     "artisan_products": "منتجات الحرفي",
     "price": "السعر",
@@ -141,7 +144,8 @@
     "walking_time": "وقت المشي",
     "transport_mode": "وسيلة النقل",
     "mark_complete": "وضع علامة مكتملة",
-    "continue_itinerary": "متابعة المسار"
+    "continue_itinerary": "متابعة المسار",
+    "start_itinerary": "بدء المسار"
   },
   "voice_guide": {
     "ai_guide": "مرشد ذكي",
