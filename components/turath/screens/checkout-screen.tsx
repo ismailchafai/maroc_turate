@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { ChevronLeftIcon, CheckIcon } from '../icons'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 const CART_ITEMS = [
   { id: '1', name: 'Zellige Table', price: 4500, image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=200&h=200&fit=crop', artisan: 'Fatima Zahra', quantity: 1 },

@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { SettingsIcon, TrophyIcon, ChevronRightIcon } from '../icons'
 import { BottomNavigation } from '../bottom-navigation'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 const USER_DATA = {
   name: 'Alexandra Chen',
