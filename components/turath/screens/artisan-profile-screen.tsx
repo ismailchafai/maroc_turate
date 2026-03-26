@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { ChevronLeftIcon, ShareIcon, StarIcon, VerifiedIcon, HeartIcon, CartIcon, MapPinIcon } from '../icons'
 import { BottomNavigation } from '../bottom-navigation'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 const ARTISAN_DATA = {
   name: 'Fatima Zahra',
@@ -48,6 +49,7 @@ interface ArtisanProfileScreenProps {
 export function ArtisanProfileScreen({ isDark }: ArtisanProfileScreenProps) {
   void isDark
   const { goBack, navigate } = useNavigation()
+  const { t } = useTranslation()
   const [isFollowing, setIsFollowing] = useState(ARTISAN_DATA.following)
   const [activeTab, setActiveTab] = useState<'portfolio' | 'products' | 'reviews'>('portfolio')
 

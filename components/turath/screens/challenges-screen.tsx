@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { ChevronLeftIcon, TrophyIcon, MapPinIcon, StarIcon } from '../icons'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 const CHALLENGE_CATEGORIES = [
   { id: 'all', label: 'All' },

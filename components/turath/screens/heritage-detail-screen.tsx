@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { ChevronLeftIcon, ShareIcon, BookmarkIcon, PlayIcon, Volume2Icon, CameraIcon, ChevronRightIcon } from '../icons'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 const HERITAGE_DATA = {
   title: 'Koutoubia Mosque',
@@ -36,6 +37,7 @@ interface HeritageDetailScreenProps {
 export function HeritageDetailScreen({ isDark }: HeritageDetailScreenProps) {
   void isDark
   const { goBack, navigate } = useNavigation()
+  const { t } = useTranslation()
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [saved, setSaved] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)

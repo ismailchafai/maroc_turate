@@ -6,6 +6,7 @@ import { FILTER_CHIPS } from '@/lib/turath-types'
 import { SearchIcon, MicIcon, MapPinIcon, ChevronRightIcon } from '../icons'
 import { BottomNavigation } from '../bottom-navigation'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 const MAP_PINS = [
   { id: 'fez', name: 'Fez', x: 55, y: 35, type: 'heritage' as const },
@@ -30,6 +31,7 @@ interface HomeMapScreenProps {
 export function HomeMapScreen({ isDark }: HomeMapScreenProps) {
   void isDark
   const { navigate } = useNavigation()
+  const { t } = useTranslation()
   const [activeFilter, setActiveFilter] = useState('all')
   const [bottomSheetExpanded, setBottomSheetExpanded] = useState(false)
 
@@ -49,7 +51,7 @@ export function HomeMapScreen({ isDark }: HomeMapScreenProps) {
         <div className="glass rounded-2xl border border-border/50 shadow-lg">
           <div className="flex items-center gap-3 px-4 py-3">
             <SearchIcon className="w-5 h-5 text-muted-foreground" />
-            <input type="text" placeholder="Search places, crafts, artisans..." className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none" />
+            <input type="text" placeholder={t('home_map.search_placeholder')} className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none" />
             <button className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
               <MicIcon className="w-5 h-5 text-primary" />
             </button>
@@ -108,9 +110,9 @@ export function HomeMapScreen({ isDark }: HomeMapScreenProps) {
         </button>
         <div className="px-4 pb-4">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-semibold text-foreground">Nearby Highlights</h3>
+            <h3 className="text-lg font-semibold text-foreground">{t('home_map.nearby_highlights', 'Nearby Highlights')}</h3>
             <button onClick={() => navigate('region-detail')} className="text-sm text-accent font-medium flex items-center gap-1">
-              View all <ChevronRightIcon className="w-4 h-4" />
+              {t('common.view_all', 'View all')} <ChevronRightIcon className="w-4 h-4" />
             </button>
           </div>
           <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">

@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { LANGUAGES } from '@/lib/turath-types'
 import { ChevronLeftIcon, ChevronRightIcon, CheckIcon, GlobeIcon, BellIcon, UserIcon } from '../icons'
 import { useNavigation } from '../navigation-provider'
+import { useTranslation } from '../language-provider'
 
 interface SettingsScreenProps {
   isDark?: boolean
@@ -13,7 +14,8 @@ interface SettingsScreenProps {
 export function SettingsScreen({ isDark }: SettingsScreenProps) {
   void isDark
   const { goBack } = useNavigation()
-  const [selectedLanguage, setSelectedLanguage] = useState('en')
+  const { t, locale, setLocale } = useTranslation()
+  const [selectedLanguage, setSelectedLanguage] = useState(locale)
   const [notifications, setNotifications] = useState({
     newContent: true,
     challenges: true,
@@ -37,13 +39,13 @@ export function SettingsScreen({ isDark }: SettingsScreenProps) {
         <button onClick={goBack} className="w-10 h-10 rounded-full bg-muted flex items-center justify-center" aria-label="Go back">
           <ChevronLeftIcon className="w-5 h-5 text-foreground" />
         </button>
-        <h1 className="text-xl font-bold text-foreground">Settings</h1>
+        <h1 className="text-xl font-bold text-foreground">{t('settings.settings')}</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto pb-8">
         {/* Profile */}
         <div className="p-4 border-b border-border">
-          <h2 className="text-sm font-semibold text-muted-foreground mb-3">PROFILE</h2>
+          <h2 className="text-sm font-semibold text-muted-foreground mb-3">{t('profile.my_profile', 'PROFILE').toUpperCase()}</h2>
           <button className="w-full flex items-center gap-4 p-4 bg-card rounded-2xl border border-border">
             <div className="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center">
               <UserIcon className="w-7 h-7 text-accent" />
