@@ -249,5 +249,172 @@
     "send": "Send",
     "listening": "Listening...",
     "speaking": "Speaking..."
+  },
+  "data": {
+    "artisans": {
+      "fatima_zahra": "Fatima Zahra",
+      "hassan_benchekroun": "Hassan Benchekroun",
+      "aicha_b": "Aicha B.",
+      "malika_a": "Malika A.",
+      "omar_t": "Omar T.",
+      "khadija_m": "Khadija M."
+    },
+    "crafts": {
+      "zellige": "Traditional Zellige",
+      "leather": "Leather",
+      "textiles": "Textiles",
+      "jewelry": "Jewelry",
+      "wood": "Wood",
+      "pottery": "Pottery"
+    },
+    "challenge_titles": {
+      "visit_5_unesco": "Visit 5 UNESCO sites in Marrakech",
+      "support_3_artisans": "Support 3 local artisans",
+      "ai_guide_3_languages": "Use AI Guide in 3 languages",
+      "almohad_dynasty": "Learn about Almohad Dynasty",
+      "walk_10km_fes": "Walk 10km in Fes Medina"
+    },
+    "challenge_descriptions": {
+      "visit_5_unesco": "Explore the most significant heritage locations in the Red City",
+      "support_3_artisans": "Purchase authentic crafts directly from makers",
+      "ai_guide_3_languages": "Explore cultural content in multiple languages",
+      "almohad_dynasty": "Complete the historical journey through Almohad sites",
+      "walk_10km_fes": "Explore the ancient streets on foot"
+    },
+    "rewards": {
+      "heritage_guardian": "Heritage Guardian Badge",
+      "zellige_master": "Zellige Master",
+      "storyteller": "Storyteller",
+      "medina_walker": "Medina Walker Badge",
+      "culture_champion": "Culture Champion",
+      "explorer": "Explorer",
+      "discount_10": "10% Discount Coupon",
+      "polyglot_badge": "Polyglot Badge",
+      "historian_badge": "Historian Badge",
+      "discount_15": "15% Off Next Purchase"
+    },
+    "shipping_options": {
+      "standard": "Standard Shipping",
+      "standard_days": "7-14 days",
+      "express": "Express Shipping",
+      "express_days": "3-5 days",
+      "premium": "Premium Shipping",
+      "premium_days": "1-2 days"
+    },
+    "heritage_sites": {
+      "koutoubia": "Koutoubia Mosque",
+      "koutoubia_desc": "The largest mosque in Marrakech, founded in 1147",
+      "bahia_palace": "Bahia Palace",
+      "bahia_desc": "Explore the stunning 19th-century palace",
+      "el_badi": "El Badi Palace",
+      "el_badi_desc": "Discover the ruins of the grand Saadian palace",
+      "saadian_tombs": "Saadian Tombs",
+      "saadian_tombs_desc": "16th century royal necropolis",
+      "jemaa_el_fnaa": "Jemaa el-Fnaa",
+      "jemaa_desc": "Begin your journey at the bustling main square"
+    },
+    "itinerary_stops": {
+      "jemaa_el_fnaa": "Jemaa el-Fnaa",
+      "jemaa_time": "9:00 AM",
+      "jemaa_duration": "2 hours",
+      "jemaa_desc": "Begin your journey at the bustling main square",
+      "koutoubia_time": "11:30 AM",
+      "koutoubia_duration": "1 hour",
+      "koutoubia_desc": "Admire the iconic 12th-century minaret",
+      "bahia_time": "1:00 PM",
+      "bahia_duration": "1.5 hours",
+      "bahia_desc": "Explore the stunning 19th-century palace",
+      "el_badi_time": "3:00 PM",
+      "el_badi_duration": "1 hour",
+      "el_badi_desc": "Discover the ruins of the grand Saadian palace",
+      "saadian_time": "4:30 PM",
+      "saadian_duration": "45 mins",
+      "saadian_desc": "Visit the ornate royal necropolis"
+    },
+    "locations": {
+      "fez": "Fez",
+      "marrakech": "Marrakech",
+      "chefchaouen": "Chefchaouen",
+      "essaouira": "Essaouira",
+      "atlas_mountains": "Atlas Mountains",
+      "tangier": "Tangier",
+      "al_quaraouiyine": "Al Quaraouiyine",
+      "chouara_tannery": "Chouara Tannery",
+      "bab_boujloud": "Bab Boujloud",
+      "dar_batha": "Dar Batha"
+    },
+    "location_categories": {
+      "heritage": "Heritage",
+      "artisan": "Artisan",
+      "food": "Food",
+      "museum": "Museum",
+      "itinerary": "Itinerary"
+    },
+    "products": {
+      "berber_rug": "Handwoven Berber Rug",
+      "zellige_mirror": "Zellige Mirror Frame",
+      "leather_pouf": "Leather Pouf Ottoman",
+      "berber_necklace": "Silver Berber Necklace",
+      "carved_cedar": "Carved Cedar Box",
+      "tagine": "Traditional Tagine",
+      "zellige_table": "Zellige Table"
+    },
+    "product_categories": {
+      "textiles": "Textiles",
+      "zellige": "Zellige",
+      "leather": "Leather",
+      "jewelry": "Jewelry",
+      "wood": "Wood",
+      "pottery": "Pottery"
+    },
+    "regions": {
+      "marrakech_safi": "Marrakech-Safi",
+      "fes_meknes": "Fes-Meknes",
+      "casablanca_settat": "Casablanca-Settat",
+      "draa_tafilalet": "Draa-Tafilalet"
+    },
+    "badges": {
+      "sahara_explorer": "Sahara Explorer",
+      "zellige_master": "Zellige Master",
+      "storyteller": "Storyteller",
+      "medina_walker": "Medina Walker",
+      "culture_champion": "Culture Champion",
+      "heritage_guardian": "Heritage Guardian"
+    },
+    "content_types": {
+      "berber_pottery": "Berber Pottery",
+      "berber_pottery_desc": "Traditional clay pottery with geometric patterns",
+      "tagine_cuisine": "Tagine Cuisine",
+      "tagine_desc": "Traditional slow-cooked Moroccan dishes",
+      "gnawa_music": "Gnawa Music",
+      "gnawa_desc": "Spiritual music tradition with African roots",
+      "ben_youssef": "Ben Youssef Madrasa",
+      "ben_youssef_desc": "Historic Islamic college with intricate carvings"
+    },
+    "suggested_questions": {
+      "battle_dchira": "Tell me about the Battle of Dchira",
+      "hassan_tower": "History of Hassan Tower",
+      "zellige_art": "What is Zellige art?",
+      "berber_traditions": "Berber traditions"
+    },
+    "user_stats": {
+      "regions_visited": "Regions Visited",
+      "sites_explored": "Sites Explored",
+      "artisans_supported": "Artisans Supported",
+      "languages_used": "Languages Used"
+    },
+    "leaderboard": {
+      "rank": "Rank",
+      "points": "Points",
+      "badge": "Badge",
+      "you": "You"
+    },
+    "pagination": {
+      "start_point": "Start point",
+      "days": "days",
+      "km": "km",
+      "hours": "hours",
+      "mins": "mins"
+    }
   }
 }

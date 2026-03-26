@@ -249,5 +249,172 @@
     "send": "Envoyer",
     "listening": "À l'écoute...",
     "speaking": "En cours de lecture..."
+  },
+  "data": {
+    "artisans": {
+      "fatima_zahra": "Fatima Zahra",
+      "hassan_benchekroun": "Hassan Benchekroun",
+      "aicha_b": "Aicha B.",
+      "malika_a": "Malika A.",
+      "omar_t": "Omar T.",
+      "khadija_m": "Khadija M."
+    },
+    "crafts": {
+      "zellige": "Zellige Traditionnel",
+      "leather": "Cuir",
+      "textiles": "Textiles",
+      "jewelry": "Bijoux",
+      "wood": "Bois",
+      "pottery": "Poterie"
+    },
+    "challenge_titles": {
+      "visit_5_unesco": "Visitez 5 sites UNESCO à Marrakech",
+      "support_3_artisans": "Soutenir 3 artisans locaux",
+      "ai_guide_3_languages": "Utilisez le Guide IA dans 3 langues",
+      "almohad_dynasty": "Apprenez la Dynastie Almohade",
+      "walk_10km_fes": "Parcourez 10 km à pied dans la Médina de Fès"
+    },
+    "challenge_descriptions": {
+      "visit_5_unesco": "Explorez les sites patrimoniaux les plus importants de la Ville Rouge",
+      "support_3_artisans": "Achetez des artisanats authentiques directement auprès des créateurs",
+      "ai_guide_3_languages": "Explorez le contenu culturel dans plusieurs langues",
+      "almohad_dynasty": "Complétez le voyage historique à travers les sites Almohades",
+      "walk_10km_fes": "Explorez les anciennes rues à pied"
+    },
+    "rewards": {
+      "heritage_guardian": "Badge Guardian du Patrimoine",
+      "zellige_master": "Maître Zellige",
+      "storyteller": "Conteur",
+      "medina_walker": "Marcheur de Médina",
+      "culture_champion": "Champion de la Culture",
+      "explorer": "Explorateur",
+      "discount_10": "Coupon de réduction 10%",
+      "polyglot_badge": "Badge Polyglotte",
+      "historian_badge": "Badge Historien",
+      "discount_15": "Réduction 15% pour le prochain achat"
+    },
+    "shipping_options": {
+      "standard": "Livraison Standard",
+      "standard_days": "7-14 jours",
+      "express": "Livraison Express",
+      "express_days": "3-5 jours",
+      "premium": "Livraison Premium",
+      "premium_days": "1-2 jours"
+    },
+    "heritage_sites": {
+      "koutoubia": "Mosquée Koutoubia",
+      "koutoubia_desc": "La plus grande mosquée de Marrakech, construite en 1147",
+      "bahia_palace": "Palais Bahia",
+      "bahia_desc": "Explorez le magnifique palais du XIXe siècle",
+      "el_badi": "Palais El Badi",
+      "el_badi_desc": "Découvrez les ruines du grand palais saadien",
+      "saadian_tombs": "Tombes Saadides",
+      "saadian_tombs_desc": "Nécropole royale du XVIe siècle",
+      "jemaa_el_fnaa": "Jemaa el-Fnaa",
+      "jemaa_desc": "Commencez votre voyage sur la place principale animée"
+    },
+    "itinerary_stops": {
+      "jemaa_el_fnaa": "Jemaa el-Fnaa",
+      "jemaa_time": "9:00 AM",
+      "jemaa_duration": "2 heures",
+      "jemaa_desc": "Commencez votre voyage sur la place principale animée",
+      "koutoubia_time": "11:30 AM",
+      "koutoubia_duration": "1 heure",
+      "koutoubia_desc": "Admirez la minaret emblématique du XIIe siècle",
+      "bahia_time": "13:00 AM",
+      "bahia_duration": "1,5 heures",
+      "bahia_desc": "Explorez le magnifique palais du XIXe siècle",
+      "el_badi_time": "15:00 AM",
+      "el_badi_duration": "1 heure",
+      "el_badi_desc": "Découvrez les ruines du grand palais saadien",
+      "saadian_time": "16:30 AM",
+      "saadian_duration": "45 minutes",
+      "saadian_desc": "Visitez la nécropole royale ornée"
+    },
+    "locations": {
+      "fez": "Fès",
+      "marrakech": "Marrakech",
+      "chefchaouen": "Chefchaouen",
+      "essaouira": "Essaouira",
+      "atlas_mountains": "Montagnes de l'Atlas",
+      "tangier": "Tanger",
+      "al_quaraouiyine": "Al Quaraouiyine",
+      "chouara_tannery": "Tannerie Chouara",
+      "bab_boujloud": "Bab Boujloud",
+      "dar_batha": "Dar Batha"
+    },
+    "location_categories": {
+      "heritage": "Patrimoine",
+      "artisan": "Artisanat",
+      "food": "Gastronomie",
+      "museum": "Musée",
+      "itinerary": "Itinéraire"
+    },
+    "products": {
+      "berber_rug": "Tapis Berbère Tissé à la Main",
+      "zellige_mirror": "Cadre de Miroir Zellige",
+      "leather_pouf": "Pouf Ottoman en Cuir",
+      "berber_necklace": "Collier Berbère en Argent",
+      "carved_cedar": "Boîte Cèdre Sculptée",
+      "tagine": "Tajine Traditionnel",
+      "zellige_table": "Table Zellige"
+    },
+    "product_categories": {
+      "textiles": "Textiles",
+      "zellige": "Zellige",
+      "leather": "Cuir",
+      "jewelry": "Bijoux",
+      "wood": "Bois",
+      "pottery": "Poterie"
+    },
+    "regions": {
+      "marrakech_safi": "Marrakech-Safi",
+      "fes_meknes": "Fès-Meknès",
+      "casablanca_settat": "Casablanca-Settat",
+      "draa_tafilalet": "Draa-Tafilalet"
+    },
+    "badges": {
+      "sahara_explorer": "Explorateur du Sahara",
+      "zellige_master": "Maître Zellige",
+      "storyteller": "Conteur",
+      "medina_walker": "Marcheur de Médina",
+      "culture_champion": "Champion de la Culture",
+      "heritage_guardian": "Guardian du Patrimoine"
+    },
+    "content_types": {
+      "berber_pottery": "Poterie Berbère",
+      "berber_pottery_desc": "Poterie traditionnelle en argile avec motifs géométriques",
+      "tagine_cuisine": "Cuisine Tajine",
+      "tagine_desc": "Plats marocains traditionnels cuits lentement",
+      "gnawa_music": "Musique Gnawa",
+      "gnawa_desc": "Tradition musicale spirituelle aux racines africaines",
+      "ben_youssef": "Madrasa Ben Youssef",
+      "ben_youssef_desc": "Collège islamique historique avec des sculptures complexes"
+    },
+    "suggested_questions": {
+      "battle_dchira": "Parlez-moi de la Bataille de Dchira",
+      "hassan_tower": "Histoire de la Minaret Hassan",
+      "zellige_art": "Qu'est-ce que l'art du Zellige?",
+      "berber_traditions": "Traditions berbères"
+    },
+    "user_stats": {
+      "regions_visited": "Régions visitées",
+      "sites_explored": "Sites explorés",
+      "artisans_supported": "Artisans soutenus",
+      "languages_used": "Langues utilisées"
+    },
+    "leaderboard": {
+      "rank": "Classement",
+      "points": "Points",
+      "badge": "Badge",
+      "you": "Vous"
+    },
+    "pagination": {
+      "start_point": "Point de départ",
+      "days": "jours",
+      "km": "km",
+      "hours": "heures",
+      "mins": "minutes"
+    }
   }
 }

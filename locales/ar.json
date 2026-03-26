@@ -249,5 +249,172 @@
     "send": "إرسال",
     "listening": "استماع جاري...",
     "speaking": "جاري الكلام..."
+  },
+  "data": {
+    "artisans": {
+      "fatima_zahra": "فاطمة الزهراء",
+      "hassan_benchekroun": "حسن بنشقرون",
+      "aicha_b": "عائشة ب.",
+      "malika_a": "مليكة أ.",
+      "omar_t": "عمر ت.",
+      "khadija_m": "خديجة م."
+    },
+    "crafts": {
+      "zellige": "الزليج التقليدي",
+      "leather": "الجلود",
+      "textiles": "النسيج",
+      "jewelry": "المجوهرات",
+      "wood": "الخشب",
+      "pottery": "الفخار"
+    },
+    "challenge_titles": {
+      "visit_5_unesco": "قم بزيارة 5 مواقع يونسكو في مراكش",
+      "support_3_artisans": "دعم 3 حرفيين محليين",
+      "ai_guide_3_languages": "استخدم المرشد الذكي في 3 لغات",
+      "almohad_dynasty": "تعرف على سلالة الموحدين",
+      "walk_10km_fes": "امش 10 كم في مدينة فاس العتيقة"
+    },
+    "challenge_descriptions": {
+      "visit_5_unesco": "استكشف أهم مواقع التراث في المدينة الحمراء",
+      "support_3_artisans": "اشتر الحرف الأصلية مباشرة من الصانعين",
+      "ai_guide_3_languages": "استكشف المحتوى الثقافي بلغات متعددة",
+      "almohad_dynasty": "أكمل الرحلة التاريخية عبر مواقع الموحدين",
+      "walk_10km_fes": "استكشف الشوارع القديمة سيراً على الأقدام"
+    },
+    "rewards": {
+      "heritage_guardian": "شارة حارس التراث",
+      "zellige_master": "سيد الزليج",
+      "storyteller": "الراوي",
+      "medina_walker": "شارة سير الوسط القديم",
+      "culture_champion": "بطل الثقافة",
+      "explorer": "المستكشف",
+      "discount_10": "قسيمة خصم 10%",
+      "polyglot_badge": "شارة متعدد اللغات",
+      "historian_badge": "شارة المؤرخ",
+      "discount_15": "خصم 15% على الشراء التالي"
+    },
+    "shipping_options": {
+      "standard": "الشحن العادي",
+      "standard_days": "7-14 أيام",
+      "express": "الشحن السريع",
+      "express_days": "3-5 أيام",
+      "premium": "الشحن الممتاز",
+      "premium_days": "1-2 أيام"
+    },
+    "heritage_sites": {
+      "koutoubia": "جامع الكتبية",
+      "koutoubia_desc": "أكبر مسجد في مراكش، تأسس سنة 1147",
+      "bahia_palace": "قصر الباهية",
+      "bahia_desc": "استكشف القصر الرائع من القرن التاسع عشر",
+      "el_badi": "قصر البديع",
+      "el_badi_desc": "اكتشف أطلال القصر الكبير السعدي",
+      "saadian_tombs": "مقابر السعديين",
+      "saadian_tombs_desc": "نكروبول ملكي من القرن السادس عشر",
+      "jemaa_el_fnaa": "جامع الفنا",
+      "jemaa_desc": "ابدأ رحلتك في الساحة الرئيسية النابضة بالحياة"
+    },
+    "itinerary_stops": {
+      "jemaa_el_fnaa": "جامع الفنا",
+      "jemaa_time": "9:00 صباحاً",
+      "jemaa_duration": "ساعتان",
+      "jemaa_desc": "ابدأ رحلتك في الساحة الرئيسية النابضة بالحياة",
+      "koutoubia_time": "11:30 صباحاً",
+      "koutoubia_duration": "ساعة واحدة",
+      "koutoubia_desc": "أعجب بالصومعة الشهيرة من القرن الثاني عشر",
+      "bahia_time": "1:00 مساءاً",
+      "bahia_duration": "ساعة ونصف",
+      "bahia_desc": "استكشف القصر الرائع من القرن التاسع عشر",
+      "el_badi_time": "3:00 مساءاً",
+      "el_badi_duration": "ساعة واحدة",
+      "el_badi_desc": "اكتشف أطلال القصر الكبير السعدي",
+      "saadian_time": "4:30 مساءاً",
+      "saadian_duration": "45 دقيقة",
+      "saadian_desc": "زر نكروبول ملكي مزخرف"
+    },
+    "locations": {
+      "fez": "فاس",
+      "marrakech": "مراكش",
+      "chefchaouen": "شفشاون",
+      "essaouira": "الصويرة",
+      "atlas_mountains": "جبال الأطلس",
+      "tangier": "طنجة",
+      "al_quaraouiyine": "القرويين",
+      "chouara_tannery": "دباغة الشوارة",
+      "bab_boujloud": "باب بوجلود",
+      "dar_batha": "دار باتا"
+    },
+    "location_categories": {
+      "heritage": "التراث",
+      "artisan": "حرفي",
+      "food": "طعام",
+      "museum": "متحف",
+      "itinerary": "مسار"
+    },
+    "products": {
+      "berber_rug": "سجادة أمازيغية منسوجة يدوياً",
+      "zellige_mirror": "إطار مرآة الزليج",
+      "leather_pouf": "كرسي عثماني من الجلود",
+      "berber_necklace": "عقد أمازيغي من الفضة",
+      "carved_cedar": "صندوق أرز منحوت",
+      "tagine": "طاجن تقليدي",
+      "zellige_table": "طاولة زليج"
+    },
+    "product_categories": {
+      "textiles": "النسيج",
+      "zellige": "الزليج",
+      "leather": "الجلود",
+      "jewelry": "المجوهرات",
+      "wood": "الخشب",
+      "pottery": "الفخار"
+    },
+    "regions": {
+      "marrakech_safi": "مراكش-آسفي",
+      "fes_meknes": "فاس-مكناس",
+      "casablanca_settat": "الدار البيضاء-سطات",
+      "draa_tafilalet": "درعة-تافيلالت"
+    },
+    "badges": {
+      "sahara_explorer": "مستكشف الصحراء",
+      "zellige_master": "سيد الزليج",
+      "storyteller": "الراوي",
+      "medina_walker": "سير الوسط القديم",
+      "culture_champion": "بطل الثقافة",
+      "heritage_guardian": "حارس التراث"
+    },
+    "content_types": {
+      "berber_pottery": "الفخار الأمازيغي",
+      "berber_pottery_desc": "فخار تقليدي من الطين بأنماط هندسية",
+      "tagine_cuisine": "طاجين",
+      "tagine_desc": "أطباق مغربية تقليدية مطهية ببطء",
+      "gnawa_music": "موسيقى كناوة",
+      "gnawa_desc": "تقليد موسيقي روحاني بجذور أفريقية",
+      "ben_youssef": "مدرسة ابن يوسف",
+      "ben_youssef_desc": "كلية إسلامية تاريخية بنقوش معقدة"
+    },
+    "suggested_questions": {
+      "battle_dchira": "أخبرني عن معركة الدشيرة",
+      "hassan_tower": "تاريخ صومعة حسان",
+      "zellige_art": "ما هو فن الزليج؟",
+      "berber_traditions": "التقاليد الأمازيغية"
+    },
+    "user_stats": {
+      "regions_visited": "المناطق التي تمت زيارتها",
+      "sites_explored": "المواقع المستكشفة",
+      "artisans_supported": "الحرفيون المدعومون",
+      "languages_used": "اللغات المستخدمة"
+    },
+    "leaderboard": {
+      "rank": "التصنيف",
+      "points": "النقاط",
+      "badge": "الشارة",
+      "you": "أنت"
+    },
+    "pagination": {
+      "start_point": "نقطة البداية",
+      "days": "أيام",
+      "km": "كم",
+      "hours": "ساعات",
+      "mins": "دقائق"
+    }
   }
 }
